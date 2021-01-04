@@ -4,11 +4,11 @@
 
 ## Overview
 
-Overview: 4 to 5 non-technical sentences, summarizing the features, functions, and goals.
+Get Lost is a retail webstore featuring travel products. Specifically, Get Lost features backpacks, carry-all's, fanny-packs, and other travel accessories for carrying all the stuff you need on-the-go.
+
+## Color Scheme
 
 ## Wireframes and Prototype
-
-Link to Adobe XD project
 
 ## Component Hierarchy
 
@@ -26,4 +26,42 @@ MVP: A link to your GitHub Projects board (See Step 5)
 
 ## PMVP
 
-Post-MVP: Your goals for post-MVP based on the given prototype
+  - Search
+  - Sort
+  - Additional Carousels
+  - Additional Product Types (Apparel, Accessories, Gear, etc.)
+  - Shopping Cart with Number of Products Displayed in Corner
+
+
+## SWOT Analysis
+
+### Strengths:
+
+  **Evyn:** React logic / state
+
+  **Mitchel:** CSS Logic, Front-End Functionality
+
+  **Shelby:** Design, project management, UI/UX, react layout/flow, CSS/CSS animations, backend setup
+
+  **Liz:** Back end development (MongoDB, Mongoose)
+
+### Weaknesses:
+
+  **Evyn:** CSS and Styling (I’ve been learning tailwind though!)
+
+  **Mitchel:** React Hooks, Back End Functionality
+
+  **Shelby:** React state, functions, backend deployment/database junk
+
+  **Liz:** Styling
+
+### Opportunities:
+
+  - Being able to support one another in a group setting.
+  - Learning from each other's strengths and weaknesses.
+  - Completing tasks more quickly with a division of labor.
+
+### Threats:
+
+  - Merge conflicts
+  - Potential scheduling issues that arise individually
