@@ -12,11 +12,11 @@ Get Lost is a retail webstore featuring travel products. Specifically, Get Lost 
 
 ## Wireframes and Prototype
 
-[Whimsical Component Hierarchy] (https://whimsical.com/get-lost-hierarchy-VcLT7ZBzYni7nFWeuf7LGy)
+[Wireframes](https://www.canva.com/design/DAESRseRiGI/NbONkDtclRCAfoCm7KShPA/view?utm_content=DAESRseRiGI&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
 ## Component Hierarchy
 
-Whimsical Diagram: A link to the whimsical diagram to convey the data flow between your front-end and back-end, with component hierarchy included (remember to enable public link access)
+[Whimsical Component Hierarchy] (https://whimsical.com/get-lost-hierarchy-VcLT7ZBzYni7nFWeuf7LGy)
 
 ## Data Sample
 
@@ -30,43 +30,42 @@ Team Expectations: A link to your team's Google document that establishes timeli
 
 ## PMVP
 
-  - Search
-  - Sort
-  - Additional Carousels
-  - Additional Product Types (Apparel, Accessories, Gear, etc.)
-  - Shopping Cart with Number of Products Displayed in Corner
-  - Reviews and/or Star Rating on Each Product
-
+- Search
+- Sort
+- Additional Carousels
+- Additional Product Types (Apparel, Accessories, Gear, etc.)
+- Shopping Cart with Number of Products Displayed in Corner
+- Reviews and/or Star Rating on Each Product
 
 ## SWOT Analysis
 
 ### Strengths:
 
-  **Evyn:** React logic / state
+**Evyn:** React logic / state
 
-  **Mitchel:** CSS Logic, Front-End Functionality
+**Mitchel:** CSS Logic, Front-End Functionality
 
-  **Shelby:** Design, project management, UI/UX, react layout/flow, CSS/CSS animations, backend setup
+**Shelby:** Design, project management, UI/UX, react layout/flow, CSS/CSS animations, backend setup
 
-  **Liz:** Back end development (MongoDB, Mongoose)
+**Liz:** Back end development (MongoDB, Mongoose)
 
 ### Weaknesses:
 
-  **Evyn:** CSS and Styling (I’ve been learning tailwind though!)
+**Evyn:** CSS and Styling (I’ve been learning tailwind though!)
 
-  **Mitchel:** React Hooks, Back End Functionality
+**Mitchel:** React Hooks, Back End Functionality
 
-  **Shelby:** React state, functions, backend deployment/database junk
+**Shelby:** React state, functions, backend deployment/database junk
 
-  **Liz:** Styling
+**Liz:** Styling
 
 ### Opportunities:
 
-  - Being able to support one another in a group setting.
-  - Learning from each other's strengths and weaknesses.
-  - Completing tasks more quickly with a division of labor.
+- Being able to support one another in a group setting.
+- Learning from each other's strengths and weaknesses.
+- Completing tasks more quickly with a division of labor.
 
 ### Threats:
 
-  - Merge conflicts
-  - Potential scheduling issues that arise individually
+- Merge conflicts
+- Potential scheduling issues that arise individually
