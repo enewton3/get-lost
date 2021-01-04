@@ -8,7 +8,7 @@ Get Lost is a retail webstore featuring travel products. Specifically, Get Lost 
 
 ## Color Scheme
 
-![Color Palette] (https://cdn.discordapp.com/attachments/795678760148926484/795682550965600326/get_1.png)
+![Color Palette](./client/assets/getlostCP.png)
 
 ## Wireframes and Prototype
 
@@ -16,17 +16,15 @@ Get Lost is a retail webstore featuring travel products. Specifically, Get Lost 
 
 ## Component Hierarchy
 
-[Whimsical Component Hierarchy] (https://whimsical.com/get-lost-hierarchy-VcLT7ZBzYni7nFWeuf7LGy)
-
-## Data Sample
+![Whimsical Component Hierarchy](./client/assets/getLostHierarchy.png)
 
 ## Team Expectations
 
-Team Expectations: A link to your team's Google document that establishes timelines, communication preferences, code conventions, git practices, etc.
+[Team Expectations Doc](https://docs.google.com/document/d/1VrfWZuzz9GX8ofPkck9fHQeeOAk0MUv3F3ChuMPLrBI/edit?usp=sharing)
 
 ## MVP
 
-[Get Lost Github Projects Page] (https://github.com/enewton3/get-lost/projects/1)
+[Get Lost Github Projects Page](https://github.com/enewton3/get-lost/projects/1)
 
 ## PMVP
 
