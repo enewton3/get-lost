@@ -1,5 +1,7 @@
 # get-lost
 
+![Get Lost logo](./client/assets/get_2.png)
+
 ## Overview
 
 Overview: 4 to 5 non-technical sentences, summarizing the features, functions, and goals.
