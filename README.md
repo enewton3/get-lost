@@ -14,6 +14,8 @@ Link to Adobe XD project
 
 Whimsical Diagram: A link to the whimsical diagram to convey the data flow between your front-end and back-end, with component hierarchy included (remember to enable public link access)
 
+## Data Sample
+
 ## Team Expectations
 
 Team Expectations: A link to your team's Google document that establishes timelines, communication preferences, code conventions, git practices, etc.
