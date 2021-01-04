@@ -8,7 +8,11 @@ Get Lost is a retail webstore featuring travel products. Specifically, Get Lost 
 
 ## Color Scheme
 
+![Color Palette] (https://cdn.discordapp.com/attachments/795678760148926484/795682550965600326/get_1.png)
+
 ## Wireframes and Prototype
+
+[Whimsical Component Hierarchy] (https://whimsical.com/get-lost-hierarchy-VcLT7ZBzYni7nFWeuf7LGy)
 
 ## Component Hierarchy
 
@@ -22,7 +26,7 @@ Team Expectations: A link to your team's Google document that establishes timeli
 
 ## MVP
 
-MVP: A link to your GitHub Projects board (See Step 5)
+[Get Lost Github Projects Page] (https://github.com/enewton3/get-lost/projects/1)
 
 ## PMVP
 
@@ -31,6 +35,7 @@ MVP: A link to your GitHub Projects board (See Step 5)
   - Additional Carousels
   - Additional Product Types (Apparel, Accessories, Gear, etc.)
   - Shopping Cart with Number of Products Displayed in Corner
+  - Reviews and/or Star Rating on Each Product
 
 
 ## SWOT Analysis
