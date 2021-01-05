@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-const db = require('../db/connection')
-const Product = require('../models/product')
-
-db.on('error', console.error.bind(console, 'MongoDB connection error:'))
-
-const main = async () => {
-  const products = 
-    [
-      {
-      
-    }
-  ]
-=======
 const db = require("../db/connection");
 const Product = require("../schema/product");
 
@@ -102,4 +88,3 @@ const run = async () => {
 };
 
 run();
->>>>>>> 7213da4e569d551d0ef67048bea92928d06fcce8
