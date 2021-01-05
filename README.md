@@ -14,6 +14,9 @@ Get Lost is a retail webstore featuring travel products. Specifically, Get Lost 
 
 [Wireframes](https://www.canva.com/design/DAESRseRiGI/NbONkDtclRCAfoCm7KShPA/view?utm_content=DAESRseRiGI&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton)
 
+[Color Palette] (https://www.canva.com/design/DAESTQN4Zds/luEJC434VXLyJyN-dQKb7A/view?utm_content=DAESTQN4Zds&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton
+)
+
 ## Component Hierarchy
 
 ![Whimsical Component Hierarchy](./client/assets/getLostHierarchy.png)

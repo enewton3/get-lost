@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const User = require("../models/user");
+const User = require("../schema/user");
 const db = require("../db/connection");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
@@ -60,7 +60,29 @@ const verify = async (req, res) => {
   }
 };
 
-const changePassword = async (req, res) => {};
+const changePassword = async (req, res) => {
+  try {
+    //find the user that we're changing the password
+    //req = username, oldpassword, newpassword
+    const { username, password, newPassword } = req.body;
+    const user = await User.findOne({ username: username });
+
+    //verify the old password against the password stored in the database
+    if (await bcrypt.compare(password, user.password_digest)) {
+      //hash the new password
+      const password_digest = await bcrypt.hash(newPassword, SALT_ROUNDS);
+      //replace the old password_digest with the new password_digest
+      user.password_digest = password_digest;
+      const payload = await user.update({ password_digest: password_digest });
+      const token = jwt.sign(payload, TOKEN_KEY);
+      res.status(201).json({ token });
+    } else {
+      res.status(401).send("Invalid Credentials");
+    }
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
 
 module.exports = {
   signUp,
