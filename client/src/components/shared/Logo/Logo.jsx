@@ -1,4 +1,4 @@
-import logo from "../../../../assets/get_lost_logo.png";
+import logo from "../../../images/get_lost_logo.png";
 
 export default function Logo() {
   return (

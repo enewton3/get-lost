@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Link from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,6 +14,12 @@ export default function Nav(props) {
   const [userMenuToggle, setUserMenuToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
+
+  useEffect(() => {}, [userMenuToggle, menuToggle, searchToggle]);
+
+  const handleToggle = (e) => {
+    const [name] = e.target;
+  };
 
   const authUserLinks = (
     <>
@@ -38,7 +44,7 @@ export default function Nav(props) {
   );
   return (
     <div>
-      <FontAwesomeIcon icon={faBars} onClick={handleToggle} />
+      <FontAwesomeIcon icon={faBars} name="menuToggle" onClick={handleToggle} />
       {menuToggle ? (
         <div className="menu-links">
           <Link className="menu-link" to="/">
@@ -68,8 +74,16 @@ export default function Nav(props) {
       <div className="option-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
         {searchToggle ? <input type="text" /> : null}
-        <FontAwesomeIcon icon={faSearch} onClick={handleToggle} />
-        <FontAwesomeIcon icon={faUser} onClick={handleToggle} />
+        <FontAwesomeIcon
+          icon={faSearch}
+          name="searchToggle"
+          onClick={handleToggle}
+        />
+        <FontAwesomeIcon
+          icon={faUser}
+          name="userMenuToggle"
+          onClick={handleToggle}
+        />
         {userMenuToggle ? (
           <div className="user-menu">
             {user ? authUserLinks : unAuthUserLinks}
