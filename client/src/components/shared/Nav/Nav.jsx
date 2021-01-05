@@ -52,13 +52,13 @@ export default function Nav(props) {
           <Link className="menu-link" to="/about">
             About
           </Link>
-          <Link className="menu-link" to="/listing-page">
+          <Link className="menu-link" to="/listing-page/all">
             All Packs
           </Link>
-          <Link className="menu-link" to="/listing-page/day-trip">
+          <Link className="menu-link" to="/listing-page/Day-Trip">
             Day Trip
           </Link>
-          <Link className="menu-link" to="/listing-page/long-haul">
+          <Link className="menu-link" to="/listing-page/Expedition">
             Long Haul
           </Link>
           <Link className="menu-link" to="/listing-page/sale">
