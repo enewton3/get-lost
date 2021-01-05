@@ -1,0 +1,29 @@
+.all-nav{
+  background-color: #8D7F6F;
+  height: 4vw;
+  display: flex;
+  justify-content: space-between;
+  border-style: solid;
+  border-color: cornflowerblue;
+  width: 100vw;
+}
+
+.option-icons {
+text-align: right;
+font-size: 2vw;
+display: flex;
+justify-content: space-between;
+border-color: coral;
+border-style: solid;
+width: 10%;
+justify-self: flex-end;
+
+}
+.burger-boi {
+border: chartreuse solid;
+width: 5%;
+justify-self: flex-start;
+}
+.all-icons {
+  border: pink solid;
+}
