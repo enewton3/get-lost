@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,8 +15,6 @@ export default function Nav(props) {
   const [userMenuToggle, setUserMenuToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
-
-  // useEffect(() => {}, [userMenuToggle, menuToggle, searchToggle]);
 
   const authUserLinks = (
     <>
