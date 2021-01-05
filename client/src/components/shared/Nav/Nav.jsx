@@ -15,11 +15,7 @@ export default function Nav(props) {
   const [menuToggle, setMenuToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
 
-  useEffect(() => {}, [userMenuToggle, menuToggle, searchToggle]);
-
-  const handleToggle = (e) => {
-    const [name] = e.target;
-  };
+  // useEffect(() => {}, [userMenuToggle, menuToggle, searchToggle]);
 
   const authUserLinks = (
     <>
@@ -44,7 +40,11 @@ export default function Nav(props) {
   );
   return (
     <div>
-      <FontAwesomeIcon icon={faBars} name="menuToggle" onClick={handleToggle} />
+      <FontAwesomeIcon
+        icon={faBars}
+        name="menuToggle"
+        onClick={() => setMenuToggle((prev) => !prev)}
+      />
       {menuToggle ? (
         <div className="menu-links">
           <Link className="menu-link" to="/">
@@ -77,12 +77,12 @@ export default function Nav(props) {
         <FontAwesomeIcon
           icon={faSearch}
           name="searchToggle"
-          onClick={handleToggle}
+          onClick={() => setSearchToggle((prev) => !prev)}
         />
         <FontAwesomeIcon
           icon={faUser}
           name="userMenuToggle"
-          onClick={handleToggle}
+          onClick={() => setUserMenuToggle((prev) => !prev)}
         />
         {userMenuToggle ? (
           <div className="user-menu">
