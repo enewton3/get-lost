@@ -39,7 +39,7 @@ function App() {
         <Route path="/sign-out">
           <SignOut setUser={setUser} clearUser={clearUser} />
         </Route>
-        <Route path="/listing-page">
+        <Route path="/listing-page/:filter">
           <Listing user={user} />
         </Route>
         <Route path="/detail-page/:id">
@@ -48,7 +48,7 @@ function App() {
         <Route path="/add-item">
           {user ? <ProductCreate user={user} /> : <Redirect to="sign-up" />}
         </Route>
-        <Route path="edit-item/:id/edit">
+        <Route path="/edit-item/:id/edit">
           {user ? <ProductEdit user={user} /> : <Redirect to="sign-up" />}
         </Route>
       </Switch>

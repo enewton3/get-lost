@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,6 +8,7 @@ import {
   faUser,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
+import Search from "../../Search/Search";
 import "./Nav.css";
 
 export default function Nav(props) {
@@ -15,12 +16,6 @@ export default function Nav(props) {
   const [userMenuToggle, setUserMenuToggle] = useState(false);
   const [menuToggle, setMenuToggle] = useState(false);
   const [searchToggle, setSearchToggle] = useState(false);
-
-  useEffect(() => {}, [userMenuToggle, menuToggle, searchToggle]);
-
-  const handleToggle = (e) => {
-    const [name] = e.target;
-  };
 
   const authUserLinks = (
     <>
@@ -45,9 +40,9 @@ export default function Nav(props) {
   );
   return (
     <div className="all-nav">
-      <div className = "burger-boi" >
-        <FontAwesomeIcon icon={faBars} name="menuToggle" onClick={handleToggle} />
-        </div>
+      <div className="burger-boi" >
+        <FontAwesomeIcon icon={faBars} name="menuToggle" onClick={() => setMenuToggle((prev) => !prev)} />
+      </div>
       {menuToggle ? (
         <div className="menu-links">
           <Link className="menu-link" to="/">
@@ -56,13 +51,13 @@ export default function Nav(props) {
           <Link className="menu-link" to="/about">
             About
           </Link>
-          <Link className="menu-link" to="/listing-page">
+          <Link className="menu-link" to="/listing-page/all">
             All Packs
           </Link>
-          <Link className="menu-link" to="/listing-page/day-trip">
+          <Link className="menu-link" to="/listing-page/Day-Trip">
             Day Trip
           </Link>
-          <Link className="menu-link" to="/listing-page/long-haul">
+          <Link className="menu-link" to="/listing-page/Expedition">
             Long Haul
           </Link>
           <Link className="menu-link" to="/listing-page/sale">
@@ -73,21 +68,21 @@ export default function Nav(props) {
           </Link>
         </div>
       ) : null}
-   <div className= "all-icons">
+      <div className="all-icons">
         <Logo />
-        </div>
+      </div>
       <div className="option-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
-        {searchToggle ? <input type="text" /> : null}
+        {searchToggle ? <Search /> : null}
         <FontAwesomeIcon
           icon={faSearch}
           name="searchToggle"
-          onClick={handleToggle}
+          onClick={() => setSearchToggle((prev) => !prev)}
         />
         <FontAwesomeIcon
           icon={faUser}
           name="userMenuToggle"
-          onClick={handleToggle}
+          onClick={() => setUserMenuToggle((prev) => !prev)}
         />
         {userMenuToggle ? (
           <div className="user-menu">
@@ -97,10 +92,10 @@ export default function Nav(props) {
         <Link className="shopping-cart-icon" to="/shopping-cart">
           <FontAwesomeIcon icon={faShoppingCart} />
         </Link>
-       
+
       </div>
-     
-      </div>
-      
+
+    </div>
+
   );
 }
