@@ -8,6 +8,7 @@ import {
   faUser,
   faShoppingCart,
 } from "@fortawesome/free-solid-svg-icons";
+import Search from "../../Search/Search";
 
 export default function Nav(props) {
   const { user } = props;
@@ -73,7 +74,7 @@ export default function Nav(props) {
       <Logo />
       <div className="option-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
-        {searchToggle ? <input type="text" /> : null}
+        {searchToggle ? <Search /> : null}
         <FontAwesomeIcon
           icon={faSearch}
           name="searchToggle"
