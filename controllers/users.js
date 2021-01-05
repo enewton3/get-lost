@@ -1,6 +1,6 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const User = require("../models/user");
+const User = require("../schema/user");
 const db = require("../db/connection");
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
