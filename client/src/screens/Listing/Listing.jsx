@@ -11,7 +11,9 @@ export default function Listing(props) {
   const [filter, setFilter] = useState("");
 
   const displayedProducts =
-    filter === "all" ? products : products.filter((item) => item.id === filter);
+    filter === "all"
+      ? products
+      : products.filter((item) => item.type === filter);
 
   useEffect(() => {
     const fetchProducts = async () => {
