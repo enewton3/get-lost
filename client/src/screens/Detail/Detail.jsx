@@ -1,8 +1,14 @@
+import React from "react";
 import "./Detail.css";
-import { useState, useEffect } from "react";
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
 import { useParams, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTrashAlt,
+  faPencilAlt,
+  faCartPlus,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Detail = (props) => {
   const [product, setProduct] = useState(null);
@@ -28,17 +34,21 @@ const Detail = (props) => {
         <div className="price">{`${product.price}`}</div>
         <div className="description">{product.description}</div>
         <img className="detail-image" src={product.imgURL} alt={product.name} />
-        <button
-          className="edit-button"
-          onClick={() => editProduct(product._id)}
-        >
-          <FontAwesomeIcon icon={fa - trash - alt} />
+        <button className="edit-button">
+          <Link
+            className="edit-link"
+            to={`/products/${product._id}/edit`}
+          ></Link>
+          <FontAwesomeIcon icon={faPencilAlt} />
         </button>
         <button
           className="delete-button"
           onClick={() => deleteProduct(product.id)}
         >
-          <FontAwesomeIcon icon={fa - pencil - alt} />
+          <FontAwesomeIcon icon={faTrashAlt} />
+        </button>
+        <button className="cart-button" onClick={() => shopProduct(product.id)}>
+          <FontAwesomeIcon icon={faCartPlus} />
         </button>
       </div>
     </Layout>
