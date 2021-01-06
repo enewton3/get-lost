@@ -1,3 +1,6 @@
+
+
+
 A:link {
   text-decoration: none;
 }
@@ -75,12 +78,12 @@ margin-left: -60vw; */
 position: absolute;
 left: 5%;
 top: 5%;
-
-
-
-
-
+font-family: 'Vollkorn SC', serif;
 }
+
+
+
+
 .menu-link {
   background-color: rgba(223, 223, 223, 0.831);
   padding-bottom: 2vw;
@@ -114,6 +117,7 @@ top: 5%;
   padding-top: 1vw;
   font-size: 1.5vw;
   color: rgb(58, 58, 58);
+  font-family: 'Vollkorn SC', serif;
   
 }
 .user-link:hover {
