@@ -4,7 +4,7 @@ export default function Slide(props) {
     <div
       className={
         index === currentIndex
-          ? "carousel-slide carousel_slide_active"
+          ? "carousel-slide carousel-slide-active"
           : "carousel-slide"
       }
     >
