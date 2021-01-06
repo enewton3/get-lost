@@ -10,6 +10,7 @@ import SignOut from "./screens/SignOut/SignOut";
 import { useEffect, useState } from "react";
 import ProductCreate from "./screens/ProductCreate/ProductCreate";
 import ProductEdit from "./screens/ProductEdit/ProductEdit";
+import About from "./screens/About/About";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -44,6 +45,9 @@ function App() {
         </Route>
         <Route path="/detail-page/:id">
           <Detail user={user} />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/add-product">
           {user ? <ProductCreate user={user} /> : <Redirect to="sign-up" />}
