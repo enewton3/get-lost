@@ -31,10 +31,10 @@ const Detail = (props) => {
         <img className='detail-image' src={product.imgURL} alt={product.name} />
         <button className='edit-button' onClick={() => editProduct(product._id)}><FontAwesomeIcon icon={fa-trash-alt} /></button>
         <button className='delete-button' onClick={() => deleteProduct(product.id)}><FontAwesomeIcon icon={fa-pencil-alt} /></button>
+        <button className='cart-button' onClick={() => deleteProduct(product.id)}><FontAwesomeIcon icon={fa-cart-plus} /></button>
       </div>
   </Layout>
 )
-
 }
 
 export default Detail
