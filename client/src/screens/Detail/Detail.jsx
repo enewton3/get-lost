@@ -4,7 +4,8 @@ import Layout from '../../components/shared/Layout/Layout';
 import { getProduct, deleteProduct } from '../../services/products'
 import { useParams, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faTrashAlt,faPencilAlt,faCartPlus} from "@fortawesome/free-solid-svg-icons";
+import { faTrashAlt, faPencilAlt, faCartPlus } from "@fortawesome/free-solid-svg-icons";
+import shopProduct from '../../services/product';
 
 
 const Detail = (props) => {
@@ -32,9 +33,9 @@ const Detail = (props) => {
         <div className='price'>{`${product.price}`}</div>
         <div className='description'>{product.description}</div>
         <img className='detail-image' src={product.imgURL} alt={product.name} />
-        <button className='edit-button'><Link className='edit-link' to={`/products/${product._id}/edit`}></Link><FontAwesomeIcon icon={faPencilAlt} /></button>
-        <button className='delete-button' onClick={() => deleteProduct(product.id)}><FontAwesomeIcon icon={faTrashAlt} /></button>
-        <button className='cart-button' onClick={() => shopProduct(product.id)}><FontAwesomeIcon icon={faCartPlus} /></button>
+        <Link className='edit-link' to={`/edit-product/${product._id}`}><button className='edit-button'><FontAwesomeIcon icon={faPencilAlt} /></button></Link>
+        <button className='delete-button' onClick={() => deleteProduct(product._id)}><FontAwesomeIcon icon={faTrashAlt} /></button>
+        <button className='cart-button' onClick={() => shopProduct(product._id)}><FontAwesomeIcon icon={faCartPlus} /></button>
       </div>
   </Layout>
 )
