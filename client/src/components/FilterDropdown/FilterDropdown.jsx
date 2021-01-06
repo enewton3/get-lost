@@ -10,7 +10,7 @@ export default function FilterDropdown() {
 
   return (
     <>
-      <label for="dropdown">Filter:</label>
+      <label htmlFor="dropdown">Filter:</label>
       <select id="dropdown" onChange={handleChange}>
         <option value="all">All</option>
         <option value="Day-Trip">Day Trip</option>

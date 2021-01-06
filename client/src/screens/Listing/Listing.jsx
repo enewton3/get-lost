@@ -16,6 +16,20 @@ export default function Listing(props) {
       ? products
       : products.filter((item) => item.type === filter);
 
+  let pageTitle;
+
+  switch (filter) {
+    case "Day-Trip":
+      pageTitle = "Day Trip";
+      break;
+    case "Expedition":
+      pageTitle = "Long Haul";
+      break;
+    default:
+      pageTitle = "All Packs";
+      break;
+  }
+
   useEffect(() => {
     const fetchProducts = async () => {
       const products = await getProducts();
@@ -27,10 +41,11 @@ export default function Listing(props) {
 
   return (
     <Layout user={props.user}>
+      <div className="page-title">{pageTitle}</div>
       <div>
         <FilterDropdown />
         {displayedProducts.map((item) => (
-          <ProductCard product={item} />
+          <ProductCard key={item._id} product={item} />
         ))}
       </div>
     </Layout>
