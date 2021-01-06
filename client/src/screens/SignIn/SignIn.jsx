@@ -3,6 +3,7 @@ import "./SignIn.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
+import Hey from "../Heythere";
 
 const SignIn = (props) => {
   const history = useHistory();
@@ -60,7 +61,7 @@ const SignIn = (props) => {
   return (
     <Layout>
       <div className="form-container">
-        <h3>Log In</h3>
+        <Hey />
         <form onSubmit={onSignIn}>
           <label>Username</label>
           <input
