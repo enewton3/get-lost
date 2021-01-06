@@ -32,9 +32,9 @@ const Detail = (props) => {
         <div className='price'>{`${product.price}`}</div>
         <div className='description'>{product.description}</div>
         <img className='detail-image' src={product.imgURL} alt={product.name} />
-        <button className='edit-button' onClick={() => editProduct(product._id)}><FontAwesomeIcon icon={faPencilAlt} /></button>
+        <button className='edit-button'><Link className='edit-link' to={`/products/${product._id}/edit`}></Link><FontAwesomeIcon icon={faPencilAlt} /></button>
         <button className='delete-button' onClick={() => deleteProduct(product.id)}><FontAwesomeIcon icon={faTrashAlt} /></button>
-        <button className='cart-button' onClick={() => deleteProduct(product.id)}><FontAwesomeIcon icon={faCartPlus} /></button>
+        <button className='cart-button' onClick={() => shopProduct(product.id)}><FontAwesomeIcon icon={faCartPlus} /></button>
       </div>
   </Layout>
 )
