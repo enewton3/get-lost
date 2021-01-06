@@ -3,6 +3,7 @@ import Carousel from "../../components/Carousel/Carousel";
 import "./Landing.css";
 import { Link } from "react-router-dom";
 
+
 export default function Landing(props) {
   return (
     <Layout user={props.user}>
