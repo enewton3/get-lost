@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { getProducts } from "../../services/products";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import Layout from "../../components/shared/Layout/Layout";
+import FilterDropdown from "../../components/FilterDropdown/FilterDropdown";
 import "./Listing.css";
 
 export default function Listing(props) {
@@ -27,6 +28,7 @@ export default function Listing(props) {
   return (
     <Layout user={props.user}>
       <div>
+        <FilterDropdown />
         {displayedProducts.map((item) => (
           <ProductCard product={item} />
         ))}
