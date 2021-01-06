@@ -32,7 +32,7 @@ width: 20vw;
 padding-bottom: 3vw;
 margin-top: 5vw;
 margin-bottom: 3vw;
-font-size: 3vw;
+font-size: 2vw;
 
 
 }
@@ -47,7 +47,7 @@ font-size: 3vw;
   }
   .sign-button {
     margin-left: 5vw;
-    margin-top: 3vw;
+    margin-top: 1vw;
     width: 5vw;
     height: 2vw;
     border-radius: 25px;

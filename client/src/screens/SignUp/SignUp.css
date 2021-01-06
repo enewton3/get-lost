@@ -1,0 +1,73 @@
+
+.title {
+  font-family: 'Vast Shadow', cursive;
+  color: #E88B44;
+  margin-left: 3vw;
+  margin-top: 2vw;
+  font-size: 3vw;
+}
+.hike-dude {
+font-size: 7vw;
+margin-left: 3vw;
+color: #0e9ca4;
+}
+
+.all-sign {
+  font-family: 'Vollkorn SC', serif;
+  display: flex;
+  flex-direction: column;
+  width: 1vw;
+  height: 5vw;
+  text-align: center;
+  justify-content: center;
+  margin-left: 25vw;
+  margin-top: -15vw;
+   justify-content: space-between;
+   font-size: 1vw;
+  
+  
+ 
+}
+.label-up {
+
+padding-bottom: 3vw;
+margin-top: 2vw;
+margin-bottom: 2vw;
+font-size: 1vw;
+
+
+}
+.input-up {
+  border: none;
+  margin-top: 1vw;
+  margin-bottom: 2vw;
+  width: 15vw;
+  height: 1.5vw;
+
+  
+  }
+  .up-button {
+    margin-left: 5vw;
+    margin-top: 1vw;
+    width: 5vw;
+    height: 2vw;
+    border-radius: 25px;
+    border: none;
+    background-color: #E88B44;
+
+  }
+  .up-button:hover {
+    background-color: #f2b17f;
+  }
+  .input-up:hover {
+  background-color: rgb(242, 242, 242);
+  }
+  .do-have {
+ 
+    font-size: .8vw;
+    margin-top: 25vw;
+    margin-left: 2vw;
+    }
+    .sign-in {
+      font-size: .8vw; 
+    }
