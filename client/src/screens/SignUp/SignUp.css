@@ -2,6 +2,7 @@
 .title {
   font-family: 'Vast Shadow', cursive;
   color: #E88B44;
+  text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-left: 3vw;
   margin-top: 2vw;
   font-size: 3vw;
@@ -13,7 +14,7 @@ color: #0e9ca4;
 }
 
 .all-sign {
-  font-family: 'Vollkorn SC', serif;
+  font-family: 'Josefin Slab', serif;
   display: flex;
   flex-direction: column;
   width: 1vw;
@@ -33,7 +34,7 @@ color: #0e9ca4;
 padding-bottom: 3vw;
 margin-top: 2vw;
 margin-bottom: 2vw;
-font-size: 1vw;
+font-size: 1.5vw;
 
 
 }

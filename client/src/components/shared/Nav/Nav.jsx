@@ -41,7 +41,7 @@ export default function Nav(props) {
   return (
     <div className="all-nav">
       <div className="all-icons">
-        <Logo />
+      <Link className="home-link" to="/"><Logo /></Link>
       </div>
       <div className="burger-boi" >
         <FontAwesomeIcon icon={faBars} name="menuToggle" onClick={() => setMenuToggle((prev) => !prev)} />
