@@ -1,0 +1,123 @@
+A:link {
+  text-decoration: none;
+}
+.all-nav{
+  background-color: #8D7F6F;
+  height: 4vw;
+  display: flex;
+  justify-content: space-between;
+  /* border-style: solid;
+  border-color: cornflowerblue; */
+  width: 100vw;
+}
+/* a:link {
+  text-decoration: none;  not working :(
+
+} */
+
+.option-icons {
+text-align: right;
+font-size: 2vw;
+display: flex;
+justify-content: space-between;
+/* border-color: coral;
+border-style: solid; */
+width: 15%;
+justify-self: flex-end;
+text-decoration: none;
+color: white;
+margin-right: 5vw;
+margin-top: 1.6vw;
+
+}
+.burger-boi {
+/* border: chartreuse solid; */
+width: 4.5%;
+border-radius: 20px;
+justify-self: flex-start;
+font-size: 3vw;
+margin-left: -85vw;
+color: rgb(52, 52, 52);
+text-align: center;
+
+}
+.all-icons {
+  margin-left: 5vw;
+}
+.shopping-cart-icon {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.shopping-cart-icon:hover {
+  font-size: 130%;
+}
+.user-icon:hover {
+  font-size: 130%;
+}
+.cart-icon:hover {
+  font-size: 130%;
+}
+.search-icon:hover {
+  font-size: 130%;
+}
+.burger-boi:hover {
+background-color: #655d53;
+}
+
+.menu-links {
+display: flex;
+flex-direction: column;
+width: 9vw;
+text-align: center;
+justify-self: flex-start;
+/* margin-top: 3vw;
+margin-left: -60vw; */
+position: absolute;
+left: 5%;
+top: 5%;
+
+
+
+
+
+}
+.menu-link {
+  background-color: rgba(223, 223, 223, 0.831);
+  padding-bottom: 2vw;
+  padding-top: 1vw;
+  font-size: 1.5vw;
+  color: rgb(58, 58, 58);
+  
+  
+  
+}
+.menu-link:hover {
+  background-color:  rgb(199, 199, 199);
+
+}
+
+.all-user {
+  display: flex;
+  flex-direction: column;
+  width: 9vw;
+  text-align: center;
+  justify-self: flex-start;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+
+}
+.user-link {
+ 
+  background-color: rgba(223, 223, 223, 0.831);
+  padding-bottom: 2vw;
+  padding-top: 1vw;
+  font-size: 1.5vw;
+  color: rgb(58, 58, 58);
+  
+}
+.user-link:hover {
+  background-color:  rgb(199, 199, 199);
+
+}
+
