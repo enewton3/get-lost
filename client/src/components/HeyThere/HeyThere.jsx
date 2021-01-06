@@ -1,4 +1,4 @@
-import logo from "../images/hey there-logo.png";
+import logo from "../../images/hey-there-logo.png";
 
 export default function HeyThere() {
   return (
