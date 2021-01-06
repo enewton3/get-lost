@@ -8,7 +8,7 @@ export default function Slide(props) {
           : "carousel-slide"
       }
     >
-      <img src={image} alt={`${index + 1}`} />
+      <img src={image.default} alt={`${index + 1}`} />
     </div>
   );
 }

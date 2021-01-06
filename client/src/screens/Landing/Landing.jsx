@@ -2,7 +2,7 @@ import Layout from "../../components/shared/Layout/Layout";
 import Carousel from "../../components/Carousel/Carousel";
 import "./Landing.css";
 import { Link } from "react-router-dom";
-import { images } from "../../images/HomepageCarousel/index";
+import { images } from "../../images/HomepageCarousel";
 
 export default function Landing(props) {
   return (
