@@ -17,13 +17,14 @@ width: 20vw;
   font-family: 'Vollkorn SC', serif;
   display: flex;
   flex-direction: column;
-  width: 9vw;
+  width: 1vw;
   height: 12vw;
   text-align: center;
   justify-content: center;
   margin-left: 25vw;
-  margin-top: -20vw;
-  justify-content: space-between;
+   justify-content: space-between;
+  
+ 
 }
 .label {
 
@@ -31,6 +32,8 @@ padding-bottom: 3vw;
 margin-top: 5vw;
 margin-bottom: 3vw;
 font-size: 3vw;
+
+
 }
 .input {
   border: none;

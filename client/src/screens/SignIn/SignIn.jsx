@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SignIn.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { signIn } from "../../services/users";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import HeyThere from "../../components/HeyThere/HeyThere";
 
 const SignIn = (props) => {
@@ -60,7 +60,9 @@ const SignIn = (props) => {
 
   return (
     <Layout>
+      
       <div className="form-container">
+      <div className= "total-sign">
         <HeyThere />
         <form onSubmit={onSignIn}>
           <label className= "label">Username</label>
@@ -83,10 +85,10 @@ const SignIn = (props) => {
           />
           {renderError()}
           </form>
-          </div>
+        </div>
+        </div>
           <h3 className= "dont-have">Don't have an account? Sign up <Link className="sign-up" to="/sign-up">here!</Link></h3>
           
-      </div>
     </Layout>
   );
 };
