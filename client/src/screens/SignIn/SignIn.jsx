@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./SignIn.css";
+import Layout from "../../components/shared/Layout/Layout";
 import { signIn } from "../../services/users";
 import { useHistory } from "react-router-dom";
 
