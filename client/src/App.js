@@ -25,6 +25,7 @@ function App() {
   const clearUser = () => setUser(null);
 
   return (
+    
     <div className="App">
       <Switch>
         <Route exact path="/">
@@ -52,6 +53,7 @@ function App() {
           {user ? <ProductEdit user={user} /> : <Redirect to="sign-up" />}
         </Route>
       </Switch>
+      <div className= "filler"></div>
     </div>
   );
 }
