@@ -7,14 +7,14 @@ export default function Landing(props) {
   return (
     <Layout user={props.user}>
       <Carousel />
-      <Link to={`/Listing/Day-Trip`}>
+      <Link className="day-trip-link" to={`/Listing/Day-Trip`}>
         <div className="shop-day-trip">Shop Day Trip</div>
       </Link>
-      <Link to={`/Listing/Expedition`}>
-        <div className="shop-expedition">Shop Day Trip</div>
+      <Link className="all-link" to={`/Listing/all`}>
+        <div className="shop-all">Shop All</div>
       </Link>
-      <Link to={`/Listing/all`}>
-        <div className="shop-all">Shop Day Trip</div>
+      <Link className="expedition-link" to={`/Listing/Expedition`}>
+        <div className="shop-expedition">Shop Expedition</div>
       </Link>
     </Layout>
   );
