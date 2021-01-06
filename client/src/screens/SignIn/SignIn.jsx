@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./SignIn.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { signIn } from "../../services/users";
-import { useHistory , Link} from "react-router-dom";
-import Hey from "../Heythere";
+import { useHistory } from "react-router-dom";
+import HeyThere from "../../components/HeyThere/HeyThere";
 
 const SignIn = (props) => {
   const history = useHistory();
@@ -61,10 +61,7 @@ const SignIn = (props) => {
   return (
     <Layout>
       <div className="form-container">
-        <div className= "hey">
-          <Hey />
-        </div>
-        <div className = "total-sign">
+        <HeyThere />
         <form onSubmit={onSignIn}>
           <label className= "label">Username</label>
           <input className= "input"
