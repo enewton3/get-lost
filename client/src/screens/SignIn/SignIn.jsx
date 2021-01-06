@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./SignIn.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { signIn } from "../../services/users";
-import { useHistory } from "react-router-dom";
+import { useHistory , Link} from "react-router-dom";
 import Hey from "../Heythere";
 
 const SignIn = (props) => {
@@ -87,6 +87,8 @@ const SignIn = (props) => {
           {renderError()}
           </form>
           </div>
+          <h3 className= "dont-have">Don't have an account? Sign up <Link className="sign-up" to="/sign-up">here!</Link></h3>
+          
       </div>
     </Layout>
   );

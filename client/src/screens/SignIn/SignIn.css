@@ -57,3 +57,10 @@ font-size: 3vw;
   .input:hover {
   background-color: rgb(242, 242, 242);
   }
+  .dont-have {
+  font-size: .8vw;
+  margin-top: 15vw;
+  }
+  .sign-up {
+    font-size: .8vw; 
+  }
