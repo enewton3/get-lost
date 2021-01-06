@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Detail.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
