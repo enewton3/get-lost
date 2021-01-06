@@ -43,7 +43,7 @@ function App() {
         <Route path="/listing-page/:filter">
           <Listing user={user} />
         </Route>
-        <Route path="/detail-page/:id">
+        <Route path="/detail/:id">
           <Detail user={user} />
         </Route>
         <Route path="/about">
