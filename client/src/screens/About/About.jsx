@@ -1,12 +1,26 @@
 import React from "react";
 import "./About.css";
 import Layout from "../../components/shared/Layout/Layout";
-// import { Link } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
+
 
 const About = (props) => {
   return (
     <Layout user={props.user}>
-      <div>About Get Lost (and its Dev's!)</div>
+      <div className="total-about">
+        < div className="about-title"> About Us >> </div>
+        <div className="all-about">
+          <p className="about-lost"> Get Lost is a travel brand and gear store specializing in packs of all sizes for whatever your next adventure may be. All items are tested by staff so you can trust they are just as rugged and ready for an expedition as you are. Whether your next big adventure is being a nomad in the mountains or urban exploring, get ready to Get Lost. </p>
+          <div className="check-dev">Check  Out the Creators of Get Lost</div>
+          <FontAwesomeIcon className="hand-down" icon={faHandPointDown} />
+        </div>
+        <div className="about-devs">
+          <h6 className="the-devs">As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked with a project to build a fully CRUD-capable, full-stack app for a retailer. Using teamwork, creativity,  and communication, challenges or deadlines didn't stand a chance. We hope you enjoy our project!  </h6>
+        </div>
+      </div>
+
     </Layout>
   );
 };
