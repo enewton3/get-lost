@@ -18,7 +18,7 @@ export default function Nav(props) {
   const [searchToggle, setSearchToggle] = useState(false);
 
   const authUserLinks = (
-    <div className = "all-user">
+    <div className="all-user">
       <Link className="user-link" to="/sign-in">
         Add Product
       </Link>
@@ -29,7 +29,7 @@ export default function Nav(props) {
   );
 
   const unAuthUserLinks = (
-    <div className= "all-user">
+    <div className="all-user">
       <Link className="user-link" to="/sign-in">
         Sign In
       </Link>
@@ -41,15 +41,15 @@ export default function Nav(props) {
   return (
     <div className="all-nav">
       <div className="all-icons">
-        <Logo />
+        <Link className="home-link" to="/"><Logo /></Link>
       </div>
       <div className="burger-boi" >
         <FontAwesomeIcon icon={faBars} name="menuToggle" onClick={() => setMenuToggle((prev) => !prev)} />
       </div>
       {menuToggle ? (
-       
+
         <div className="menu-links">
-         
+
           <Link className="menu-link" to="/">
             Home
           </Link>
@@ -71,36 +71,36 @@ export default function Nav(props) {
           <Link className="menu-link" to="/contact">
             Contact
           </Link>
-          
-          </div>
+
+        </div>
       ) : null}
-      
+
       <div className="option-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
         {searchToggle ? <Search /> : null}
-        <div className = "search-icon">
+        <div className="search-icon">
           <FontAwesomeIcon
-          icon={faSearch}
-          name="searchToggle"
-          onClick={() => setSearchToggle((prev) => !prev)}
+            icon={faSearch}
+            name="searchToggle"
+            onClick={() => setSearchToggle((prev) => !prev)}
           /> </div>
-        <div className = "user-icon">
-        <FontAwesomeIcon
-          icon={faUser}
-          name="userMenuToggle"
-          onClick={() => setUserMenuToggle((prev) => !prev)}
+        <div className="user-icon">
+          <FontAwesomeIcon
+            icon={faUser}
+            name="userMenuToggle"
+            onClick={() => setUserMenuToggle((prev) => !prev)}
           />
-          </div>
+        </div>
         {userMenuToggle ? (
           <div className="user-menu">
             {user ? authUserLinks : unAuthUserLinks}
           </div>
         ) : null}
-        
+
         <Link className="shopping-cart-icon" to="/shopping-cart">
-        <div className = "cart-icon">
+          <div className="cart-icon">
             <FontAwesomeIcon icon={faShoppingCart} />
-            </div>
+          </div>
         </Link>
 
       </div>

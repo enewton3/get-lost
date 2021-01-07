@@ -14,7 +14,7 @@
 width: 20vw;
 }
 .total-sign {
-  font-family: 'Vollkorn SC', serif;
+  font-family: 'Josefin Slab', serif;
   display: flex;
   flex-direction: column;
   width: 1vw;
@@ -22,6 +22,7 @@ width: 20vw;
   text-align: center;
   justify-content: center;
   margin-left: 25vw;
+  margin-top: -20vw;
    justify-content: space-between;
   
  
@@ -31,7 +32,7 @@ width: 20vw;
 padding-bottom: 3vw;
 margin-top: 5vw;
 margin-bottom: 3vw;
-font-size: 3vw;
+font-size: 2vw;
 
 
 }
@@ -46,7 +47,7 @@ font-size: 3vw;
   }
   .sign-button {
     margin-left: 5vw;
-    margin-top: 3vw;
+    margin-top: 1vw;
     width: 5vw;
     height: 2vw;
     border-radius: 25px;
@@ -61,8 +62,10 @@ font-size: 3vw;
   background-color: rgb(242, 242, 242);
   }
   .dont-have {
+ 
   font-size: .8vw;
   margin-top: 15vw;
+  margin-left: 2vw;
   }
   .sign-up {
     font-size: .8vw; 

@@ -62,8 +62,9 @@ const SignIn = (props) => {
     <Layout>
       
       <div className="form-container">
+      <HeyThere />
       <div className= "total-sign">
-        <HeyThere />
+       
         <form onSubmit={onSignIn}>
           <label className= "label">Username</label>
           <input className= "input"
@@ -86,9 +87,9 @@ const SignIn = (props) => {
           {renderError()}
           </form>
         </div>
-        </div>
+        
           <h3 className= "dont-have">Don't have an account? Sign up <Link className="sign-up" to="/sign-up">here!</Link></h3>
-          
+          </div>
     </Layout>
   );
 };

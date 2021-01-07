@@ -29,16 +29,16 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
-          <Landing />
+          <Landing user={user} />
         </Route>
         <Route path="/sign-up">
-          <SignUp setUser={setUser} />
+          <SignUp user={user} setUser={setUser} />
         </Route>
         <Route path="/sign-in">
-          <SignIn setUser={setUser} />
+          <SignIn user={user} setUser={setUser} />
         </Route>
         <Route path="/sign-out">
-          <SignOut setUser={setUser} clearUser={clearUser} />
+          <SignOut user={user} setUser={setUser} clearUser={clearUser} />
         </Route>
         <Route path="/listing-page/:filter">
           <Listing user={user} />
@@ -47,7 +47,7 @@ function App() {
           <Detail user={user} />
         </Route>
         <Route path="/about">
-          <About />
+          <About user={user} />
         </Route>
         <Route path="/add-product">
           {user ? <ProductCreate user={user} /> : <Redirect to="sign-up" />}

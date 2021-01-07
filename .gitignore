@@ -2,4 +2,5 @@
 .eslintcache
 
 .env.development.local
+.env
 
