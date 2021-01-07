@@ -26,9 +26,9 @@ const About = (props) => {
           <div className="mitch-div"><h1 className="mitch-title">MITCH</h1><h5 className="about-mitch">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
          jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb</h5></div>
         </div>
+        <h7 className="about-liz"><strong>Liz Yrineo</strong>Hello fellow adventurers!  I’m so glad to be a part of your journey!  As a Colorado native, I have grown up playing in and caring for the Rocky Mountains.  We’re not just a ski destination.  We also get to camp, hike, mountain bike and rock climb, just to name a few incredible activities that I enjoy.  Whether we’re out for a day-long hike or trekking for days, every new experience is an opportunity to learn more about ourselves and our world.  So throw on your pack and embark on your own wonderous excursion!</h7>
       </div>
-
-    </Layout>
+  </Layout>
   );
 };
 
