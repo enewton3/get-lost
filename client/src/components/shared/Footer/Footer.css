@@ -1,3 +1,33 @@
 .footer {
   color: grey;
+  background-color: rgba(57, 57, 57, 0.865);
+  height: 10vw;
+  text-align: center;
 }
+.our-name{
+ padding-top: 1vw;
+}
+.social-icons {
+font-size: 2.5vw;
+}
+.facebook {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  margin-top: 3vw;
+  color: rgb(36, 126, 216);
+  }
+  .insta {
+    margin-left: 1vw;
+    margin-right: 1vw;
+    color: rgb(227, 123, 244);
+    }
+    .twit {
+      margin-left: 1vw;
+      margin-right: 1vw;
+      color: rgb(169, 212, 255);
+      }
+      .email-footer {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        color: rgb(237, 206, 30);
+        }
