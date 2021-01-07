@@ -51,6 +51,8 @@ const signIn = async (req, res) => {
 
 const verify = async (req, res) => {
   try {
+    // console.log(TOKEN_KEY);
+    console.log(req)
     const token = req.headers.authorization.split(" ")[1];
     const payload = jwt.verify(token, TOKEN_KEY);
     if (payload) {
