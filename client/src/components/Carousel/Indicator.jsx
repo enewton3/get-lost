@@ -8,8 +8,7 @@ export default function Indicator(props) {
           ? "carousel-indicator carousel-indicator-active"
           : "carousel-indicator"
       }
-    >
-      indicator
-    </div>
+      onClick={props.onClick}
+    ></div>
   );
 }
