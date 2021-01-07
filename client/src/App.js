@@ -50,10 +50,10 @@ function App() {
           <About user={user} />
         </Route>
         <Route path="/add-product">
-          {user ? <ProductCreate user={user} /> : <Redirect to="sign-up" />}
+          {user ? <ProductCreate user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route path="/edit-product/:id">
-          {user ? <ProductEdit user={user} /> : <Redirect to="sign-up" />}
+          {user ? <ProductEdit user={user} /> : <Redirect to="/sign-up" />}
         </Route>
       </Switch>
       <div className="filler"></div>
