@@ -53,7 +53,11 @@ const SignUp = (props) => {
         </button>
       );
     } else {
-      return <button className="up-button" type="submit">Sign Up!</button>;
+      return (
+        <button className="up-button" type="submit">
+          Sign Up!
+        </button>
+      );
     }
   };
 
@@ -62,13 +66,13 @@ const SignUp = (props) => {
   return (
     <Layout>
       <div className="form-container">
-        <h3 className="title">Sign Up >></h3><FontAwesomeIcon className="hike-dude"
-          icon={faHiking} />
+        <h3 className="title">Sign Up </h3>
+        <FontAwesomeIcon className="hike-dude" icon={faHiking} />
         <div className="all-sign">
-
           <form onSubmit={onSignUp}>
             <label className="label-up">Username</label>
-            <input className="input-up"
+            <input
+              className="input-up"
               required
               type="text"
               name="username"
@@ -77,7 +81,8 @@ const SignUp = (props) => {
               onChange={handleChange}
             />
             <label className="label-up">Email address</label>
-            <input className="input-up"
+            <input
+              className="input-up"
               required
               type="email"
               name="email"
@@ -86,7 +91,8 @@ const SignUp = (props) => {
               onChange={handleChange}
             />
             <label className="label-up">Password</label>
-            <input className="input-up"
+            <input
+              className="input-up"
               required
               name="password"
               value={password}
@@ -95,7 +101,8 @@ const SignUp = (props) => {
               onChange={handleChange}
             />
             <label className="label-up">Password Confirmation</label>
-            <input className="input-up"
+            <input
+              className="input-up"
               required
               name="passwordConfirmation"
               value={passwordConfirmation}
@@ -106,9 +113,13 @@ const SignUp = (props) => {
             {renderError()}
           </form>
         </div>
-        <h3 className="do-have">Already have an account? Sign in <Link className="sign-in" to="/sign-in">here!</Link></h3>
+        <h3 className="do-have">
+          Already have an account? Sign in{" "}
+          <Link className="sign-in" to="/sign-in">
+            here!
+          </Link>
+        </h3>
       </div>
-
     </Layout>
   );
 };
