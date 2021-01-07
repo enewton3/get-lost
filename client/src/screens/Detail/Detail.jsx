@@ -10,6 +10,7 @@ import {
   faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
 import shopProduct from "../../services/shopping";
+import Carousel from "../../components/Carousel/Carousel";
 
 const Detail = (props) => {
   const [product, setProduct] = useState(null);
@@ -32,6 +33,7 @@ const Detail = (props) => {
           <div className="name">{product.name}</div>
           <div className="price">{`${product.price}`}</div>
           <div className="description">{product.description}</div>
+          <Carousel images={product.imgURL} />
           <img
             className="detail-image"
             src={product.imgURL}

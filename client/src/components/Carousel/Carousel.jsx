@@ -7,7 +7,7 @@ import "./Carousel.css";
 
 export default function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { images } = props;
+  const { images, imageChange, intervalTime } = props;
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
@@ -29,10 +29,12 @@ export default function Carousel(props) {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      goToNextSlide();
-    }, 5000);
-    return () => clearInterval(interval);
+    if (imageChange) {
+      const interval = setInterval(() => {
+        goToNextSlide();
+      }, intervalTime);
+      return () => clearInterval(interval);
+    }
   });
 
   return (
