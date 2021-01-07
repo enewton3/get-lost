@@ -2,14 +2,17 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const User = require("../schema/user");
 const db = require("../db/connection");
+require("dotenv").config();
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-const SALT_ROUNDS = process.env.SALT_ROUNDS;
+const SALT_ROUNDS = parseInt(process.env.SALT_ROUNDS);
 const TOKEN_KEY = process.env.TOKEN_KEY;
 
 const signUp = async (req, res) => {
   try {
+    console.log(process.env);
+    console.log(SALT_ROUNDS, TOKEN_KEY);
     const { username, email, password } = req.body;
     const password_digest = await bcrypt.hash(password, SALT_ROUNDS);
     const user = new User({
