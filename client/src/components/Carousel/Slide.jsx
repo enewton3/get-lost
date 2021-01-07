@@ -1,5 +1,7 @@
 export default function Slide(props) {
   const { index, image, currentIndex } = props;
+  const source = image.default ? image.default : image;
+
   return (
     <img
       className={
@@ -7,7 +9,7 @@ export default function Slide(props) {
           ? "carousel-slide carousel-slide-active"
           : "carousel-slide"
       }
-      src={image.default}
+      src={source}
       alt={`${index + 1}`}
     />
   );
