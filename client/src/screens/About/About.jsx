@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.css";
 import Layout from "../../components/shared/Layout/Layout";
-import { HashRouter } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 
@@ -17,7 +16,15 @@ const About = (props) => {
           <FontAwesomeIcon className="hand-down" icon={faHandPointDown} />
         </div>
         <div className="about-devs">
-          <h6 className="the-devs">As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked with a project to build a fully CRUD-capable, full-stack app for a retailer. Using teamwork, creativity,  and communication, challenges or deadlines didn't stand a chance. We hope you enjoy our project!  </h6>
+          <h6 className="the-devs">As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked with a project to build a fully CRUD-capable, fullstack app for a retailer with stellar user-experince in mind.  We hope you enjoy our project!  </h6>
+          <div className="shelby-div"><h1 className="shelby-title">SHELBY</h1><h5 className="about-shelby">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
+         jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb</h5></div>
+          <div className="evyn-div"><h1 className="evyn-title">EVYN</h1><h5 className="about-evyn">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
+         jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb</h5></div>
+          <div className="liz-div"><h1 className="liz-title">LIZ</h1><h5 className="about-liz">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
+         jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb</h5></div>
+          <div className="mitch-div"><h1 className="mitch-title">MITCH</h1><h5 className="about-mitch">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
+         jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb</h5></div>
         </div>
       </div>
 
