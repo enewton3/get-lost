@@ -10,7 +10,7 @@ A:link {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  margin-top: -2vw;
+  top: 0;
   width: 100vw;
 }
 /* a:link {
