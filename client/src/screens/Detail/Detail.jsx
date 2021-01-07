@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./Detail.css";
+
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
 import { useParams, Link } from "react-router-dom";
@@ -11,6 +11,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import shopProduct from "../../services/shopping";
 import Carousel from "../../components/Carousel/Carousel";
+// import './DetailCarousel.css';
+import "./Detail.css";
 
 const Detail = (props) => {
   const [product, setProduct] = useState(null);
@@ -33,7 +35,7 @@ const Detail = (props) => {
           <div className="name">{product.name}</div>
           <div className="price">{`${product.price}`}</div>
           <div className="description">{product.description}</div>
-          <Carousel className='detail-carousel' images={product.imgURL} />
+          <Carousel className="detail-carousel" images={product.imgURL} />
           {/* <img
             className="detail-image"
             src={product.imgURL}
@@ -50,12 +52,14 @@ const Detail = (props) => {
           >
             <FontAwesomeIcon icon={faTrashAlt} />
           </button>
+          <div className="cart">
           <button
             className="cart-button"
             onClick={() => shopProduct(product._id)}
           >
             <FontAwesomeIcon icon={faCartPlus} />
-          </button>
+            </button>
+            </div>
         </div>
       ) : (
         <h1>The journey is worth the wait!</h1>
