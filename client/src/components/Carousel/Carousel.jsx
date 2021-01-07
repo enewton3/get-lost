@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
 import Slide from "./Slide";
 import Indicator from "./Indicator";
+import "./Carousel.css";
 
 export default function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -27,41 +28,52 @@ export default function Carousel(props) {
     }
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      goToNextSlide();
+    }, 5000);
+    return () => clearInterval(interval);
+  });
+
   return (
-    <div>
-      <ArrowLeft
-        onClick={() => {
-          goToPrevSlide();
-        }}
-      />
+    <div className="carousel">
+      <div className="slides">
+        {images.map((item, index) => {
+          return (
+            <Slide
+              key={`slide${index}`}
+              index={index}
+              image={item}
+              currentIndex={currentIndex}
+            />
+          );
+        })}
+      </div>
+      <div className="carousel-nav">
+        <ArrowLeft
+          onClick={() => {
+            goToPrevSlide();
+          }}
+        />
+        <div className="indicators">
+          {images.map((item, index) => {
+            return (
+              <Indicator
+                key={`ind${index}`}
+                index={index}
+                onClick={() => goToSlide(index)}
+                currentIndex={currentIndex}
+              />
+            );
+          })}
+        </div>
 
-      {images.map((item, index) => {
-        return (
-          <Slide
-            key={`slide${index}`}
-            index={index}
-            image={item}
-            currentIndex={currentIndex}
-          />
-        );
-      })}
-
-      {images.map((item, index) => {
-        return (
-          <Indicator
-            key={`ind${index}`}
-            index={index}
-            onClick={() => goToSlide(index)}
-            currentIndex={currentIndex}
-          />
-        );
-      })}
-
-      <ArrowRight
-        onClick={() => {
-          goToNextSlide();
-        }}
-      />
+        <ArrowRight
+          onClick={() => {
+            goToNextSlide();
+          }}
+        />
+      </div>
     </div>
   );
 }
