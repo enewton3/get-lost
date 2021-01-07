@@ -38,5 +38,12 @@ margin-top: 2.5vw;
 
 }
 .the-devs {
-  margin-top: 80vw;
+  margin-top: 50vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  font-size: 2vw;
+  font-family: 'Staatliches', cursive;
+  margin-bottom: 30vw;
+  text-align: center;
+
 }
