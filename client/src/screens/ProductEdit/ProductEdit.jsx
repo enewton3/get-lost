@@ -10,10 +10,11 @@ const ProductEdit = (props) => {
     description: "",
     imgURL: "",
     price: "",
+    type: "",
   });
-
   const [isUpdated, setUpdated] = useState(false);
-  let { id } = useParams();
+  const params = useParams();
+  let { id } = params;
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -33,13 +34,12 @@ const ProductEdit = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    let { id } = props.match.params;
     const updated = await editProduct(id, product);
     setUpdated(updated);
   };
 
   if (isUpdated) {
-    return <Redirect to={`/products/${props.match.params.id}`} />;
+    return <Redirect to={`/detail/${id}`} />;
   }
 
   return (
@@ -90,6 +90,8 @@ const ProductEdit = (props) => {
             required
             onChange={handleChange}
           />
+          <label htmlFor="type">Type: </label>
+          <div id="type">{product.type}</div>
           <button type="submit" className="save-button">
             Save
           </button>

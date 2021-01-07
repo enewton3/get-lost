@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Detail.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTrashAlt,
@@ -16,6 +16,7 @@ const Detail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -26,6 +27,11 @@ const Detail = (props) => {
     fetchProduct();
   }, [id]);
 
+  const handleDelete = () => {
+    deleteProduct(id);
+    history.push("/");
+  };
+
   return (
     <Layout user={props.user}>
       {isLoaded ? (
@@ -33,7 +39,7 @@ const Detail = (props) => {
           <div className="name">{product.name}</div>
           <div className="price">{`${product.price}`}</div>
           <div className="description">{product.description}</div>
-          <Carousel className='detail-carousel' images={product.imgURL} />
+          <Carousel className="detail-carousel" images={product.imgURL} />
           {/* <img
             className="detail-image"
             src={product.imgURL}
@@ -46,7 +52,9 @@ const Detail = (props) => {
           </Link>
           <button
             className="delete-button"
-            onClick={() => deleteProduct(product._id)}
+            onClick={() => {
+              handleDelete();
+            }}
           >
             <FontAwesomeIcon icon={faTrashAlt} />
           </button>
