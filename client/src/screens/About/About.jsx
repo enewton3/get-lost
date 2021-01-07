@@ -4,7 +4,6 @@ import Layout from "../../components/shared/Layout/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointDown } from "@fortawesome/free-solid-svg-icons";
 
-
 const About = (props) => {
   return (
     <Layout user={props.user}>
