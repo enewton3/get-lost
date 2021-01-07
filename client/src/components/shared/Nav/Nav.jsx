@@ -19,10 +19,10 @@ export default function Nav(props) {
 
   const authUserLinks = (
     <div className="all-user">
-      <Link className="user-link" to="/sign-in">
+      <Link className="user-link" to="/add-product">
         Add Product
       </Link>
-      <Link className="user-link" to="/sign-in">
+      <Link className="user-link" to="/sign-out">
         Sign Out
       </Link>
     </div>
@@ -41,15 +41,19 @@ export default function Nav(props) {
   return (
     <div className="all-nav">
       <div className="all-icons">
-        <Link className="home-link" to="/"><Logo /></Link>
+        <Link className="home-link" to="/">
+          <Logo />
+        </Link>
       </div>
-      <div className="burger-boi" >
-        <FontAwesomeIcon icon={faBars} name="menuToggle" onClick={() => setMenuToggle((prev) => !prev)} />
+      <div className="burger-boi">
+        <FontAwesomeIcon
+          icon={faBars}
+          name="menuToggle"
+          onClick={() => setMenuToggle((prev) => !prev)}
+        />
       </div>
       {menuToggle ? (
-
         <div className="menu-links">
-
           <Link className="menu-link" to="/">
             Home
           </Link>
@@ -71,7 +75,6 @@ export default function Nav(props) {
           <Link className="menu-link" to="/contact">
             Contact
           </Link>
-
         </div>
       ) : null}
 
@@ -83,7 +86,8 @@ export default function Nav(props) {
             icon={faSearch}
             name="searchToggle"
             onClick={() => setSearchToggle((prev) => !prev)}
-          /> </div>
+          />{" "}
+        </div>
         <div className="user-icon">
           <FontAwesomeIcon
             icon={faUser}
@@ -102,10 +106,7 @@ export default function Nav(props) {
             <FontAwesomeIcon icon={faShoppingCart} />
           </div>
         </Link>
-
       </div>
-
     </div>
-
   );
 }
