@@ -19,9 +19,9 @@ const About = (props) => {
         <div className="about-devs">
           <h6 className="the-devs">As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked with a project to build a fully CRUD-capable, full-stack app for a retailer. Using teamwork, creativity,  and communication, challenges or deadlines didn't stand a chance. We hope you enjoy our project!  </h6>
         </div>
+        <h7 className="about-liz"><strong>Liz Yrineo</strong>Hello fellow adventurers!  I’m so glad to be a part of your journey!  As a Colorado native, I have grown up playing in and caring for the Rocky Mountains.  We’re not just a ski destination.  We also get to camp, hike, mountain bike and rock climb, just to name a few incredible activities that I enjoy.  Whether we’re out for a day-long hike or trekking for days, every new experience is an opportunity to learn more about ourselves and our world.  So throw on your pack and embark on your own wonderous excursion!</h7>
       </div>
-
-    </Layout>
+  </Layout>
   );
 };
 
