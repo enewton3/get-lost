@@ -3,15 +3,20 @@
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
   text-align: center;
+  margin: 0 auto;
+ margin-top: 2vw;
+  width: 45vw;
+  background-color: #000000f0;
+  box-shadow: 10px 8px 20px 30px rgb(14, 14, 14);
+  
+  
 }
 
 .carousel-slide {
   display: none;
-  margin: 10vw 5vw 0vw 5vw;
-  border: 2px solid hotpink;
-  width: 50vw;
+  margin: 1vw 5vw .5vw 5vw;
+  width: 30vw;
   max-height: 30vw;
   height: auto;
   transition: transform 0.5s ease-in-out;
@@ -22,7 +27,6 @@
 }
 
 .indicators {
-  border: 2px solid red;
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
@@ -41,5 +45,9 @@
 }
 
 .carousel-indicator-active {
-  background-color: black;
+  background-color: rgb(57, 57, 57);
+}
+.lefty {
+color: rgb(201, 201, 201);
+padding: .5vw;
 }

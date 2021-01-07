@@ -4,7 +4,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 export default function ArrowRight(props) {
   return (
     <div onClick={props.onClick} className="carousel-arrow-right">
-      <FontAwesomeIcon icon={faArrowRight} />
+      <FontAwesomeIcon className= "lefty" icon={faArrowRight} />
     </div>
   );
 }
