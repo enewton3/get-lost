@@ -33,12 +33,12 @@ const Detail = (props) => {
           <div className="name">{product.name}</div>
           <div className="price">{`${product.price}`}</div>
           <div className="description">{product.description}</div>
-          <Carousel images={product.imgURL} />
-          <img
+          <Carousel className='detail-carousel' images={product.imgURL} />
+          {/* <img
             className="detail-image"
             src={product.imgURL}
             alt={product.name}
-          />
+          /> */}
           <Link className="edit-link" to={`/edit-product/${product._id}`}>
             <button className="edit-button">
               <FontAwesomeIcon icon={faPencilAlt} />
