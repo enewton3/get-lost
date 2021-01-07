@@ -1,3 +1,15 @@
+.blur {
+margin: 0 auto;
+/* background-color: #726459d7;
+box-shadow: .5vw 1vw .5vw 1.4vw  #726459d7; */
+height: 23vw;
+width: 53vw;
+
+  
+
+
+
+}
 .carousel {
   display: flex;
   flex-flow: column nowrap;
@@ -5,21 +17,27 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
- margin-top: 2vw;
+  margin-top: 2vw;
   width: 45vw;
-  background-color: #000000f0;
-  box-shadow: 10px 8px 20px 30px rgb(14, 14, 14);
+  
+  
+  
+  
   
   
 }
 
 .carousel-slide {
   display: none;
-  margin: 1vw 5vw .5vw 5vw;
-  width: 30vw;
+  margin: 2vw 5vw .5vw 5vw;
+  width: 100vw;
   max-height: 30vw;
   height: auto;
   transition: transform 0.5s ease-in-out;
+  object-fit: cover;
+ 
+  
+  
 }
 .carousel-slide-active {
   display: block;
@@ -30,10 +48,12 @@
   display: flex;
   flex-flow: row wrap;
   margin: 0 auto;
+  filter: none;
 }
 .carousel-nav {
   display: flex;
   flex-flow: row wrap;
+  filter: none;
 }
 .carousel-indicator {
   background-color: grey;
@@ -50,4 +70,7 @@
 .lefty {
 color: rgb(201, 201, 201);
 padding: .5vw;
+}
+.lefty:hover {
+color: chocolate;
 }

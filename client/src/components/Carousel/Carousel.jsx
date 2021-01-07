@@ -38,7 +38,10 @@ export default function Carousel(props) {
   });
 
   return (
-    <div className="carousel">
+  
+     <div className= "blur">
+      <div className="carousel">
+     
       <div className="slides">
         {images.map((item, index) => {
           return (
@@ -76,6 +79,8 @@ export default function Carousel(props) {
           }}
         />
       </div>
-    </div>
+      </div>
+      </div>
+      
   );
 }

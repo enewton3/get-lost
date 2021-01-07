@@ -8,15 +8,17 @@ export default function Landing(props) {
   return (
     <Layout user={props.user}>
       <Carousel images={images} imageChange={true} intervalTime={5000} />
-      <Link className="day-trip-link" to={`/listing-page/Day-Trip`}>
-        <div className="shop-day-trip">Shop Day Trip</div>
+      <div className="all-landing">
+      <Link className="landing-link" to={`/listing-page/Day-Trip`}>
+        <div className="shop">Shop Day Trip</div>
       </Link>
-      <Link className="all-link" to={`/listing-page/all`}>
-        <div className="shop-all">Shop All</div>
+      <Link className="landing-link" to={`/listing-page/all`}>
+        <div className="shop"> Shop All</div>
       </Link>
-      <Link className="expedition-link" to={`/listing-page/Expedition`}>
-        <div className="shop-expedition">Shop Long Haul</div>
-      </Link>
+      <Link className="landing-link" to={`/listing-page/Expedition`}>
+        <div className="shop">Shop Long Haul</div>
+        </Link>
+        </div>
     </Layout>
   );
 }

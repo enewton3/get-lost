@@ -9,8 +9,8 @@ A:link {
   height: 4vw;
   display: flex;
   justify-content: space-between;
-  /* border-style: solid;
-  border-color: cornflowerblue; */
+  position: fixed;
+  margin-top: -2vw;
   width: 100vw;
 }
 /* a:link {
