@@ -1,14 +1,13 @@
 .page-title {
-  background-image: linear-gradient( to right, white, #4ed841c9);
   text-align: center;
-  margin-top: 4vw;
+  margin-top: 5vw;
   padding-top: 16px;
   padding-bottom: 20px;
   font-family: "Vast Shadow", cursive;
   color: #e88b44;
   font-size: 5vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
-  border-bottom: 2px solid rgb(72, 72, 72, 0.5);
+
 }
 
 .products-container {
