@@ -9,6 +9,7 @@ A:link {
   position: fixed;
   top: 0;
   width: 100vw;
+  border-bottom: 2px solid rgba(87, 87, 87, 0.3);
 }
 
 
@@ -31,6 +32,7 @@ A:link {
   border-radius: 20px;
   justify-self: flex-start;
   font-size: 3vw;
+  margin-top: 3px;
   margin-left: -85vw;
   color: rgb(52, 52, 52);
   text-align: center;
