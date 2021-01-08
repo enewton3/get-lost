@@ -41,11 +41,11 @@ const ProductEdit = (props) => {
     setUpdated(updated);
   };
 
-  const handleAddInput = (e) => {
-    e.preventDefault();
-    product.imgURL[product.imgURL.length] = { image: "" };
-    setAdd((prev) => !prev);
-  };
+  // const handleAddInput = (e) => {
+  //   e.preventDefault();
+  //   product.imgURL[product.imgURL.length] = { image: "" };
+  //   setAdd((prev) => !prev);
+  // };
 
   if (isUpdated) {
     return <Redirect to={`/detail/${id}`} />;
