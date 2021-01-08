@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { getProducts } from "../../services/products";
 import "./Search.css";
 
 export default function Search() {
@@ -7,6 +8,11 @@ export default function Search() {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
+
+  const fetchProducts = async () => {
+    const results = await getProducts()
+  }
+
 
   return (
     <>

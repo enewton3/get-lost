@@ -2,7 +2,7 @@ A:link {
   text-decoration: none;
 }
 .all-nav {
-  background-color: #8d7f6f;
+  background-color: #786d60;
   height: 4vw;
   display: flex;
   justify-content: space-between;
@@ -10,18 +10,15 @@ A:link {
   top: 0;
   width: 100vw;
 }
-/* a:link {
-  text-decoration: none;  not working :(
 
-} */
+
+
 
 .option-icons {
   text-align: right;
   font-size: 2vw;
   display: flex;
   justify-content: space-between;
-  /* border-color: coral;
-border-style: solid; */
   width: 15%;
   justify-self: flex-end;
   text-decoration: none;
@@ -30,7 +27,6 @@ border-style: solid; */
   margin-top: 1.6vw;
 }
 .burger-boi {
-  /* border: chartreuse solid; */
   width: 4.5%;
   border-radius: 20px;
   justify-self: flex-start;
@@ -68,8 +64,6 @@ border-style: solid; */
   width: 9vw;
   text-align: center;
   justify-self: flex-start;
-  /* margin-top: 3vw;
-margin-left: -60vw; */
   position: absolute;
   left: 5%;
   top: 5%;
@@ -107,4 +101,10 @@ margin-left: -60vw; */
 }
 .user-link:hover {
   background-color: rgb(199, 199, 199);
+}
+.welcome-msg {
+position: absolute;
+left: 15vw;
+font-family: 'Staatliches', cursive;
+color: rgb(227, 227, 227);
 }
