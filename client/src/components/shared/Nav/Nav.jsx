@@ -79,7 +79,7 @@ export default function Nav(props) {
       ) : null}
 
       <div className="option-icons">
-        {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
+        {user && <div className="welcome-msg">Hey there, {user.username}</div>}
         {searchToggle ? <Search /> : null}
         <div className="search-icon">
           <FontAwesomeIcon

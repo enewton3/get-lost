@@ -1,0 +1,58 @@
+.label {
+  padding-bottom: 3vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  font-size: 2vw;
+  }
+  .total-contact {
+    font-family: 'Josefin Slab', serif;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 12vw;
+    text-align: center;
+    justify-content: center;
+    margin-left: 25vw;
+    margin-top: -23vw;
+     justify-content: space-between;
+    
+   
+  }
+  .contact-us {
+    width: 22vw;
+    margin-top: 5vw;
+    margin-left: 1vw;
+    font-family: 'Vast Shadow', cursive;
+    font-size: 2.2vw;
+    
+  }
+.hand-right {
+  color: #E88B44;
+  font-size: 5vw;
+  margin-left: 10vw;
+}
+.mess-input{
+  border: none;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  width: 15vw;
+  height: 5.5vw;
+  text-align: center;
+
+}
+.mess-input:hover {
+  background-color: rgb(242, 242, 242);
+  }
+  .mess-button {
+    margin-top: -1.5vw;
+    width: 5vw;
+    height: 2vw;
+    border-radius: 25px;
+    border: none;
+    background-color: #E88B44;
+    font-family: 'Josefin Slab', serif;
+
+  }
+  .mess-button:hover {
+    background-color: #f2b17f;
+  }
