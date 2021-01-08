@@ -1,16 +1,13 @@
-
-
-
 A:link {
   text-decoration: none;
 }
-.all-nav{
-  background-color: #8D7F6F;
+.all-nav {
+  background-color: #8d7f6f;
   height: 4vw;
   display: flex;
   justify-content: space-between;
-  /* border-style: solid;
-  border-color: cornflowerblue; */
+  position: fixed;
+  top: 0;
   width: 100vw;
 }
 /* a:link {
@@ -19,30 +16,28 @@ A:link {
 } */
 
 .option-icons {
-text-align: right;
-font-size: 2vw;
-display: flex;
-justify-content: space-between;
-/* border-color: coral;
+  text-align: right;
+  font-size: 2vw;
+  display: flex;
+  justify-content: space-between;
+  /* border-color: coral;
 border-style: solid; */
-width: 15%;
-justify-self: flex-end;
-text-decoration: none;
-color: white;
-margin-right: 5vw;
-margin-top: 1.6vw;
-
+  width: 15%;
+  justify-self: flex-end;
+  text-decoration: none;
+  color: white;
+  margin-right: 5vw;
+  margin-top: 1.6vw;
 }
 .burger-boi {
-/* border: chartreuse solid; */
-width: 4.5%;
-border-radius: 20px;
-justify-self: flex-start;
-font-size: 3vw;
-margin-left: -85vw;
-color: rgb(52, 52, 52);
-text-align: center;
-
+  /* border: chartreuse solid; */
+  width: 4.5%;
+  border-radius: 20px;
+  justify-self: flex-start;
+  font-size: 3vw;
+  margin-left: -85vw;
+  color: rgb(52, 52, 52);
+  text-align: center;
 }
 .all-icons {
   margin-left: 5vw;
@@ -64,25 +59,22 @@ text-align: center;
   font-size: 130%;
 }
 .burger-boi:hover {
-background-color: #655d53;
+  background-color: #655d53;
 }
 
 .menu-links {
-display: flex;
-flex-direction: column;
-width: 9vw;
-text-align: center;
-justify-self: flex-start;
-/* margin-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  width: 9vw;
+  text-align: center;
+  justify-self: flex-start;
+  /* margin-top: 3vw;
 margin-left: -60vw; */
-position: absolute;
-left: 5%;
-top: 5%;
-font-family: 'Josefin Slab', serif;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  font-family: "Josefin Slab", serif;
 }
-
-
-
 
 .menu-link {
   background-color: rgba(232, 232, 232, 0.927);
@@ -90,13 +82,9 @@ font-family: 'Josefin Slab', serif;
   padding-top: 1vw;
   font-size: 1.5vw;
   color: rgb(58, 58, 58);
-  
-  
-  
 }
 .menu-link:hover {
-  background-color:  rgb(199, 199, 199);
-
+  background-color: rgb(199, 199, 199);
 }
 
 .all-user {
@@ -107,21 +95,16 @@ font-family: 'Josefin Slab', serif;
   justify-self: flex-start;
   position: absolute;
   right: 5%;
-  top: 5%;
-
+  top: 3vw;
 }
 .user-link {
- 
   background-color: rgba(232, 232, 232, 0.927);
   padding-bottom: 2vw;
   padding-top: 1vw;
   font-size: 1.5vw;
   color: rgb(58, 58, 58);
-  font-family: 'Josefin Slab', serif;
-  
+  font-family: "Josefin Slab", serif;
 }
 .user-link:hover {
-  background-color:  rgb(199, 199, 199);
-
+  background-color: rgb(199, 199, 199);
 }
-
