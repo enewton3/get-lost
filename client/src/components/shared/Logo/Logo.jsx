@@ -4,7 +4,7 @@ import "./Logo.css";
 export default function Logo() {
   return (
     <div className="logo">
-      <img src={logo} width="90vw" alt="get lost logo" />
+       <img className= "main-logo" src={logo} alt="get lost logo" /> 
     </div>
   );
 }
