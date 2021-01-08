@@ -1,12 +1,13 @@
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faCopyright, faEnvelope, faPhone, faQuestionCircle } from "@fortawesome/free-solid-svg-icons";
+import { faComment, faCopyright, faEnvelope, faHiking, faPhone, faQuestionCircle, faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faFacebookSquare, faInstagramSquare, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
    
     <div className="footer">
+      
       <div className="our-name">
         <FontAwesomeIcon icon={faCopyright} /> 2021 The Digital Nomads
       </div>
@@ -27,6 +28,10 @@ Sat–Sun, 6am–9pm PT
 Call us at : 1-800-426-4840
 Mon–Fri, 5am–10pm PT
 Sat–Sun, 6am–9pm PT</p>
+      </div>
+      <div className="emply">
+      <p className="employee-word">Employee Sign In --> <FontAwesomeIcon className="employee-icon" icon={faHiking} /></p>
+       
       </div>
       </div>
   );
