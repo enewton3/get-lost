@@ -5,8 +5,8 @@ import Logo from "../Logo/Logo";
 import MainMenu from "./NavMenuComponents/MainMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
-  faSearch,
+  // faBars,
+  // faSearch,
   faUser,
   faShoppingCart,
   faMapSigns,
