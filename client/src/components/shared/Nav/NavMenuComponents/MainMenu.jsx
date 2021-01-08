@@ -3,17 +3,17 @@ import "./MainMenu.css";
 
 export default function MainMenu(props) {
   const defaultStyle = {
-    transition: `max-height ${props.duration}ms linear`,
+    transition: `opacity ${props.duration}ms ease-in-out`,
     maxHeight: 0,
   };
 
   const transitionStyles = {
-    entering: { maxHeight: "200px" },
-    entered: { maxHeight: "200px" },
-    exiting: { maxHeight: 0 },
-    exited: { maxHeight: 0 },
+    entering: { opacity: 1 },
+    entered: { opacity: 1 },
+    exiting: { opacity: 0 },
+    exited: { opacity: 0 },
   };
-  
+
   return (
     <div
       className="menu-links"
