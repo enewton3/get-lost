@@ -102,3 +102,9 @@ A:link {
 .user-link:hover {
   background-color: rgb(199, 199, 199);
 }
+.welcome-msg {
+position: absolute;
+left: 15vw;
+font-family: 'Staatliches', cursive;
+color: rgb(227, 227, 227);
+}
