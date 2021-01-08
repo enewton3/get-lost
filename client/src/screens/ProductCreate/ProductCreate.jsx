@@ -8,7 +8,7 @@ const ProductCreate = (props) => {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    imgURL: [{ name: "" }],
+    imgURL: [{ image: "" }],
     price: "",
     type: "",
   });
