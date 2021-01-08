@@ -7,6 +7,8 @@ import {
   faSearch,
   faUser,
   faShoppingCart,
+  faMapSigns,
+  faBinoculars,
 } from "@fortawesome/free-solid-svg-icons";
 import Search from "../../Search/Search";
 import "./Nav.css";
@@ -47,7 +49,7 @@ export default function Nav(props) {
       </div>
       <div className="burger-boi">
         <FontAwesomeIcon
-          icon={faBars}
+          icon={faMapSigns}
           name="menuToggle"
           onClick={() => setMenuToggle((prev) => !prev)}
         />
@@ -79,11 +81,11 @@ export default function Nav(props) {
       ) : null}
 
       <div className="option-icons">
-        {user && <div className="welcome-msg">Hey there, {user.username}</div>}
+        {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
         {searchToggle ? <Search /> : null}
         <div className="search-icon">
           <FontAwesomeIcon
-            icon={faSearch}
+            icon={faBinoculars}
             name="searchToggle"
             onClick={() => {
               // handleClickOutside();
