@@ -41,7 +41,11 @@ const Detail = (props) => {
           <div className="name">{product.name}</div>
           <div className="price">{`${product.price}`}</div>
           <div className="description">{product.description}</div>
-          <Carousel className="detail-carousel" images={product.imgURL} type='detail' />
+          <Carousel
+            className="detail-carousel"
+            images={product.imgURL}
+            type="detail"
+          />
           {/* <img
             className="detail-image"
             src={product.imgURL}
