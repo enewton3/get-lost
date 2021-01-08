@@ -1,13 +1,15 @@
-.name {
+.product-detail {
   margin-top: 8vw;
   margin-left: 3vw;
+}
+
+.name {
   font-family: "Vast Shadow", cursive;
   color: #e88b44;
   font-size: 5vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
 }
 .price {
-  margin-left: 3vw;
   font-family: "Vast Shadow", cursive;
   color: #e88b44;
   font-size: 3vw;
@@ -16,8 +18,7 @@
 .description {
   background-color: #c3d6cb;
   box-shadow: none;
-  margin: 10vw 0vw 0vw 2vw;
-  padding: 2vw;
+  padding-top: 2vw;
   width: 250px;
   color: #060606;
   font-family: "Josefin Slab", serif;
