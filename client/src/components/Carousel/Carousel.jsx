@@ -7,7 +7,7 @@ import "./Carousel.css";
 
 export default function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { images, imageChange, intervalTime } = props;
+  const { images, imageChange, intervalTime,  } = props;
 
   const goToSlide = (index) => {
     setCurrentIndex(index);

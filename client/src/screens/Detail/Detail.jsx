@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./Detail.css";
+
 import Layout from "../../components/shared/Layout/Layout";
 import { getProduct, deleteProduct } from "../../services/products";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useHistory } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTrashAlt,
@@ -11,11 +11,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import shopProduct from "../../services/shopping";
 import Carousel from "../../components/Carousel/Carousel";
+// import './DetailCarousel.css';
+import "./Detail.css";
 
 const Detail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
   const { id } = useParams();
+  const history = useHistory();
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -26,6 +29,11 @@ const Detail = (props) => {
     fetchProduct();
   }, [id]);
 
+  const handleDelete = () => {
+    deleteProduct(id);
+    history.push("/");
+  };
+
   return (
     <Layout user={props.user}>
       {isLoaded ? (
@@ -33,12 +41,12 @@ const Detail = (props) => {
           <div className="name">{product.name}</div>
           <div className="price">{`${product.price}`}</div>
           <div className="description">{product.description}</div>
-          <Carousel images={product.imgURL} />
-          <img
+          <Carousel className="detail-carousel" images={product.imgURL} />
+          {/* <img
             className="detail-image"
             src={product.imgURL}
             alt={product.name}
-          />
+          /> */}
           <Link className="edit-link" to={`/edit-product/${product._id}`}>
             <button className="edit-button">
               <FontAwesomeIcon icon={faPencilAlt} />
@@ -46,16 +54,20 @@ const Detail = (props) => {
           </Link>
           <button
             className="delete-button"
-            onClick={() => deleteProduct(product._id)}
+            onClick={() => {
+              handleDelete();
+            }}
           >
             <FontAwesomeIcon icon={faTrashAlt} />
           </button>
+          <div className="cart">
           <button
             className="cart-button"
             onClick={() => shopProduct(product._id)}
           >
             <FontAwesomeIcon icon={faCartPlus} />
-          </button>
+            </button>
+            </div>
         </div>
       ) : (
         <h1>The journey is worth the wait!</h1>
