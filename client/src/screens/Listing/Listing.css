@@ -31,6 +31,11 @@
   border: 2px solid rgb(72, 72, 72, 0.2);
 }
 
+.product-name {
+  font-family: 'Staatliches', cursive;
+  font-size: 2vw;
+}
+
 .filter {
   font-family: "Josefin Slab", serif;
   font-size: 2vw; 

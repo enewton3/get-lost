@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
-import Carousel from "../../Carousel/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -11,7 +10,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Search from "../../Search/Search";
 import "./Nav.css";
-import "../../Carousel/Carousel.css";
 
 export default function Nav(props) {
   const { user } = props;
