@@ -7,7 +7,7 @@ import "./Carousel.css";
 
 export default function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { images, imageChange, intervalTime } = props;
+  const { source, imageChange, intervalTime, type } = props;
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
@@ -15,13 +15,13 @@ export default function Carousel(props) {
 
   const goToPrevSlide = () => {
     if (currentIndex === 0) {
-      setCurrentIndex(images.length);
+      setCurrentIndex(source.length);
     }
     setCurrentIndex((prev) => prev - 1);
   };
 
   const goToNextSlide = () => {
-    if (currentIndex >= images.length - 1) {
+    if (currentIndex >= source.length - 1) {
       setCurrentIndex(0);
     } else {
       setCurrentIndex((prev) => prev + 1);
@@ -38,43 +38,49 @@ export default function Carousel(props) {
   });
 
   return (
-    <div className="carousel">
-      <div className="slides">
-        {images.map((item, index) => {
-          return (
-            <Slide
-              key={`slide${index}`}
-              index={index}
-              image={item}
-              currentIndex={currentIndex}
-            />
-          );
-        })}
-      </div>
-      <div className="carousel-nav">
-        <ArrowLeft
-          onClick={() => {
-            goToPrevSlide();
-          }}
-        />
-        <div className="indicators">
-          {images.map((item, index) => {
+    <div className={type ? `blur-${type}` : "blur"}>
+      <div className={type ? `carousel-${type}` : "carousel"}>
+        <div className={type ? `slides-${type}` : "slides"}>
+          {source.map((item, index) => {
             return (
-              <Indicator
-                key={`ind${index}`}
+              <Slide
+                key={`slide${index}`}
                 index={index}
-                onClick={() => goToSlide(index)}
+                source={item}
                 currentIndex={currentIndex}
+                type={type}
               />
             );
           })}
         </div>
+        <div className={type ? `carousel-nav-${type}` : "carousel-nav"}>
+          <ArrowLeft
+            type={type}
+            onClick={() => {
+              goToPrevSlide();
+            }}
+          />
+          <div className={type ? `indicators-${type}` : "indicators"}>
+            {source.map((item, index) => {
+              return (
+                <Indicator
+                  key={`ind${index}`}
+                  index={index}
+                  onClick={() => goToSlide(index)}
+                  currentIndex={currentIndex}
+                  type={type}
+                />
+              );
+            })}
+          </div>
 
-        <ArrowRight
-          onClick={() => {
-            goToNextSlide();
-          }}
-        />
+          <ArrowRight
+            onClick={() => {
+              goToNextSlide();
+            }}
+            type={type}
+          />
+        </div>
       </div>
     </div>
   );

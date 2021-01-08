@@ -8,12 +8,14 @@ const ProductEdit = (props) => {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    imgURL: "",
+    imgURL: [{ image: "" }],
     price: "",
+    type: "",
   });
-
   const [isUpdated, setUpdated] = useState(false);
-  let { id } = useParams();
+  const [add, setAdd] = useState(false);
+  const params = useParams();
+  let { id } = params;
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -22,6 +24,8 @@ const ProductEdit = (props) => {
     };
     fetchProduct();
   }, [id]);
+
+  useEffect(() => {}, [add]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -33,13 +37,18 @@ const ProductEdit = (props) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    let { id } = props.match.params;
     const updated = await editProduct(id, product);
     setUpdated(updated);
   };
 
+  // const handleAddInput = (e) => {
+  //   e.preventDefault();
+  //   product.imgURL[product.imgURL.length] = { image: "" };
+  //   setAdd((prev) => !prev);
+  // };
+
   if (isUpdated) {
-    return <Redirect to={`/products/${props.match.params.id}`} />;
+    return <Redirect to={`/detail/${id}`} />;
   }
 
   return (
@@ -47,24 +56,33 @@ const ProductEdit = (props) => {
       <div className="product-edit">
         <div className="image-container">
           <img
-            className="edit-product-image"
-            src={product.imgURL}
+            className="edit-image"
+            src={product.imgURL[0].image}
             alt={product.name}
           />
-          <form onSubmit={handleSubmit}>
-            <input
-              className="edit-input-image-link"
-              placeholder="Image Link"
-              value={product.imgURL}
-              name="imgURL"
-              required
-              onChange={handleChange}
-            />
-          </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
+          {product.imgURL.map((item, index) => {
+            return (
+              <input
+                className="edit-link"
+                placeholder="Image Link"
+                value={product.imgURL[index].image}
+                name={`${product.imgURL[index].image}`}
+                required
+                onChange={handleChange}
+              />
+            );
+          })}
+          {/* <button
+            onClick={(e) => {
+              handleAddInput(e);
+            }}
+          >
+            +
+          </button> */}
           <input
-            className="input-name"
+            className="input-edit"
             placeholder="Name"
             value={product.name}
             name="name"
@@ -73,7 +91,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-price"
+            className="input-edit"
             placeholder="Price"
             value={product.price}
             name="price"
@@ -81,7 +99,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <textarea
-            className="textarea-description"
+            className="input-edit"
             rows={10}
             cols={78}
             placeholder="Description"
@@ -90,6 +108,8 @@ const ProductEdit = (props) => {
             required
             onChange={handleChange}
           />
+          {/* <label htmlFor="type">Type: </label>
+          <div id="type">{product.type}</div> */}
           <button type="submit" className="save-button">
             Save
           </button>
