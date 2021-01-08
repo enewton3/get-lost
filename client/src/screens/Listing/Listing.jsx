@@ -44,7 +44,7 @@ export default function Listing(props) {
       <div className="page-title">{pageTitle}</div>
       <div className="products-container">
         <div className="filter">
-          <FilterDropdown />
+          <FilterDropdown initial={params.filter} />
         </div>
         <div className="products">
           {products ? (
