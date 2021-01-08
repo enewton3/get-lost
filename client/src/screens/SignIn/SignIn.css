@@ -1,5 +1,5 @@
 .form-container {
-  background-color: #E9E4BD;
+  background-color: #e9e4bd;
   padding-bottom: 2vw;
   padding-top: 1vw;
   font-size: 1.5vw;
@@ -8,13 +8,12 @@
   margin-left: 19%;
   height: 30vw;
   margin-top: 8vw;
-
 }
 .hey {
-width: 20vw;
+  width: 20vw;
 }
 .total-sign {
-  font-family: 'Josefin Slab', serif;
+  font-family: "Josefin Slab", serif;
   display: flex;
   flex-direction: column;
   width: 1vw;
@@ -23,18 +22,13 @@ width: 20vw;
   justify-content: center;
   margin-left: 25vw;
   margin-top: -20vw;
-   justify-content: space-between;
-  
- 
+  justify-content: space-between;
 }
 .label {
-
-padding-bottom: 3vw;
-margin-top: 5vw;
-margin-bottom: 3vw;
-font-size: 2vw;
-
-
+  padding-bottom: 3vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  font-size: 2vw;
 }
 .input {
   border: none;
@@ -42,31 +36,27 @@ font-size: 2vw;
   margin-bottom: 3vw;
   width: 15vw;
   height: 1.5vw;
-
-  
-  }
-  .sign-button {
-    margin-left: 5vw;
-    margin-top: 1vw;
-    width: 5vw;
-    height: 2vw;
-    border-radius: 25px;
-    border: none;
-    background-color: #E88B44;
-
-  }
-  .sign-button:hover {
-    background-color: #f2b17f;
-  }
-  .input:hover {
+}
+.sign-button {
+  margin-left: 5vw;
+  margin-top: 1vw;
+  width: 5vw;
+  height: 2vw;
+  border-radius: 25px;
+  border: none;
+  background-color: #e88b44;
+}
+.sign-button:hover {
+  background-color: #f2b17f;
+}
+.input:hover {
   background-color: rgb(242, 242, 242);
-  }
-  .dont-have {
- 
-  font-size: .8vw;
+}
+.dont-have {
+  font-size: 0.8vw;
   margin-top: 15vw;
   margin-left: 2vw;
-  }
-  .sign-up {
-    font-size: .8vw; 
-  }
+}
+.sign-up {
+  font-size: 0.8vw;
+}

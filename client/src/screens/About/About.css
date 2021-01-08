@@ -1,49 +1,45 @@
 .all-about {
-background-color:#85a257;
-width: 60vw;
-margin-left: 19.5vw;
-height: 11vw;
-font-family: 'Josefin Slab', serif;
-font-size: 1.5vw;
-text-align: center;
-padding-top: 2vw;
-padding-right: 1vw;
-padding-left: 1vw;
+  background-color: #85a257;
+  width: 60vw;
+  margin-left: 19.5vw;
+  height: 11vw;
+  font-family: "Josefin Slab", serif;
+  font-size: 1.5vw;
+  text-align: center;
+  padding-top: 2vw;
+  padding-right: 1vw;
+  padding-left: 1vw;
 }
 
 .about-title {
-
-font-family: 'Vast Shadow', cursive;
-color: #E88B44;
-font-size: 6.2vw;
-text-shadow: 1.5px 1.5px rgb(72, 72, 72);
-width: 55vw;
-margin-top: 5vw;
-height: 5vw;
-margin-left: 23vw;
-text-align: center;
+  font-family: "Vast Shadow", cursive;
+  color: #e88b44;
+  font-size: 6.2vw;
+  text-shadow: 1.5px 1.5px rgb(72, 72, 72);
+  width: 55vw;
+  margin-top: 5vw;
+  height: 5vw;
+  margin-left: 23vw;
+  text-align: center;
 }
 .check-dev {
-  font-family: 'Staatliches', cursive;
-  color: #EDB63B;
+  font-family: "Staatliches", cursive;
+  color: #edb63b;
   font-size: 4.2vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-top: 5vw;
- 
 }
 .hand-down {
-color: #E88B44;
-font-size: 5vw;
-margin-top: 2.5vw;
-
+  color: #e88b44;
+  font-size: 5vw;
+  margin-top: 2.5vw;
 }
 .the-devs {
   margin-top: 50vw;
   margin-left: 3vw;
   margin-right: 3vw;
   font-size: 2vw;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   margin-bottom: 30vw;
   text-align: center;
-
 }
