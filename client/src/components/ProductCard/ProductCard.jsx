@@ -8,7 +8,7 @@ const ProductCard = (props) => {
     <Link className="product" to={`/detail/${product._id}`}>
       <img className="product-image" src={product.imgURL} alt={props.name} />
       <div className="product-name">{product.name}</div>
-      <div className="price">{`$${product.price}`}</div>
+      <div className="price">{`${product.price}`}</div>
     </Link>
   );
 };
