@@ -50,22 +50,4 @@ export default function Slide(props) {
   } else {
     return <div>Loading</div>;
   }
-
-  // if (image) {
-  //   return (
-  //     <img
-  //       className={
-  //         index === currentIndex
-  //           ? `${classNameDefault} ${classNameActive}`
-  //           : `${classNameDefault}`
-  //       }
-  //       src={image}
-  //       alt={`${index + 1}`}
-  //     />
-  //   );
-  // } else if (text) {
-  //   return <div>{text}</div>;
-  // } else if (link) {
-  //   return <Link to={link}>{source.text}</Link>;
-  // }
 }
