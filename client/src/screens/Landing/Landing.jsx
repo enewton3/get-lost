@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { images } from "../../images/HomepageCarousel";
 
 export default function Landing(props) {
+  const testArray = ["test 1", "test 2", "test 3", "test 4"];
+
   return (
     <Layout user={props.user}>
       <Carousel images={images} imageChange={true} intervalTime={5000} />
@@ -19,6 +21,8 @@ export default function Landing(props) {
           <div className="shop">Shop Long Haul</div>
         </Link>
       </div>
+
+      <Carousel images={testArray} imageChange={true} intervalTime={1000} />
     </Layout>
   );
 }
