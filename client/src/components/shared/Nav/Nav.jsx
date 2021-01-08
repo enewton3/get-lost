@@ -85,7 +85,10 @@ export default function Nav(props) {
           <FontAwesomeIcon
             icon={faSearch}
             name="searchToggle"
-            onClick={() => setSearchToggle((prev) => !prev)}
+            onClick={() => {
+              // handleClickOutside();
+              setSearchToggle((prev) => !prev);
+            }}
           />{" "}
         </div>
         <div className="user-icon">

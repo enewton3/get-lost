@@ -1,14 +1,9 @@
 .blur {
-margin: 0 auto;
-/* background-color: #726459d7;
+  margin: 0 auto;
+  /* background-color: #726459d7;
 box-shadow: .5vw 1vw .5vw 1.4vw  #726459d7; */
-height: 23vw;
-width: 53vw;
-
-  
-
-
-
+  height: 23vw;
+  width: 53vw;
 }
 .carousel {
   display: flex;
@@ -19,25 +14,16 @@ width: 53vw;
   margin: 0 auto;
   margin-top: 2vw;
   width: 45vw;
-  
-  
-  
-  
-  
-  
 }
 
 .carousel-slide {
   display: none;
-  margin: 2vw 5vw .5vw 5vw;
+  margin: 2vw 5vw 0.5vw 5vw;
   width: 100vw;
   max-height: 30vw;
   height: auto;
   transition: transform 0.5s ease-in-out;
   object-fit: cover;
- 
-  
-  
 }
 .carousel-slide-active {
   display: block;
@@ -68,9 +54,9 @@ width: 53vw;
   background-color: rgb(57, 57, 57);
 }
 .lefty {
-color: rgb(133, 133, 133);
-padding: .5vw;
+  color: rgb(133, 133, 133);
+  padding: 0.5vw;
 }
 .lefty:hover {
-color: chocolate;
+  color: chocolate;
 }

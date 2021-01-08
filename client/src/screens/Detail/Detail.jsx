@@ -41,7 +41,7 @@ const Detail = (props) => {
           <div className="name">{product.name}</div>
           <div className="price">{`${product.price}`}</div>
           <div className="description">{product.description}</div>
-          <Carousel className="detail-carousel" images={product.imgURL} />
+          <Carousel className="detail-carousel" images={product.imgURL} type='detail' />
           {/* <img
             className="detail-image"
             src={product.imgURL}
@@ -61,13 +61,13 @@ const Detail = (props) => {
             <FontAwesomeIcon icon={faTrashAlt} />
           </button>
           <div className="cart">
-          <button
-            className="cart-button"
-            onClick={() => shopProduct(product._id)}
-          >
-            <FontAwesomeIcon icon={faCartPlus} />
+            <button
+              className="cart-button"
+              onClick={() => shopProduct(product._id)}
+            >
+              <FontAwesomeIcon icon={faCartPlus} />
             </button>
-            </div>
+          </div>
         </div>
       ) : (
         <h1>The journey is worth the wait!</h1>
