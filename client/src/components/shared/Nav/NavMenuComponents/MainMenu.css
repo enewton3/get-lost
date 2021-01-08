@@ -1,0 +1,23 @@
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  width: 9vw;
+  text-align: center;
+  justify-self: flex-start;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  font-family: "Josefin Slab", serif;
+}
+
+.menu-link {
+  background-color: rgba(232, 232, 232, 0.927);
+  padding-bottom: 2vw;
+  padding-top: 1vw;
+  font-size: 1.5vw;
+  color: rgb(58, 58, 58);
+  /* display: none; */
+}
+.menu-link:hover {
+  background-color: rgb(199, 199, 199);
+}

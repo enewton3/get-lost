@@ -37,50 +37,49 @@ const Detail = (props) => {
   return (
     <Layout user={props.user}>
       <div className="all-detail">
-      {isLoaded ? (
-        <div className="product-detail">
-          <div className="name">{product.name}</div>
-          <div className="price">{`${product.price}`}</div>
+        {isLoaded ? (
+          <div className="product-detail">
+            <div className="name">{product.name}</div>
+            <div className="price">{`${product.price}`}</div>
             <div className="description">{product.description}</div>
-            
-          <Carousel
-            className="detail-carousel"
-            images={product.imgURL}
-            type="detail"
-          />
-          {/* <img
+
+            <Carousel
+              className="detail-carousel"
+              source={product.imgURL}
+              type="detail"
+            />
+            {/* <img
             className="detail-image"
             src={product.imgURL}
             alt={product.name}
           /> */}
-            <div className= "deet-butt">
-          <Link className="edit-link" to={`/edit-product/${product._id}`}>
-            <button className="edit-button">
-              <FontAwesomeIcon icon={faPencilAlt} />
-            </button>
-          </Link>
-          <button
-            className="trash-button"
-            onClick={() => {
-              handleDelete();
-            }}
-          >
-            <FontAwesomeIcon icon={faTrashAlt} />
+            <div className="deet-butt">
+              <Link className="edit-link" to={`/edit-product/${product._id}`}>
+                <button className="edit-button">
+                  <FontAwesomeIcon icon={faPencilAlt} />
+                </button>
+              </Link>
+              <button
+                className="trash-button"
+                onClick={() => {
+                  handleDelete();
+                }}
+              >
+                <FontAwesomeIcon icon={faTrashAlt} />
               </button>
-              </div>
-          
+            </div>
+
             <button
               className="cart-button"
               onClick={() => shopProduct(product._id)}
             >
               <FontAwesomeIcon icon={faCartPlus} />
             </button>
-          
-        </div>
-      ) : (
-        <h1>The journey is worth the wait!</h1>
-          )}
-        </div>
+          </div>
+        ) : (
+          <h1>The journey is worth the wait!</h1>
+        )}
+      </div>
     </Layout>
   );
 };
