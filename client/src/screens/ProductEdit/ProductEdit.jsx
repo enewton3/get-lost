@@ -8,11 +8,12 @@ const ProductEdit = (props) => {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    imgURL: "",
+    imgURL: [{ image: "" }],
     price: "",
     type: "",
   });
   const [isUpdated, setUpdated] = useState(false);
+  const [add, setAdd] = useState(false);
   const params = useParams();
   let { id } = params;
 
@@ -23,6 +24,8 @@ const ProductEdit = (props) => {
     };
     fetchProduct();
   }, [id]);
+
+  useEffect(() => {}, [add]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -38,6 +41,12 @@ const ProductEdit = (props) => {
     setUpdated(updated);
   };
 
+  const handleAddInput = (e) => {
+    e.preventDefault();
+    product.imgURL[product.imgURL.length] = { image: "" };
+    setAdd((prev) => !prev);
+  };
+
   if (isUpdated) {
     return <Redirect to={`/detail/${id}`} />;
   }
@@ -48,21 +57,30 @@ const ProductEdit = (props) => {
         <div className="image-container">
           <img
             className="edit-image"
-            src={product.imgURL}
+            src={product.imgURL[0].image}
             alt={product.name}
           />
-          <form onSubmit={handleSubmit}>
-            <input
-              className="edit-link"
-              placeholder="Image Link"
-              value={product.imgURL}
-              name="imgURL"
-              required
-              onChange={handleChange}
-            />
-          </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
+          {product.imgURL.map((item, index) => {
+            return (
+              <input
+                className="edit-link"
+                placeholder="Image Link"
+                value={product.imgURL[index].image}
+                name={`${product.imgURL[index].image}`}
+                required
+                onChange={handleChange}
+              />
+            );
+          })}
+          {/* <button
+            onClick={(e) => {
+              handleAddInput(e);
+            }}
+          >
+            +
+          </button> */}
           <input
             className="input-edit"
             placeholder="Name"
