@@ -1,22 +1,19 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../services/products";
+import { Link } from "react-router-dom";
 import "./Search.css";
 
 export default function Search() {
   const [search, setSearch] = useState("");
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([{ name: "loading" }]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
   const results = products.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase)
+    item.name.toLowerCase().includes(search.toLowerCase())
   );
-
-  console.log(results);
-  console.log(search);
-  console.log(products);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -24,7 +21,6 @@ export default function Search() {
       setProducts(response);
     };
     fetchProducts();
-    console.log("api call");
   }, []);
 
   return (
@@ -37,7 +33,14 @@ export default function Search() {
           onChange={(e) => setSearch(e.target.value)}
         />
       </form>
-      <div>{search && results.map((result) => <p>{result}</p>)}</div>
+      <div className="search-results">
+        {search &&
+          results.map((result) => (
+            <Link to={`/detail/${result._id}`}>
+              <div className="search-result">{result.name}</div>
+            </Link>
+          ))}
+      </div>
     </>
   );
 }
