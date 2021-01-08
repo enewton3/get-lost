@@ -12,7 +12,21 @@
 }
 
 .search-results {
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  background-color: rgba(228, 228, 228, 0.5);
   position: absolute;
-  top: 2vw;
+  top: 5vh;
+  right: 21vw;
+  width: 23vw;
+}
+
+.search-result {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0px 2px 0px 2px;
+  padding: 10px;
+  font-size: 0.75rem;
+  background-color: rgba(228, 228, 228, 1);
 }
