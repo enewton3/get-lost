@@ -3,11 +3,14 @@ import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
 import Slide from "./Slide";
 import Indicator from "./Indicator";
+// import CarouselStyleWrapper from "./StyleComponents/CarouselStyleWrapper";
 import "./Carousel.css";
 
 export default function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const { images, imageChange, intervalTime,  } = props;
+  const { images, imageChange, intervalTime, type } = props;
+
+  // const style = type === 'home' ? {}
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
@@ -38,49 +41,48 @@ export default function Carousel(props) {
   });
 
   return (
-  
-     <div className= "blur">
+    // <CarouselStyleWrapper type={type}>
+    <div className="blur">
       <div className="carousel">
-     
-      <div className="slides">
-        {images.map((item, index) => {
-          return (
-            <Slide
-              key={`slide${index}`}
-              index={index}
-              image={item}
-              currentIndex={currentIndex}
-            />
-          );
-        })}
-      </div>
-      <div className="carousel-nav">
-        <ArrowLeft
-          onClick={() => {
-            goToPrevSlide();
-          }}
-        />
-        <div className="indicators">
+        <div className="slides">
           {images.map((item, index) => {
             return (
-              <Indicator
-                key={`ind${index}`}
+              <Slide
+                key={`slide${index}`}
                 index={index}
-                onClick={() => goToSlide(index)}
+                image={item}
                 currentIndex={currentIndex}
               />
             );
           })}
         </div>
+        <div className="carousel-nav">
+          <ArrowLeft
+            onClick={() => {
+              goToPrevSlide();
+            }}
+          />
+          <div className="indicators">
+            {images.map((item, index) => {
+              return (
+                <Indicator
+                  key={`ind${index}`}
+                  index={index}
+                  onClick={() => goToSlide(index)}
+                  currentIndex={currentIndex}
+                />
+              );
+            })}
+          </div>
 
-        <ArrowRight
-          onClick={() => {
-            goToNextSlide();
-          }}
-        />
+          <ArrowRight
+            onClick={() => {
+              goToNextSlide();
+            }}
+          />
+        </div>
       </div>
-      </div>
-      </div>
-      
+    </div>
+    // </CarouselStyleWrapper>
   );
 }

@@ -1,5 +1,7 @@
 import "./Contact.css";
 import Layout from "../../components/shared/Layout/Layout";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHandPointRight} from "@fortawesome/free-solid-svg-icons";
 
 
 const Contact = () => {
@@ -7,11 +9,12 @@ const Contact = () => {
 
   return (
     <Layout>
-      
+     
       <div className="form-container">
+        <p className="contact-us"> Feedback? Questions? Just Want To Say Hi? Drop Us A Line </p> 
+        <FontAwesomeIcon className="hand-right" icon={faHandPointRight} />
      
       <div className= "total-contact">
-       <h2 className="contact-us"> Feedback? Questions? Just Want To Say Hi? Drop Us </h2>
         <form >
           <label className= "label">Name</label>
           <input className= "input"
@@ -31,8 +34,8 @@ const Contact = () => {
             placeholder="Email"
             // onChange={handleChange}
             />
-            <label className= "label">How Can We Help?</label>
-          <input className= "input"
+          <label className= "label">Message</label>
+          <input className= "mess-input"
             required
             name="contact"
             // value={password}
@@ -41,7 +44,7 @@ const Contact = () => {
             // onChange={handleChange}
           />
           
-          
+          <button className = "mess-button" type="submit">Submit</button>
           </form>
         </div>
         
