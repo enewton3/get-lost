@@ -47,13 +47,13 @@ const ProductEdit = (props) => {
       <div className="product-edit">
         <div className="image-container">
           <img
-            className="edit-product-image"
+            className="edit-image"
             src={product.imgURL}
             alt={product.name}
           />
           <form onSubmit={handleSubmit}>
             <input
-              className="edit-input-image-link"
+              className="edit-link"
               placeholder="Image Link"
               value={product.imgURL}
               name="imgURL"
@@ -64,7 +64,7 @@ const ProductEdit = (props) => {
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <input
-            className="input-name"
+            className="input-edit"
             placeholder="Name"
             value={product.name}
             name="name"
@@ -73,7 +73,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <input
-            className="input-price"
+            className="input-edit"
             placeholder="Price"
             value={product.price}
             name="price"
@@ -81,7 +81,7 @@ const ProductEdit = (props) => {
             onChange={handleChange}
           />
           <textarea
-            className="textarea-description"
+            className="input-edit"
             rows={10}
             cols={78}
             placeholder="Description"
@@ -90,8 +90,8 @@ const ProductEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <label htmlFor="type">Type: </label>
-          <div id="type">{product.type}</div>
+          {/* <label htmlFor="type">Type: </label>
+          <div id="type">{product.type}</div> */}
           <button type="submit" className="save-button">
             Save
           </button>

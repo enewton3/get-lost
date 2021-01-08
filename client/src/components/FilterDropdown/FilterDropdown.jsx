@@ -1,6 +1,6 @@
 import { useHistory } from "react-router-dom";
 
-export default function FilterDropdown() {
+export default function FilterDropdown(props) {
   const history = useHistory();
 
   const handleChange = (e) => {
@@ -11,7 +11,7 @@ export default function FilterDropdown() {
   return (
     <>
       <label htmlFor="dropdown">Filter:</label>
-      <select id="dropdown" onChange={handleChange}>
+      <select id="dropdown" onChange={handleChange} value={props.initial}>
         <option value="all">All</option>
         <option value="Day-Trip">Day Trip</option>
         <option value="Expedition">Long Haul</option>
