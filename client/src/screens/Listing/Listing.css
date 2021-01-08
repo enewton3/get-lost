@@ -17,6 +17,7 @@
   column-gap: 50px;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 .products {
@@ -29,11 +30,16 @@
 
 .product-image {
   border: 2px solid rgb(72, 72, 72, 0.2);
+  padding:2vw;
+  box-shadow: .1vw .1vw  .1vw .1vw rgba(165, 165, 165, 0.584);
 }
 
 .product-name {
   font-family: 'Staatliches', cursive, serif;
   font-size: 2vw;
+  text-decoration: none;
+  color: #2b2b2b;
+  border: none;
 }
 
 .filter {
@@ -43,6 +49,11 @@
   justify-content: flex-end;
   margin: 2vw 2vw 2vw 2vw;
   text-decoration: gray;
+}
+
+.product-image:hover {
+transform: scale(1.1);
+background-color: white;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -55,6 +66,7 @@
   }
   .price {
     margin-bottom: 25px;
+    color: #060606;
   }
   .filter {
     display: flex;

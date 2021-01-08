@@ -20,13 +20,13 @@ export default function Listing(props) {
 
   switch (filter) {
     case "Day-Trip":
-      pageTitle = "Day Trip";
+      pageTitle = "Day Trip >>";
       break;
-    case "Expedition":
-      pageTitle = "Long Haul";
+    case "Expedition >>":
+      pageTitle = "Long Haul >>";
       break;
     default:
-      pageTitle = "All Packs";
+      pageTitle = "All Packs >>";
       break;
   }
 
