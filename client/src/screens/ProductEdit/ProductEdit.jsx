@@ -13,7 +13,7 @@ const ProductEdit = (props) => {
     type: "",
   });
   const [isUpdated, setUpdated] = useState(false);
-  const [add, setAdd] = useState(false);
+  // const [add, setAdd] = useState(false);
   const params = useParams();
   let { id } = params;
 
@@ -25,7 +25,7 @@ const ProductEdit = (props) => {
     fetchProduct();
   }, [id]);
 
-  useEffect(() => {}, [add]);
+  // useEffect(() => {}, [add]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
