@@ -43,21 +43,21 @@ export default function Listing(props) {
     <Layout user={props.user}>
       <div className="page-title">{pageTitle}</div>
       <div className="products-container">
-          <div className="filter">    
-        <FilterDropdown />
+        <div className="filter">
+          <FilterDropdown />
         </div>
         <div className="products">
-        {products ? (
+          {products ? (
             displayedProducts.map((item) => (
-                <ProductCard key={item._id} product={item} />
+              <ProductCard key={item._id} product={item} />
             ))
-            ) : (
-              <div>
-            <h1>The journey is worth the wait!</h1>
-          </div>
-        )}
+          ) : (
+            <div>
+              <h1>The journey is worth the wait!</h1>
+            </div>
+          )}
+        </div>
       </div>
-    </div>
     </Layout>
   );
 }
