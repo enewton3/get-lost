@@ -54,7 +54,12 @@ export default function Nav(props) {
           onClick={() => setMenuToggle((prev) => !prev)}
         />
       </div>
-      <Transition timeout={500} in={menuToggle}>
+      <Transition
+        timeout={500}
+        in={menuToggle}
+        mountOnEnter={true}
+        unmountOnExit={true}
+      >
         {(state) => <MainMenu state={state} duration={500} />}
       </Transition>
 
