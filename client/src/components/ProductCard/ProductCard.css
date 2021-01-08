@@ -1,13 +1,12 @@
 .product-name {
-  margin-top: 8vw;
-  margin-left: 3vw;
   color: #edb63b;
   font-family: "Staatliches", cursive;
   font-size: 30px;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
 }
 .price {
-  margin-left: 3vw;
+  margin: 0 auto;
+  text-align: start;
   color: #edb63b;
   font-family: "Staatliches", cursive;
   font-size: 20px;
