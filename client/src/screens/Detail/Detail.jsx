@@ -36,11 +36,13 @@ const Detail = (props) => {
 
   return (
     <Layout user={props.user}>
+      <div className="all-detail">
       {isLoaded ? (
         <div className="product-detail">
           <div className="name">{product.name}</div>
           <div className="price">{`${product.price}`}</div>
-          <div className="description">{product.description}</div>
+            <div className="description">{product.description}</div>
+            
           <Carousel
             className="detail-carousel"
             images={product.imgURL}
@@ -51,31 +53,34 @@ const Detail = (props) => {
             src={product.imgURL}
             alt={product.name}
           /> */}
+            <div className= "deet-butt">
           <Link className="edit-link" to={`/edit-product/${product._id}`}>
             <button className="edit-button">
               <FontAwesomeIcon icon={faPencilAlt} />
             </button>
           </Link>
           <button
-            className="delete-button"
+            className="trash-button"
             onClick={() => {
               handleDelete();
             }}
           >
             <FontAwesomeIcon icon={faTrashAlt} />
-          </button>
-          <div className="cart">
+              </button>
+              </div>
+          
             <button
               className="cart-button"
               onClick={() => shopProduct(product._id)}
             >
               <FontAwesomeIcon icon={faCartPlus} />
             </button>
-          </div>
+          
         </div>
       ) : (
         <h1>The journey is worth the wait!</h1>
-      )}
+          )}
+        </div>
     </Layout>
   );
 };
