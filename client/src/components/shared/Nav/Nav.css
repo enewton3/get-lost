@@ -12,9 +12,6 @@ A:link {
   border-bottom: 2px solid rgba(87, 87, 87, 0.3);
 }
 
-
-
-
 .option-icons {
   text-align: right;
   font-size: 2vw;
@@ -60,29 +57,6 @@ A:link {
   background-color: #655d53;
 }
 
-.menu-links {
-  display: flex;
-  flex-direction: column;
-  width: 9vw;
-  text-align: center;
-  justify-self: flex-start;
-  position: absolute;
-  left: 5%;
-  top: 5%;
-  font-family: "Josefin Slab", serif;
-}
-
-.menu-link {
-  background-color: rgba(232, 232, 232, 0.927);
-  padding-bottom: 2vw;
-  padding-top: 1vw;
-  font-size: 1.5vw;
-  color: rgb(58, 58, 58);
-}
-.menu-link:hover {
-  background-color: rgb(199, 199, 199);
-}
-
 .all-user {
   display: flex;
   flex-direction: column;
@@ -105,8 +79,8 @@ A:link {
   background-color: rgb(199, 199, 199);
 }
 .welcome-msg {
-position: absolute;
-left: 15vw;
-font-family: 'Staatliches', cursive;
-color: rgb(227, 227, 227);
+  position: absolute;
+  left: 15vw;
+  font-family: "Staatliches", cursive;
+  color: rgb(227, 227, 227);
 }
