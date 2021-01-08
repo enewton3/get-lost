@@ -8,6 +8,10 @@ export default function Search() {
     e.preventDefault();
   };
 
+  const searchProducts = () => {
+    
+  }
+
   return (
     <>
       <form onSubmit={(e) => handleSubmit(e)}>

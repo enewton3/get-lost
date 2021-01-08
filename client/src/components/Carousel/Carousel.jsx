@@ -3,14 +3,11 @@ import ArrowLeft from "./ArrowLeft";
 import ArrowRight from "./ArrowRight";
 import Slide from "./Slide";
 import Indicator from "./Indicator";
-// import CarouselStyleWrapper from "./StyleComponents/CarouselStyleWrapper";
 import "./Carousel.css";
 
 export default function Carousel(props) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const { images, imageChange, intervalTime, type } = props;
-
-  // const style = type === 'home' ? {}
 
   const goToSlide = (index) => {
     setCurrentIndex(index);
@@ -41,10 +38,9 @@ export default function Carousel(props) {
   });
 
   return (
-    // <CarouselStyleWrapper type={type}>
-    <div className="blur">
-      <div className="carousel">
-        <div className="slides">
+    <div className={type ? `blur-${type}` : "blur"}>
+      <div className={type ? `carousel-${type}` : "carousel"}>
+        <div className={type ? `slides-${type}` : "slides"}>
           {images.map((item, index) => {
             return (
               <Slide
@@ -52,17 +48,19 @@ export default function Carousel(props) {
                 index={index}
                 image={item}
                 currentIndex={currentIndex}
+                type={type}
               />
             );
           })}
         </div>
-        <div className="carousel-nav">
+        <div className={type ? `carousel-nav-${type}` : "carousel-nav"}>
           <ArrowLeft
+            type={type}
             onClick={() => {
               goToPrevSlide();
             }}
           />
-          <div className="indicators">
+          <div className={type ? `indicators-${type}` : "indicators"}>
             {images.map((item, index) => {
               return (
                 <Indicator
@@ -70,6 +68,7 @@ export default function Carousel(props) {
                   index={index}
                   onClick={() => goToSlide(index)}
                   currentIndex={currentIndex}
+                  type={type}
                 />
               );
             })}
@@ -79,10 +78,10 @@ export default function Carousel(props) {
             onClick={() => {
               goToNextSlide();
             }}
+            type={type}
           />
         </div>
       </div>
     </div>
-    // </CarouselStyleWrapper>
   );
 }
