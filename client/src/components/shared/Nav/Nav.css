@@ -10,7 +10,7 @@ A:link {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  margin-top: -2vw;
+  top: 0;
   width: 100vw;
 }
 /* a:link {
@@ -107,7 +107,7 @@ font-family: 'Josefin Slab', serif;
   justify-self: flex-start;
   position: absolute;
   right: 5%;
-  top: 5%;
+  top: 3vw;
 
 }
 .user-link {
