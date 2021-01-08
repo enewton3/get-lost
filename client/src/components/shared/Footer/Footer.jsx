@@ -42,7 +42,7 @@ export default function Footer() {
       </div>
       <div className="emply">
         <p className="employee-word">
-          Employee Sign In -->{" "}
+          Employee Sign In {"-->"}{" "}
           <FontAwesomeIcon className="employee-icon" icon={faHiking} />
         </p>
       </div>

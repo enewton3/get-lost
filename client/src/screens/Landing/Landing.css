@@ -1,36 +1,29 @@
 .landing-link {
-  font-family: 'Vast Shadow', cursive;
-color: #E88B44;
-font-size: 3vw;
-text-shadow: 1.5px 1.5px rgb(72, 72, 72);
+  font-family: "Vast Shadow", cursive;
+  color: #e88b44;
+  font-size: 3vw;
+  text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-top: 13vw;
   text-align: center;
-  
-  
-  
-
 }
 .all-landing {
-display: flex;
-flex-direction: column;
-justify-items: center;
-margin-left: 31.5vw;
-text-align: center;
-width: 40vw;
-
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  margin-left: 31.5vw;
+  text-align: center;
+  width: 40vw;
 }
-.shop{
+.shop {
   background-color: #eed06c;
   margin-top: 2vw;
   margin-left: 2vw;
   width: 30vw;
-  
+
   padding: 2vw;
   text-align: center;
-  
 }
 .shop:hover {
- background-color: #f5e3a8d2;
- transform: scale(1.2);
- 
+  background-color: #f5e3a8d2;
+  transform: scale(1.2);
 }
