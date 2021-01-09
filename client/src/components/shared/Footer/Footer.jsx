@@ -28,10 +28,11 @@ export default function Footer() {
         <FontAwesomeIcon className="twit" icon={faTwitterSquare} />
         <FontAwesomeIcon className="email-footer" icon={faEnvelope} />
       </div>
+
       <div className="total-help">
         <FontAwesomeIcon className="help-icon" icon={faQuestionCircle} />
         <p className="footer-help">Help and Support</p>
-        <p className="footer-help2">Find answers online anytime.</p>
+        <p className="footer-help">Find answers online anytime.</p>
         <FontAwesomeIcon className="help-icon" icon={faComment} />
         <p className="footer-help">
           Live Chat Mon–Fri, 5am–10pm PT Sat–Sun, 6am–9pm PT
