@@ -14,6 +14,7 @@ import About from "./screens/About/About";
 import Contact from "./screens/Contact/Contact";
 import AddToCart from "./screens/AddToCart/AddToCart";
 import Sale from "./screens/Sale/Sale";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -38,7 +39,9 @@ function App() {
           <SignUp user={user} setUser={setUser} />
         </Route>
         <Route path="/sign-in">
-          <SignIn user={user} setUser={setUser} />
+          <ScrollToTop>
+            <SignIn user={user} setUser={setUser} />
+          </ScrollToTop>
         </Route>
         <Route path="/sign-out">
           <SignOut user={user} setUser={setUser} clearUser={clearUser} />
