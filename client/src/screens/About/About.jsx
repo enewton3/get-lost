@@ -15,13 +15,16 @@ const About = (props) => {
           <FontAwesomeIcon className="hand-down" icon={faHandPointDown} />
         </div>
         <div className="about-devs">
-          <h6 className="the-devs">As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked with a project to build a fully CRUD-capable, fullstack app for a retailer with stellar user-experince in mind.  We hope you enjoy our project!  </h6>
-          <div className="shelby-div"><h1 className="shelby-title">SHELBY</h1><h5 className="about-shelby">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
+          <h6 className="the-devs"><div className="line-1"></div>As engineering fellows, Liz, Mitchell, Evyn, and Shelby
+          were tasked with a project to build a fully CRUD-capable, fullstack app for a
+          retailer with stellar user-experince in mind.  We hope you enjoy our project!<div className= "line-2"></div>  </h6>
+          
+          <div className="dev-div"><h1 className="dev-title">SHELBY</h1><h5 className="about-dev">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
          jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb</h5></div>
-          <div className="evyn-div"><h1 className="evyn-title">EVYN</h1><h5 className="about-evyn">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
+          <div className="dev-div"><h1 className="dev-title">EVYN</h1><h5 className="about-dev">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
          jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb</h5></div>
-          <div className="liz-div"><h1 className="liz-title">LIZ</h1><h5 className="about-liz">Hello fellow adventurers!  I’m so glad to be a part of your journey!  As a Colorado native, I have grown up playing in and caring for the Rocky Mountains.  The Rockies aren't just for skiing.  They offer a summertime playground too where we can camp, hike, mountain bike and rock climb, just to name a few incredible activities that I enjoy.  Whether we’re out for a day-long hike or trekking for days, every new experience is an opportunity to learn more about ourselves and our world.  So throw on your pack and embark on your own incredible excursion!</h5></div>
-          <div className="mitch-div"><h1 className="mitch-title">MITCH</h1><h5 className="about-mitch">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
+          <div className="dev-div"><h1 className="dev-title">LIZ</h1><h5 className="about-dev">Hello fellow adventurers!  I’m so glad to be a part of your journey!  As a Colorado native, I have grown up playing in and caring for the Rocky Mountains.  The Rockies aren't just for skiing.  They offer a summertime playground too where we can camp, hike, mountain bike and rock climb, just to name a few incredible activities that I enjoy.  Whether we’re out for a day-long hike or trekking for days, every new experience is an opportunity to learn more about ourselves and our world.  So throw on your pack and embark on your own incredible excursion!</h5></div>
+          <div className="dev-div"><h1 className="dev-title">MITCH</h1><h5 className="about-dev">ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
          jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb</h5></div>
         </div>
       </div>
