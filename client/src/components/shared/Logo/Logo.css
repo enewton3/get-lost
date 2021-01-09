@@ -2,3 +2,6 @@
   width: 7vw;
   
 }
+.main-logo:hover  {
+  transform: scale(1.06);
+}

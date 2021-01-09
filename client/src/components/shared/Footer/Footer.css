@@ -75,3 +75,18 @@ font-size: 1vw;
   .employee-butt:hover{
     transform: scale(1.05);
   }
+  .help-icon:hover {
+    transform: scale(1.1);
+  }
+  .insta:hover {
+    transform: scale(1.1);
+    }
+    .facebook:hover {
+      transform: scale(1.1);
+      }
+      .twit:hover {
+        transform: scale(1.1);
+        }
+        .email-footer:hover {
+          transform: scale(1.1);
+          }
