@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
-import { fetchCart } from "../../services/shopping";
+import { getCart } from "../../services/shopping";
 
-export default function CartCounter() {
-  const [cart, setCart] = useState([]);
+export default function CartCounter(props) {
+  const [cartLength, setCartLength] = useState([]);
+  const { isAdded } = props;
 
-  useEffect(() => {});
+  useEffect(() => {
+    const cart = getCart();
+    setCartLength(cart.length);
+  }, [isAdded]);
 
-  return <div></div>;
+  return <>{cartLength ? cartLength : null}</>;
 }

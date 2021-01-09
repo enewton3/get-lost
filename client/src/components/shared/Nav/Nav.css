@@ -41,6 +41,8 @@ A:link {
 .shopping-cart-icon {
   text-decoration: none;
   color: whitesmoke;
+  display: flex;
+  flex-flow: row nowrap;
 }
 .shopping-cart-icon:hover {
   font-size: 110%;
@@ -84,4 +86,19 @@ A:link {
   left: 15vw;
   font-family: "Staatliches", cursive;
   color: rgb(227, 227, 227);
+}
+
+.cart-counter {
+  background: red;
+  border: 1px solid red;
+  border-radius: 30px 30px 30px 30px;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0;
+  margin: -5px 0 0 -10px;
+  /* position: absolute;
+  top: 0;
+  right: 0; */
+  width: 15px;
+  height: 15px;
 }
