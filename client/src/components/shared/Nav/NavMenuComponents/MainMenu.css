@@ -1,13 +1,14 @@
-.menu-links {
+.menu {
   display: flex;
   flex-direction: column;
   width: 9vw;
   text-align: center;
-  justify-self: flex-start;
+  /* justify-self: flex-start; */
   position: absolute;
-  left: 5%;
-  top: 5%;
+  left: 0;
+  top: 100%;
   font-family: "Josefin Slab", serif;
+  z-index: 100;
 }
 
 .menu-link {
@@ -22,7 +23,7 @@
   background-color: rgb(199, 199, 199);
 }
 
-/* .menu-enter {
+.menu-enter {
   max-height: 0px;
 }
 .menu-enter-active {
@@ -35,4 +36,4 @@
 .menu-exit-active {
   max-height: 0px;
   transition: max-height 1000ms linear;
-} */
+}

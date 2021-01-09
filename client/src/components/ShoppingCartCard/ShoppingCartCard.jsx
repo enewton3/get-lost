@@ -3,16 +3,19 @@ import { useState, useEffect } from "react";
 import "./ShoppingCartCard.css";
 
 function ShoppingCartCard(props) {
-  const { productID } = props;
+  const { productID, setSubtotal } = props;
   const [product, setProduct] = useState({});
 
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getProduct(productID);
       setProduct(product);
+      const priceString = product.price.slice(1);
+      const price = parseInt(priceString);
+      setSubtotal((prev) => prev + price);
     };
     fetchProduct();
-  }, [productID]);
+  }, [productID, setSubtotal]);
 
   if (product) {
     return (
