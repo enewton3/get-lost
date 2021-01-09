@@ -10,22 +10,22 @@
 .emply {
   margin-left: -80vw;
   margin-top: -16vw;
-}
-.employee-butt {
   color: #d8d8d8;
   font-size: 1.6vw;
   background-color: rgba(179, 179, 179, 0.427);
   border: transparent;
-  padding: 0.6vw;
-  padding-bottom: 0.9vw;
   border-radius: 15px;
   font-family: "Staatliches", cursive;
   margin-left: -80vw;
-  margin-top: -16vw;
+  margin-top: -25vw;
+  padding-right: .5vw;
+  padding-left: .5vw;
+  padding-top: .01vw;
+  padding-bottom: .01vw;
 }
 .employee-word {
   color: #cdcdcd;
-  font-size: 1vw;
+  font-size: 1.3vw;
 }
 .employee-icon {
   font-size: 5vw;
@@ -87,5 +87,9 @@
   transform: scale(1.1);
 }
 .email-footer:hover {
+  transform: scale(1.1);
+}
+
+.emply:hover {
   transform: scale(1.1);
 }
