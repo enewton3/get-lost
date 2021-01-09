@@ -42,14 +42,14 @@ export default function Footer() {
           Call us at : 1-800-426-4840 Mon–Fri, 5am–10pm PT Sat–Sun, 6am–9pm PT
         </p>
       </div>
-      <div className="emply">
+      <button className="emply">
       <Link className="sign-in" to="/sign-in">
         <p className="employee-word">
           Employee Sign In {"-->"}{" "}
           <FontAwesomeIcon className="employee-icon" icon={faHiking} />
           </p>
           </Link>
-      </div>
+      </button>
     </div>
   );
 }

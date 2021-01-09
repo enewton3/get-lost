@@ -12,6 +12,7 @@ import ProductCreate from "./screens/ProductCreate/ProductCreate";
 import ProductEdit from "./screens/ProductEdit/ProductEdit";
 import About from "./screens/About/About";
 import Contact from "./screens/Contact/Contact";
+import Sale from "./screens/Sale/Sale"
 
 function App() {
   const [user, setUser] = useState(null);
@@ -58,6 +59,9 @@ function App() {
         </Route>
         <Route path="/edit-product/:id">
           {user ? <ProductEdit user={user} /> : <Redirect to="/sign-up" />}
+        </Route>
+        <Route path="/sale">
+          <Sale user={user} />
         </Route>
       </Switch>
       <div className="filler"></div>
