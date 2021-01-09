@@ -101,9 +101,7 @@ export default function Nav(props) {
           <div className="cart-icon">
             <FontAwesomeIcon icon={faShoppingCart} />
           </div>
-          <div className="cart-counter">
-            <CartCounter />
-          </div>
+          <CartCounter />
         </Link>
       </div>
     </div>
