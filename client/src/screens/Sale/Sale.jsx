@@ -9,7 +9,9 @@ export default function Sale() {
    <Layout>
     <div className="sale">
         <h1 className="sale-title">SALESALESALESALESALESALE</h1>
-        <button className= "sale-butt">Enter Here For Our Biggest Sales Event. -EVER-</button>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+        <button className="sale-butt">Enter Here For Our Biggest Sales Event. -EVER-</button>
+        </a>
         <h1 className= "sale-title2">SALESALESALESALESALESALE</h1>
       </div>
       </Layout>
