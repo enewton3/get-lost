@@ -21,3 +21,18 @@
 .menu-link:hover {
   background-color: rgb(199, 199, 199);
 }
+
+/* .menu-enter {
+  max-height: 0px;
+}
+.menu-enter-active {
+  max-height: 1000px;
+  transition: max-height 1000ms linear;
+}
+.menu-exit {
+  max-height: 1000px;
+}
+.menu-exit-active {
+  max-height: 0px;
+  transition: max-height 1000ms linear;
+} */

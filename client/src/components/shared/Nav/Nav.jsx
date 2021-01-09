@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Transition } from "react-transition-group";
+import { CSSTransition } from "react-transition-group";
 import Logo from "../Logo/Logo";
 import MainMenu from "./NavMenuComponents/MainMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -56,14 +56,15 @@ export default function Nav(props) {
           onClick={() => setMenuToggle((prev) => !prev)}
         />
       </div>
-      <Transition
-        timeout={500}
+      <CSSTransition
+        timeout={1000}
         in={menuToggle}
-        mountOnEnter={true}
-        unmountOnExit={true}
+        // mountOnEnter={true}
+        unmountOnExit
+        classNames="menu"
       >
-        {(state) => <MainMenu state={state} duration={500} />}
-      </Transition>
+        <MainMenu />
+      </CSSTransition>
 
       <div className="option-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
