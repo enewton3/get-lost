@@ -49,7 +49,9 @@ function App() {
           <Listing user={user} />
         </Route>
         <Route path="/detail/:id">
+          <ScrollToTop>
           <Detail user={user} />
+          </ScrollToTop>
         </Route>
         <Route path="/about">
           <About user={user} />
@@ -64,7 +66,9 @@ function App() {
           {user ? <ProductEdit user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route path="/shopping-cart">
+          <ScrollToTop>
           <ShoppingCart user={user} />
+          </ScrollToTop>
         </Route>
         <Route path="/sale">
           <Sale user={user} />
