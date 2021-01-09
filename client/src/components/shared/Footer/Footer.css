@@ -13,10 +13,17 @@ margin-left: -80vw;
 margin-top: -16vw;
 
 
+
 }
-.employee-word {
-  color: #cdcdcd;
-  font-size: 1vw;
+.employee-butt{
+  color: #d8d8d8;
+  font-size: 1.6vw;
+  background-color: rgba(179, 179, 179, 0.427);
+  border: transparent;
+  padding: .6vw;
+  padding-bottom: .9vw;
+  border-radius: 15px;
+  font-family: 'Staatliches', cursive;
   
   
   
@@ -64,4 +71,7 @@ font-size: 1vw;
 .help-icon{
   font-size: 2vw;
   color: #EDB63B;
+  }
+  .employee-butt:hover{
+    transform: scale(1.05);
   }
