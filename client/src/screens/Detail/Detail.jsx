@@ -9,7 +9,7 @@ import {
   faPencilAlt,
   faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import shopProduct from "../../services/shopping";
+import { shopProduct } from "../../services/shopping";
 import Carousel from "../../components/Carousel/Carousel";
 // import './DetailCarousel.css';
 import "./Detail.css";
@@ -69,10 +69,7 @@ const Detail = (props) => {
               </button>
             </div>
 
-            <button
-              className="cart-button"
-              onClick={() => shopProduct(product._id)}
-            >
+            <button className="cart-button" onClick={() => shopProduct(id)}>
               <FontAwesomeIcon icon={faCartPlus} />
             </button>
           </div>
