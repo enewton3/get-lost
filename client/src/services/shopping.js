@@ -24,3 +24,7 @@ export const getCart = () => {
   return parsedCart;
   //GET CART ARRAY FROM LOCAL STORAGE OR CONTEXT
 };
+
+export const clearCart = () => {
+  localStorage.removeItem("cart");
+};

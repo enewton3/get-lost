@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandPointDown, faPaw } from "@fortawesome/free-solid-svg-icons";
+import { faHandPointDown, faMusic, faPaw } from "@fortawesome/free-solid-svg-icons";
 
 const About = (props) => {
   return (
@@ -60,10 +60,11 @@ const About = (props) => {
             </h5>
           </div>
           <div className="dev-div">
-            <h1 className="dev-title">MITCH</h1>
+            <h1 className="dev-title">
+              MITCH <FontAwesomeIcon className="notes" icon={faMusic} />
+              </h1>
             <h5 className="about-dev">
-              ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
-              jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb
+            Hey there, thank you for taking the time to read about us! I go by Mitch. I am a bit of a nomad having lived on almost every coast of the US. Currently, I reside in Los Angeles where hikes and views are plentiful. The site was a joy to make, as we all have a combined interest in travel and exploration. Again, thanks for reading up on us, and don't forget to check the sale section!
             </h5>
           </div>
         </div>
