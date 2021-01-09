@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComment,
@@ -41,10 +42,12 @@ export default function Footer() {
         </p>
       </div>
       <div className="emply">
+      <Link className="sign-in" to="/sign-in">
         <p className="employee-word">
           Employee Sign In {"-->"}{" "}
           <FontAwesomeIcon className="employee-icon" icon={faHiking} />
-        </p>
+          </p>
+          </Link>
       </div>
     </div>
   );
