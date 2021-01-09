@@ -19,7 +19,7 @@ export default function MainMenu(props) {
       <Link className="menu-link" to="/listing-page/Expedition">
         Long Haul
       </Link>
-      <Link className="menu-link" to="/listing-page/sale">
+      <Link className="menu-link" to="/sale">
         Sale
       </Link>
       <Link className="menu-link" to="/contact">
