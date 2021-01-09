@@ -1,30 +1,32 @@
 .all-about {
-  background-color: #85a257;
-  width: 60vw;
-  margin-left: 19.5vw;
-  height: 11vw;
-  font-family: "Josefin Slab", serif;
-  font-size: 1.5vw;
-  text-align: center;
-  padding-top: 2vw;
-  padding-right: 1vw;
-  padding-left: 1vw;
+
+background-color:#85a257;
+width: 70vw;
+margin-left: 13vw;
+height: 14vw;
+font-family: 'Josefin Slab', serif;
+font-size: 2vw;
+text-align: center;
+padding-top: 2vw;
+padding-right: 1vw;
+padding-left: 1vw;
 }
 
 .about-title {
-  font-family: "Vast Shadow", cursive;
-  color: #e88b44;
-  font-size: 6.2vw;
-  text-shadow: 1.5px 1.5px rgb(72, 72, 72);
-  width: 55vw;
-  margin-top: 5vw;
-  height: 5vw;
-  margin-left: 23vw;
-  text-align: center;
+
+font-family: 'Vast Shadow', cursive;
+color: #E88B44;
+font-size: 6.2vw;
+text-shadow: 1.5px 1.5px rgb(72, 72, 72);
+width: 55vw;
+margin-top: 6vw;
+height: 5vw;
+margin-left: 23vw;
+text-align: center;
 }
 .check-dev {
-  font-family: "Staatliches", cursive;
-  color: #edb63b;
+  font-family: 'Staatliches', cursive;
+  color: #fcc54f;
   font-size: 4.2vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-top: 5vw;
@@ -34,12 +36,49 @@
   font-size: 5vw;
   margin-top: 2.5vw;
 }
+.line-1 {
+width: 50vw;
+background-color: black;
+height: .1vw;
+margin: 0 auto;
+margin-bottom: 2vw;
+box-shadow: 1px 1px 1px 1px black;
+
+
+
+}
+.line-2 {
+  width: 50vw;
+  background-color: black;
+  height: .15vw;
+  margin: 0 auto;
+  margin-top: 2vw;
+  box-shadow: 1px 1px 1px 1px black;
+
+  
+ 
+  }
 .the-devs {
   margin-top: 50vw;
   margin-left: 3vw;
   margin-right: 3vw;
   font-size: 2vw;
-  font-family: "Staatliches", cursive;
-  margin-bottom: 30vw;
+  font-family: 'Staatliches', cursive;
+  margin-bottom: 18vw;
   text-align: center;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+.hand-down:hover {
+font-size: 6vw;
+}
+
+.dev-div {
+background-color: rgba(232, 232, 232, 0.927);
+width: 70vw;
+height: 40vw;
+text-align: center;
+margin-bottom: 7vw;
+margin-left: 15vw;
+font-family: 'Staatliches', cursive;
 }
