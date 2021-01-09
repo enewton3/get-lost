@@ -7,8 +7,16 @@ export default function CartCounter(props) {
 
   useEffect(() => {
     const cart = getCart();
-    setCartLength(cart.length);
+    setCartLength(cart ? cart.length : 0);
   }, [isAdded]);
 
-  return <>{cartLength ? cartLength : null}</>;
+  return (
+    <>
+      {cartLength ? (
+        <div className="cart-counter">{cartLength}</div>
+      ) : (
+        <div></div>
+      )}
+    </>
+  );
 }
