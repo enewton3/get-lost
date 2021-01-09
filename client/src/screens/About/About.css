@@ -1,4 +1,5 @@
 .all-about {
+
 background-color:#85a257;
 width: 70vw;
 margin-left: 13vw;
@@ -29,13 +30,11 @@ text-align: center;
   font-size: 4.2vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-top: 5vw;
- 
 }
 .hand-down {
-color: #E88B44;
-font-size: 5vw;
-margin-top: 2.5vw;
-
+  color: #e88b44;
+  font-size: 5vw;
+  margin-top: 2.5vw;
 }
 .line-1 {
 width: 50vw;
@@ -69,10 +68,6 @@ box-shadow: 1px 1px 1px 1px black;
   text-align: center;
   padding-top: 2vw;
   padding-bottom: 2vw;
-  
-  
-  
-
 }
 .hand-down:hover {
 font-size: 6vw;

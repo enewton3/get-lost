@@ -8,7 +8,7 @@ const ProductCreate = (props) => {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    imgURL: [],
+    imgURL: [{ image: "" }],
     price: "",
     type: "",
   });
@@ -66,7 +66,7 @@ const ProductCreate = (props) => {
         <input
           className="input-image-link"
           placeholder="Image Link"
-          value={product.imgURL}
+          value={product.imgURL[0].image}
           name="imgURL"
           required
           onChange={handleChange}

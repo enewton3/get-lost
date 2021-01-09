@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Transition } from "react-transition-group";
 import Logo from "../Logo/Logo";
+import MainMenu from "./NavMenuComponents/MainMenu";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
-  faSearch,
+  // faBars,
+  // faSearch,
   faUser,
   faShoppingCart,
   faMapSigns,
@@ -54,31 +56,14 @@ export default function Nav(props) {
           onClick={() => setMenuToggle((prev) => !prev)}
         />
       </div>
-      {menuToggle ? (
-        <div className="menu-links">
-          <Link className="menu-link" to="/">
-            Home
-          </Link>
-          <Link className="menu-link" to="/about">
-            About
-          </Link>
-          <Link className="menu-link" to="/listing-page/all">
-            All Packs
-          </Link>
-          <Link className="menu-link" to="/listing-page/Day-Trip">
-            Day Trip
-          </Link>
-          <Link className="menu-link" to="/listing-page/Expedition">
-            Long Haul
-          </Link>
-          <Link className="menu-link" to="/listing-page/sale">
-            Sale
-          </Link>
-          <Link className="menu-link" to="/contact">
-            Contact
-          </Link>
-        </div>
-      ) : null}
+      <Transition
+        timeout={500}
+        in={menuToggle}
+        mountOnEnter={true}
+        unmountOnExit={true}
+      >
+        {(state) => <MainMenu state={state} duration={500} />}
+      </Transition>
 
       <div className="option-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}

@@ -1,13 +1,23 @@
 import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faComment, faCopyright, faEnvelope, faHiking, faPhone, faQuestionCircle, faUsers } from "@fortawesome/free-solid-svg-icons";
-import { faFacebookSquare, faInstagramSquare, faTwitterSquare } from "@fortawesome/free-brands-svg-icons";
+import {
+  faComment,
+  faCopyright,
+  faEnvelope,
+  faHiking,
+  faPhone,
+  faQuestionCircle,
+  // faUsers,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookSquare,
+  faInstagramSquare,
+  faTwitterSquare,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
-   
     <div className="footer">
-      
       <div className="our-name">
         <FontAwesomeIcon icon={faCopyright} /> 2021 The Digital Nomads
       </div>
@@ -17,6 +27,7 @@ export default function Footer() {
         <FontAwesomeIcon className="twit" icon={faTwitterSquare} />
         <FontAwesomeIcon className="email-footer" icon={faEnvelope} />
       </div>
+
        <div className= "total-help">
       <FontAwesomeIcon className="help-icon" icon={faQuestionCircle} /><p className="footer-help">Help and Support</p><p className="footer-help">Find answers online anytime.</p>
       <FontAwesomeIcon className="help-icon" icon={faComment} /><p className="footer-help">

@@ -7,7 +7,7 @@ import { images } from "../../images/HomepageCarousel";
 export default function Landing(props) {
   return (
     <Layout user={props.user}>
-      <Carousel images={images} imageChange={true} intervalTime={5000} />
+      <Carousel source={images} imageChange={true} intervalTime={5000} />
       <div className="all-landing">
         <Link className="landing-link" to={`/listing-page/Day-Trip`}>
           <div className="shop">Shop Day Trip</div>
