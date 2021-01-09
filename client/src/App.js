@@ -12,11 +12,8 @@ import ProductCreate from "./screens/ProductCreate/ProductCreate";
 import ProductEdit from "./screens/ProductEdit/ProductEdit";
 import About from "./screens/About/About";
 import Contact from "./screens/Contact/Contact";
-<<<<<<< HEAD
 import AddToCart from "./screens/AddToCart/AddToCart";
-=======
-import Sale from "./screens/Sale/Sale"
->>>>>>> d9411a76f6857b0b15194f3eada8a11f16b9ed43
+import Sale from "./screens/Sale/Sale";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -64,13 +61,11 @@ function App() {
         <Route path="/edit-product/:id">
           {user ? <ProductEdit user={user} /> : <Redirect to="/sign-up" />}
         </Route>
-<<<<<<< HEAD
         <Route path="/shopping-cart">
           <AddToCart user={user} />
-=======
+        </Route>
         <Route path="/sale">
           <Sale user={user} />
->>>>>>> d9411a76f6857b0b15194f3eada8a11f16b9ed43
         </Route>
       </Switch>
       <div className="filler"></div>
