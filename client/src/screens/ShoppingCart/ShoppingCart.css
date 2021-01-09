@@ -1,0 +1,25 @@
+.shopping-cart {
+  margin: 5vh 10vw 15vh 10vw;
+}
+.cart-title {
+  font-family: "Vast Shadow", cursive;
+  color: #e88b44;
+  font-size: 6.2vw;
+  text-shadow: 1.5px 1.5px rgb(72, 72, 72);
+  width: 55vw;
+  margin-top: 6vw;
+  height: 5vw;
+  margin-left: 23vw;
+  text-align: center;
+}
+.shopping-cart-items {
+  border: 2px solid hotpink;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 2vh 2vw 2vh 2vw;
+}
+
+.item-link {
+  width: 100%;
+  display: flex;
+}

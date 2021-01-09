@@ -9,7 +9,7 @@ import {
   faPencilAlt,
   faCartPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import shopProduct from "../../services/shopping";
+import { shopProduct } from "../../services/shopping";
 import Carousel from "../../components/Carousel/Carousel";
 // import './DetailCarousel.css';
 import "./Detail.css";
@@ -34,6 +34,11 @@ const Detail = (props) => {
     history.push("/");
   };
 
+  const handleShop = () => {
+    shopProduct(id);
+    history.push("/shopping-cart");
+  };
+
   return (
     <Layout user={props.user}>
       <div className="all-detail">
@@ -48,11 +53,6 @@ const Detail = (props) => {
               source={product.imgURL}
               type="detail"
             />
-            {/* <img
-            className="detail-image"
-            src={product.imgURL}
-            alt={product.name}
-          /> */}
             <div className="deet-butt">
               <Link className="edit-link" to={`/edit-product/${product._id}`}>
                 <button className="edit-button">
@@ -69,10 +69,7 @@ const Detail = (props) => {
               </button>
             </div>
 
-            <button
-              className="cart-button"
-              onClick={() => shopProduct(product._id)}
-            >
+            <button className="cart-button" onClick={() => handleShop()}>
               <FontAwesomeIcon icon={faCartPlus} />
             </button>
           </div>

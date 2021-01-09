@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComment,
@@ -27,10 +28,11 @@ export default function Footer() {
         <FontAwesomeIcon className="twit" icon={faTwitterSquare} />
         <FontAwesomeIcon className="email-footer" icon={faEnvelope} />
       </div>
+
       <div className="total-help">
         <FontAwesomeIcon className="help-icon" icon={faQuestionCircle} />
         <p className="footer-help">Help and Support</p>
-        <p className="footer-help2">Find answers online anytime.</p>
+        <p className="footer-help">Find answers online anytime.</p>
         <FontAwesomeIcon className="help-icon" icon={faComment} />
         <p className="footer-help">
           Live Chat Mon–Fri, 5am–10pm PT Sat–Sun, 6am–9pm PT
@@ -40,12 +42,14 @@ export default function Footer() {
           Call us at : 1-800-426-4840 Mon–Fri, 5am–10pm PT Sat–Sun, 6am–9pm PT
         </p>
       </div>
-      <div className="emply">
+      <button className="emply">
+      <Link className="sign-in" to="/sign-in">
         <p className="employee-word">
           Employee Sign In {"-->"}{" "}
           <FontAwesomeIcon className="employee-icon" icon={faHiking} />
-        </p>
-      </div>
+          </p>
+          </Link>
+      </button>
     </div>
   );
 }

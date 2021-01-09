@@ -23,31 +23,31 @@ const About = (props) => {
           <FontAwesomeIcon className="hand-down" icon={faHandPointDown} />
         </div>
         <div className="about-devs">
-          <h6 className="the-devs">
+          <h6 className="the-devs"><div className="line-1"></div>
             As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked
             with a project to build a fully CRUD-capable, fullstack app for a
             retailer with stellar user-experince in mind. We hope you enjoy our
-            project!{" "}
+            project!{" "}<div className= "line-2"></div>
           </h6>
-          <div className="shelby-div">
-            <h1 className="shelby-title">SHELBY</h1>
-            <h5 className="about-shelby">
+          <div className="dev-div">
+            <h1 className="dev-title">SHELBY</h1>
+            <h5 className="about-dev">
               ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
               jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb
             </h5>
           </div>
-          <div className="evyn-div">
-            <h1 className="evyn-title">EVYN</h1>
-            <h5 className="about-evyn">
+          <div className="dev-div">
+            <h1 className="dev-title">EVYN</h1>
+            <h5 className="about-dev">
               ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
               jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb
             </h5>
           </div>
-          <div className="liz-div">
-            <h1 className="liz-title">
+          <div className="dev-div">
+            <h1 className="dev-title">
               LIZ <FontAwesomeIcon className="paw" icon={faPaw} />
             </h1>
-            <h5 className="about-liz">
+            <h5 className="about-dev">
               Hello fellow adventurers! I’m so glad to be a part of your
               journey! I'm a Colorado native and have grown up playing in and
               caring for the Rocky Mountains. The Rockies aren't just for
@@ -59,9 +59,9 @@ const About = (props) => {
               embark on your own incredible excursion!
             </h5>
           </div>
-          <div className="mitch-div">
-            <h1 className="mitch-title">MITCH</h1>
-            <h5 className="about-mitch">
+          <div className="dev-div">
+            <h1 className="dev-title">MITCH</h1>
+            <h5 className="about-dev">
               ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
               jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb
             </h5>
