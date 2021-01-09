@@ -12,13 +12,12 @@ import ProductCreate from "./screens/ProductCreate/ProductCreate";
 import ProductEdit from "./screens/ProductEdit/ProductEdit";
 import About from "./screens/About/About";
 import Contact from "./screens/Contact/Contact";
-import AddToCart from "./screens/AddToCart/AddToCart";
+import ShoppingCart from "./screens/ShoppingCart/ShoppingCart";
 import Sale from "./screens/Sale/Sale";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   const [user, setUser] = useState(null);
-
   useEffect(() => {
     const fetchUser = async () => {
       const user = await verifyUser();
@@ -65,7 +64,7 @@ function App() {
           {user ? <ProductEdit user={user} /> : <Redirect to="/sign-up" />}
         </Route>
         <Route path="/shopping-cart">
-          <AddToCart user={user} />
+          <ShoppingCart user={user} />
         </Route>
         <Route path="/sale">
           <Sale user={user} />

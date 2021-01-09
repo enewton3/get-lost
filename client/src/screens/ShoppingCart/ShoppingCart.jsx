@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import ShoppingCartCard from "../../components/ShoppingCartCard/ShoppingCartCard";
 import Layout from "../../components/shared/Layout/Layout";
 import { getCart } from "../../services/shopping";
-import "./AddToCart.css";
+import "./ShoppingCart.css";
 
-function AddToCart(props) {
+function ShoppingCart(props) {
   const { user } = props;
   const [cart, setCart] = useState([]);
 
@@ -44,4 +44,4 @@ function AddToCart(props) {
     </Layout>
   );
 }
-export default AddToCart;
+export default ShoppingCart;
