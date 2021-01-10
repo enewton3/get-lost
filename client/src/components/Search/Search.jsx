@@ -25,9 +25,9 @@ export default function Search() {
 
   return (
     <>
-      <form onSubmit={(e) => handleSubmit(e)}>
+      <form className="search-bar" onSubmit={(e) => handleSubmit(e)}>
         <input
-          className="search-bar"
+          className="search-input"
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}

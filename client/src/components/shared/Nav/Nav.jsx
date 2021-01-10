@@ -27,25 +27,25 @@ export default function Nav(props) {
   const [searchToggle, setSearchToggle] = useState(false);
 
   const authUserLinks = (
-    <div className="all-user">
+    <>
       <Link className="user-link" to="/add-product">
         Add Product
       </Link>
       <Link className="user-link" to="/sign-out">
         Sign Out
       </Link>
-    </div>
+    </>
   );
 
   const unAuthUserLinks = (
-    <div className="all-user">
+    <>
       <Link className="user-link" to="/sign-in">
         Sign In
       </Link>
       <Link className="user-link" to="/sign-up">
         Sign Up
       </Link>
-    </div>
+    </>
   );
   return (
     <div className="all-nav">
@@ -73,7 +73,14 @@ export default function Nav(props) {
 
       <div className="option-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
-        {searchToggle ? <Search /> : null}
+        <CSSTransition
+          timeout={500}
+          in={searchToggle}
+          unmountOnExit
+          classNames="search-bar"
+        >
+          <Search searchToggle={searchToggle} />
+        </CSSTransition>
         <div className="search-icon">
           <FontAwesomeIcon
             icon={faBinoculars}
@@ -91,12 +98,17 @@ export default function Nav(props) {
             onClick={() => setUserMenuToggle((prev) => !prev)}
           />
         </div>
-        {userMenuToggle ? (
+        <CSSTransition
+          timeout={300}
+          in={userMenuToggle}
+          // mountOnEnter={true}
+          unmountOnExit
+          classNames="user-menu"
+        >
           <div className="user-menu">
             {user ? authUserLinks : unAuthUserLinks}
           </div>
-        ) : null}
-
+        </CSSTransition>
         <Link className="shopping-cart-icon" to="/shopping-cart">
           <div className="cart-icon">
             <FontAwesomeIcon icon={faShoppingCart} />
