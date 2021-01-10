@@ -1,8 +1,13 @@
+//helper stuff
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { CSSTransition } from "react-transition-group";
+//components
 import Logo from "../Logo/Logo";
 import MainMenu from "./NavMenuComponents/MainMenu";
+import Search from "../../Search/Search";
+import CartCounter from "../../CartCounter/CartCounter";
+//logos
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   // faBars,
@@ -12,7 +17,7 @@ import {
   faMapSigns,
   faBinoculars,
 } from "@fortawesome/free-solid-svg-icons";
-import Search from "../../Search/Search";
+//css
 import "./Nav.css";
 
 export default function Nav(props) {
@@ -57,7 +62,7 @@ export default function Nav(props) {
         />
       </div>
       <CSSTransition
-        timeout={1000}
+        timeout={300}
         in={menuToggle}
         // mountOnEnter={true}
         unmountOnExit
@@ -96,6 +101,7 @@ export default function Nav(props) {
           <div className="cart-icon">
             <FontAwesomeIcon icon={faShoppingCart} />
           </div>
+          <CartCounter />
         </Link>
       </div>
     </div>

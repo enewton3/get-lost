@@ -3,7 +3,7 @@ import "./MainMenu.css";
 
 export default function MainMenu(props) {
   return (
-    <div className="menu-links">
+    <div className="menu">
       <Link className="menu-link" to="/">
         Home
       </Link>
