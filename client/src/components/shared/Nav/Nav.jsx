@@ -73,7 +73,14 @@ export default function Nav(props) {
 
       <div className="option-icons">
         {user && <div className="welcome-msg">Hey there, {user.username}!</div>}
-        {searchToggle ? <Search /> : null}
+        <CSSTransition
+          timeout={500}
+          in={searchToggle}
+          unmountOnExit
+          classNames="search-bar"
+        >
+          <Search searchToggle={searchToggle} />
+        </CSSTransition>
         <div className="search-icon">
           <FontAwesomeIcon
             icon={faBinoculars}
