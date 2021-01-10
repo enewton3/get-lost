@@ -1,13 +1,11 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "../../services/products";
-import { CSSTransition } from "react-transition-group";
 import { Link } from "react-router-dom";
 import "./Search.css";
 
-export default function Search(props) {
+export default function Search() {
   const [search, setSearch] = useState("");
   const [products, setProducts] = useState([{ name: "loading" }]);
-  // const { searchToggle } = props;
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -28,19 +26,12 @@ export default function Search(props) {
   return (
     <>
       <form className="search-bar" onSubmit={(e) => handleSubmit(e)}>
-        {/* <CSSTransition
-          timeout={500}
-          in={searchToggle}
-          unmountOnExit
-          classNames="search-bar"
-        > */}
         <input
           className="search-input"
           type="text"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
-        {/* </CSSTransition> */}
       </form>
       <div className="search-results">
         {search &&
