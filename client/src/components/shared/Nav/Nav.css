@@ -60,15 +60,15 @@ A:link {
   background-color: #655d53;
 }
 
-.all-user {
+.user-menu {
   display: flex;
   flex-direction: column;
   width: 9vw;
   text-align: center;
   justify-self: flex-start;
   position: absolute;
-  right: 5%;
-  top: 3vw;
+  right: 0;
+  top: 100%;
 }
 .user-link {
   background-color: rgba(232, 232, 232, 0.927);
@@ -101,4 +101,19 @@ A:link {
   right: 0; */
   width: 15px;
   height: 15px;
+}
+
+.user-menu-enter {
+  transform: translateX(100%);
+}
+.user-menu-enter-active {
+  transform: translateX(0);
+  transition: transform 0.3s linear;
+}
+.user-menu-exit {
+  transform: translateX(0);
+}
+.user-menu-exit-active {
+  transform: translateX(100%);
+  transition: transform 0.3s linear;
 }
