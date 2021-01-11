@@ -9,7 +9,6 @@
 }
 .edit-link {
   font-family: "Staatliches", cursive;
-  /* font-size: 1vw; */
   margin-bottom: 0.5vw;
   border: none;
   width: 35vw;
@@ -28,7 +27,6 @@
   border: none;
 }
 .input-edit {
-  /* font-size: 1vw; */
   margin-bottom: 0.5vw;
   margin-left: 1vw;
   border: none;
@@ -40,5 +38,12 @@
   .input-edit,
   .edit-form {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550) {
+  .product-edit {
+    width: 100vw;
+    margin: 0;
   }
 }
