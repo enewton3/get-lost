@@ -68,7 +68,7 @@ const SignIn = (props) => {
         <HeyThere />
         <div className="total-sign">
           <form className="signin-form" onSubmit={onSignIn}>
-            <label className="label">Username</label>
+            <label className="signin-label">Username</label>
             <input
               className="input"
               required
@@ -78,7 +78,7 @@ const SignIn = (props) => {
               placeholder="Enter Username"
               onChange={handleChange}
             />
-            <label className="label">Password</label>
+            <label className="signin-label">Password</label>
             <input
               className="input"
               required

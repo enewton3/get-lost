@@ -4,49 +4,48 @@
   padding-top: 1vh;
   font-size: 1rem;
   color: rgb(58, 58, 58);
-  width: 50vw;
-  margin-left: 19%;
-  height: 30vw;
-  margin-top: 8vw;
+  /* width: 50vw; */
+  margin: 0 20vw 0 20vw;
+  height: 50vh;
+  margin-top: 14vh;
   display: flex;
   flex-flow: row wrap;
 }
 .hey-there {
-  width: 20vw;
+  width: 25vw;
 }
 .total-sign {
-  /* border: 2px solid hotpink; */
   font-family: "Josefin Slab", serif;
   display: flex;
   flex-flow: column wrap;
-  width: 20vw;
+  width: 50%;
   text-align: center;
-  justify-content: space-between;
-  padding: 5vh 5vw 5vh 5vw;
+  justify-content: center;
+  /* padding: 5vh 5vw 5vh 5vw; */
 }
 
 .signin-form {
   width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
-.label {
-  padding-bottom: 3vw;
-  margin-top: 5vw;
-  margin-bottom: 3vw;
-  font-size: 2vw;
+.signin-label {
+  /* padding-bottom: 3vw; */
+  /* margin-top: 5vw; */
+  /* margin-bottom: 3vw; */
+  font-size: 3rem;
 }
 .input {
   border: none;
   margin-top: 1vw;
   margin-bottom: 3vw;
   width: 15vw;
-  height: 1.5vw;
+  /* height: 1.5vh; */
 }
 .sign-button {
-  /* margin-left: 5vw;
-  margin-top: 1vw; */
-  width: 5vw;
-  height: 2vw;
   border-radius: 25px;
+  width: 20%;
   border: none;
   background-color: #e88b44;
 }
@@ -57,16 +56,39 @@
   background-color: rgb(242, 242, 242);
 }
 .dont-have {
-  font-size: 0.8vw;
-  margin-top: 15vw;
+  font-size: 0.8rem;
+  /* margin-top: 15vh; */
   margin-left: 2vw;
 }
 .sign-up {
-  font-size: 0.8vw;
+  font-size: 0.8rem;
 }
 
 @media only screen and (max-width: 1024px) {
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
+  .form-container {
+    width: 100vw;
+    flex-flow: row wrap;
+    margin: 10vh 0 0 0;
+  }
+  .hey-there {
+    width: 50%;
+  }
+  .total-sign {
+    width: 40%;
+    padding: 0;
+    z-index: 50;
+  }
+  .input {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .signin-label {
+    font-size: 2rem;
+  }
+  .sign-button {
+    width: 40%;
+  }
 }
