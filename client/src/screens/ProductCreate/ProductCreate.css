@@ -1,0 +1,20 @@
+.create-form{
+  width: 55vw;
+  margin: 0 auto;
+  margin-top: 10vw;
+  background-color: rgb(230, 230, 230);
+  padding: 2vw;
+  font-family: "Staatliches", cursive;
+  border: none;
+}
+.add-title {
+margin-left: 1vw;
+
+}
+.input-add {
+  font-size: 1vw;
+  margin-bottom: 0.5vw;
+  margin-left: 1vw;
+  border: none;
+  width: 40vw;
+}
