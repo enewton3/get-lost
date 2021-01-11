@@ -47,11 +47,6 @@ export default function Nav(props) {
   );
   return (
     <div className="all-nav">
-      <div className="all-icons">
-        <Link className="home-link" to="/">
-          <Logo />
-        </Link>
-      </div>
       <div className="burger-boi">
         <FontAwesomeIcon
           icon={faMapSigns}
@@ -59,6 +54,12 @@ export default function Nav(props) {
           onClick={() => setMenuToggle((prev) => !prev)}
         />
       </div>
+      <div className="all-icons">
+        <Link className="home-link" to="/">
+          <Logo />
+        </Link>
+      </div>
+
       <CSSTransition
         timeout={300}
         in={menuToggle}
