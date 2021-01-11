@@ -1,26 +1,60 @@
+.total-land {
+  width: 50vw;
+  height: 75vw;
+ 
+  background: url("../../images/longhaullandingbackground.jpg");
+  background-repeat: no-repeat;
+  margin-left: 40vw;
+  margin-top: 14vw;
+  display: flex;
+  
+}
+
 .landing-link {
   font-family: "Vast Shadow", cursive;
   color: #e88b44;
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-top: 13vw;
   text-align: center;
+ 
 }
 .all-landing {
   display: flex;
   flex-direction: column;
   justify-items: center;
-  margin-left: 31.5vw;
+  margin-left: -10vw;
+  margin-top: -13vw;
   text-align: center;
-  width: 40vw;
+   height: 80vw;
+  
 }
-.shop {
+.shop-all {
   background-color: #eed06c;
-  margin-top: 2vw;
-  margin-left: 2vw;
+  margin-top: -10vw;
+  margin-left: 20vw;
   width: 30vw;
+  padding: 1.5vw;
+  text-align: center;
 
-  padding: 2vw;
+   
+
+  
+}
+.shop-day {
+  background-color: #eed06c;
+  margin-top: 5vw;
+  margin-left: 20vw;
+  width: 30vw;
+  padding: 1.5vw;
+  text-align: center;
+}
+.shop-long {
+  background-color: #eed06c;
+  margin-top: -18vw;
+  margin-left: 20vw;
+  width: 30vw;
+  padding: 1.5vw;
   text-align: center;
 }
 .shop:hover {
