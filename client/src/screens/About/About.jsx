@@ -2,7 +2,8 @@ import React from "react";
 import "./About.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandPointDown, faMusic, faPaw } from "@fortawesome/free-solid-svg-icons";
+import { faHandPointDown, faMusic, faPaw, faSubway } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 
 const About = (props) => {
   return (
@@ -30,17 +31,19 @@ const About = (props) => {
             project!{" "}<div className= "line-2"></div>
           </h6>
           <div className="dev-div">
-            <h1 className="dev-title">SHELBY</h1>
+            <h1 className="dev-title">SHELBY <FontAwesomeIcon className="airplane" icon={faPaperPlane} /></h1>
             <h5 className="about-dev">
-              ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
-              jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb
+              Salutations! Born and raised in Ohio, curently a North Carolina resident, I've tried to see as much of our planet as possible. When I'm not 
+              plotting my next great escape, I relax with my house plants and quietly enjoy the local trails and parks. I'm so exicted to have worked on Get Lost with my team. 
+              I'm especially thankful for the technincal accumen Evyn, Liz, and Mitchell bring--I've learned so much! On this project, 
+              I led the design, project managemnt, and UX/UI elements while also taking a leadership role in most of the styling. Even though my passion and strength is in styling, UX/UI, and project planning, I'm blessed to have such 
+              strong team memebers who are so talented in JS and React who took the time to teach me more about backend and component creation. I hope you enjoy your adventure through our site!
             </h5>
           </div>
           <div className="dev-div">
-            <h1 className="dev-title">EVYN</h1>
+            <h1 className="dev-title">EVYN <FontAwesomeIcon className="metro" icon={faSubway} /></h1>
             <h5 className="about-dev">
-              ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
-              jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb
+              
             </h5>
           </div>
           <div className="dev-div">
