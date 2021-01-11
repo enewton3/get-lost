@@ -1,7 +1,7 @@
 .all {
   background-color: rgb(70, 70, 70);
-  height: 47vw;
-  margin-top: 12vw;
+  height: 45vw;
+  margin-top: 14vw;
  padding-bottom: 5vw;
 }
 
@@ -105,4 +105,18 @@ background-color: rgb(70, 70, 70);
 .long:hover{
   cursor: pointer;
   
+}
+@media only screen and (max-width: 1200px) {
+  .landing-link{
+    font-size: 5vw;
+    text-shadow: .5px .5px black;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  .landing-link{
+    font-size: 2.5vw;
+    text-shadow: .5px .5px black;
+  }
 }
