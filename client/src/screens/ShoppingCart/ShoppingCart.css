@@ -13,13 +13,41 @@
   text-align: center;
 }
 .shopping-cart-items {
-  border: 2px solid hotpink;
+  background-color: whitesmoke;
   display: flex;
   flex-flow: column wrap;
-  padding: 2vh 2vw 2vh 2vw;
+  padding: 3vh 2vw 3vh 2vw;
+  width: 50vw;
+  margin: 0 auto;
 }
 
 .item-link {
   width: 100%;
   display: flex;
+}
+.totals {
+background-color: whitesmoke;
+width: 52vw;
+margin: 0 auto;
+padding-top: 2vw;
+padding-left: 2vw;
+padding-bottom: 2vw;
+line-height: 1vw;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1vw;
+}
+
+.cart-butt {
+border: none;
+background-color: tomato;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+width: 5vw;
+height: 2vw;
+margin-top: 1vw;
+border-radius: 10px;
+}
+.cart-butt:hover {
+background-color: rgb(247, 154, 138);
+transform: scale(1.1);
+
 }
