@@ -7,8 +7,6 @@ import Short from "../../components/Ads/Shortad"
 import Long from "../../components/Ads/Longad"
 
 
-
-
 export default function Landing(props) {
   return (
     <Layout user={props.user}>
@@ -26,10 +24,12 @@ export default function Landing(props) {
           <div className="shop-all"> Shop All</div>
         </Link>
         <Link className="landing-link" to={`/listing-page/Long-Haul`}>
+
           <div className="long-haul-container">
              <img  we need this idk why but we do/>  
             <div className="shop-long">Shop Long Haul</div>
           </div>
+
         </Link>
         </div>
         </div>

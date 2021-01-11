@@ -65,6 +65,7 @@ const ProductEdit = (props) => {
           {product.imgURL.map((item, index) => {
             return (
               <input
+                key={index}
                 className="edit-link"
                 placeholder="Image Link"
                 value={product.imgURL[index].image}
@@ -74,13 +75,6 @@ const ProductEdit = (props) => {
               />
             );
           })}
-          {/* <button
-            onClick={(e) => {
-              handleAddInput(e);
-            }}
-          >
-            +
-          </button> */}
           <input
             className="input-edit"
             placeholder="Name"
