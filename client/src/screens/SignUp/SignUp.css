@@ -4,7 +4,6 @@
   padding-top: 1vh;
   font-size: 1rem;
   color: rgb(58, 58, 58);
-  /* width: 50vw; */
   margin: 0 20vw 0 20vw;
   height: 50vh;
   margin-top: 14vh;
@@ -31,14 +30,8 @@
   display: flex;
   flex-direction: column wrap;
   width: 50%;
-  /* height: 5vw; */
   text-align: center;
   justify-content: center;
-  /* margin-left: 25vw;
-  margin-top: -15vw; */
-  /* justify-content: space-between; */
-  /* font-size: 1vw; */
-  border: 2px solid hotpink;
 }
 
 .signup-form {
@@ -50,9 +43,6 @@
   align-items: center;
 }
 .label-up {
-  /* padding-bottom: 3vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw; */
   font-size: 1.5rem;
 }
 .input-up {
@@ -63,10 +53,6 @@
   height: 1.5vw;
 }
 .up-button {
-  /* margin-left: 5vw;
-  margin-top: 1vw; */
-  /* width: 5vw; */
-  /* height: auto; */
   border-radius: 25px;
   border: none;
   background-color: #e88b44;

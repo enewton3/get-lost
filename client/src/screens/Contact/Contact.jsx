@@ -6,7 +6,7 @@ import { faHandPointRight } from "@fortawesome/free-solid-svg-icons";
 const Contact = (props) => {
   return (
     <Layout user={props.user}>
-      <div className="form-container">
+      <div className="contact-form-container">
         <p className="contact-us">
           {" "}
           Feedback? Questions? Just Want To Say Hi? Drop Us A Line{" "}
