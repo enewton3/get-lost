@@ -60,9 +60,9 @@
 
 @media only screen and (max-width: 1200px) {
   .products {
-    display: block;
-    align-content: center;
-    justify-content: center;
+    /* display: block; */
+    /* align-content: center;
+    justify-content: center; */
     margin-top: 25px;
     padding: 10px;
   }

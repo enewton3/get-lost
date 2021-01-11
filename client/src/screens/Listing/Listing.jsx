@@ -22,7 +22,7 @@ export default function Listing(props) {
     case "Day-Trip":
       pageTitle = "Day Trip >>";
       break;
-    case "Expedition >>":
+    case "Long-Haul":
       pageTitle = "Long Haul >>";
       break;
     default:
