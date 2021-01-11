@@ -4,6 +4,7 @@ import "./Landing.css";
 import { Link } from "react-router-dom";
 import { images } from "../../images/HomepageCarousel";
 
+
 export default function Landing(props) {
   return (
     <Layout user={props.user}>

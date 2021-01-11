@@ -75,16 +75,18 @@
   font-family: "Staatliches", cursive;
 }
 .dev-title {
-font-size: 5vw;
-padding-top: 1vw;
+font-size: 5.5vw;
+padding-top: .5vw;
+height: 5vw;
 }
 .about-dev {
 font-size: 1.5vw;
 background-color: rgba(0, 0, 0, 0.783);
 color: rgb(255, 255, 255);
 text-shadow: 1px 1px black;
-height: 25.5vw;
+height: 24.6vw;
 padding: 2vw;
+padding-top: 4.25vw;
 letter-spacing: .1vw;
 word-spacing: .5vw;
 font-family: "Josefin Slab", serif;
@@ -98,3 +100,27 @@ color: rgb(249, 131, 151);
 .paw {
   color: rgb(114, 78, 165);
 }
+.train {
+color: rgb(65, 217, 244)
+}
+.notes {
+color: rgb(75, 196, 14);
+}
+.liz-pic {
+position: absolute;
+left: 15vw;
+width: 22vw;
+top: 195vw;
+}
+.evyn-pic {
+  position: absolute;
+  left: 15vw;
+  width: 22vw;
+  top: 148vw;
+  }
+  .mitch-pic {
+    position: absolute;
+    left: 15vw;
+    width: 22vw;
+    top: 243vw;
+    }

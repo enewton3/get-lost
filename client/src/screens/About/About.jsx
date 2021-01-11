@@ -9,6 +9,9 @@ import {
   faSubway,
 } from "@fortawesome/free-solid-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import Liz from "../../components/DevImages/Liz";
+import Evyn from "../../components/DevImages/Evyn"
+import Mitch from "../../components/DevImages/Mitch"
 
 const About = (props) => {
   return (
@@ -49,8 +52,8 @@ const About = (props) => {
           <div className="dev-div">
 
 
-            <h1 className="dev-title">
-              EVYN <FontAwesomeIcon icon={faSubway} />
+            <h1 className="dev-title"> <Evyn className="evyn-pic" />
+              EVYN <FontAwesomeIcon className="train" icon={faSubway} />
             </h1>
 
             <h5 className="about-dev">
@@ -60,7 +63,9 @@ const About = (props) => {
             </h5>
           </div>
           <div className="dev-div">
+            
             <h1 className="dev-title">
+            <Liz className="liz-pic" />
               LIZ <FontAwesomeIcon className="paw" icon={faPaw} />
             </h1>
             <h5 className="about-dev">
@@ -73,7 +78,7 @@ const About = (props) => {
             </h5>
           </div>
           <div className="dev-div">
-            <h1 className="dev-title">
+            <h1 className="dev-title"><Mitch className="mitch-pic" />
               MITCH <FontAwesomeIcon className="notes" icon={faMusic} />
             </h1>
             <h5 className="about-dev">
