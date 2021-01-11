@@ -4,15 +4,19 @@ import "./Landing.css";
 import { Link } from "react-router-dom";
 import { images } from "../../images/HomepageCarousel";
 import Short from "../../components/Ads/Shortad"
+import Long from "../../components/Ads/Longad"
 
-// import Expedition from 
+
 
 
 export default function Landing(props) {
   return (
     <Layout user={props.user}>
       <Carousel source={images} imageChange={true} intervalTime={5000} />
-      <Short classname="short" />
+      <div className="all">
+      <Link to={`/sale`}>
+          <Short classname="short" />
+          </Link>
       <div className= "total-land">
       <div className="all-landing">
         <Link className="landing-link" to={`/listing-page/Day-Trip`}>
@@ -23,12 +27,20 @@ export default function Landing(props) {
         </Link>
         <Link className="landing-link" to={`/listing-page/Long-Haul`}>
           <div className="long-haul-container">
-            <img />
+             <img  we need this idk why but we do/>  
             <div className="shop-long">Shop Long Haul</div>
           </div>
         </Link>
         </div>
         </div>
+        </div>
+      
+      <Link to={`/listing-page/all`}>
+      <div className="l-back">
+          <Long classname="long" />
+          </div>
+          </Link>
+        
     </Layout>
   );
 }
