@@ -3,6 +3,7 @@ import Carousel from "../../components/Carousel/Carousel";
 import "./Landing.css";
 import { Link } from "react-router-dom";
 import { images } from "../../images/HomepageCarousel";
+import Short from "../../components/Ads/Shortad"
 
 // import Expedition from 
 
@@ -11,6 +12,7 @@ export default function Landing(props) {
   return (
     <Layout user={props.user}>
       <Carousel source={images} imageChange={true} intervalTime={5000} />
+      <Short classname="short" />
       <div className= "total-land">
       <div className="all-landing">
         <Link className="landing-link" to={`/listing-page/Day-Trip`}>
