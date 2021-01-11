@@ -12,7 +12,7 @@ const ProductCard = (props) => {
         alt={props.name}
       />
       <div className="product-name">{product.name}</div>
-      <div className="price">{`${product.price}`}</div>
+      <div className="product-price">{`${product.price}`}</div>
     </Link>
   );
 };
