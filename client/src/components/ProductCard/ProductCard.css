@@ -1,25 +1,35 @@
-/* .product-name {
-  color: #edb63b;
-  font-family: "Staatliches", cursive;
-  font-size: 30px;
-  text-shadow: 1.5px 1.5px rgb(72, 72, 72);
+.product {
+  border: 2px solid rgb(72, 72, 72, 0.2);
 }
-.price {
-  margin: 0 auto;
-  text-align: start;
-  color: #edb63b;
-  font-family: "Staatliches", cursive;
-  font-size: 20px;
-  text-shadow: 1.5px 1.5px rgb(72, 72, 72);
-}
-.description {
-  background-color: white;
-  box-shadow: 10px 8px 20px 30px white;
-  margin: 10vw 0vw 0vw 2vw;
+
+.product-image {
+  border: 2px solid rgb(72, 72, 72, 0.2);
   padding: 2vw;
-  width: 250px;
-  color: #060606;
-  font-family: "Josefin Slab", serif;
-  font-size: 1.5vw;
-  border: orchid solid;
-} */
+  box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(165, 165, 165, 0.584);
+  width: 20vw;
+  height: 30vw;
+  object-fit: contain;
+}
+
+.product-name {
+  font-family: "Staatliches", cursive, serif;
+  font-size: 2vw;
+  text-decoration: none;
+  color: #2b2b2b;
+  border: none;
+}
+
+.product-price {
+  font-family: "Staatliches", cursive;
+  color: #555250;
+  font-size: 3vw;
+}
+
+.product:hover {
+  transform: scale(1.1);
+  background-color: white;
+}
+
+@media (max-width: 1200) {
+  /* .product; */
+}
