@@ -36,6 +36,9 @@ font-size: 4vw;
 .sale-butt:hover {
   transform: scale(1.1);
   color: rgb(193, 38, 38);
+
+  cursor: pointer;
+
 }
 
 @media only screen and (max-width: 650px) {
@@ -48,4 +51,5 @@ font-size: 4vw;
   .sale {
     margin-top: 90px;
   }
+
 }

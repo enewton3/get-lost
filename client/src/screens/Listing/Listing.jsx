@@ -41,6 +41,7 @@ export default function Listing(props) {
 
   return (
     <Layout user={props.user}>
+      <div className= "list-back">
       <div className="page-title">{pageTitle}</div>
       <div className="products-container">
         <div className="filter">
@@ -49,7 +50,7 @@ export default function Listing(props) {
         <div className="products">
           {products ? (
             displayedProducts.map((item) => (
-              <ProductCard key={item._id} product={item} />
+              <ProductCard className= "p-card" key={item._id} product={item} />
             ))
           ) : (
             <div>
@@ -57,7 +58,8 @@ export default function Listing(props) {
             </div>
           )}
         </div>
-      </div>
+        </div>
+        </div>
     </Layout>
   );
 }
