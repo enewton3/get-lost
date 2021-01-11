@@ -66,11 +66,35 @@
 }
 
 .dev-div {
-  background-color: rgba(232, 232, 232, 0.927);
+  background-color: rgba(255, 255, 255, 0.927);
   width: 70vw;
   height: 40vw;
   text-align: center;
   margin-bottom: 7vw;
   margin-left: 15vw;
   font-family: "Staatliches", cursive;
+}
+.dev-title {
+font-size: 5vw;
+padding-top: 1vw;
+}
+.about-dev {
+font-size: 1.5vw;
+background-color: rgba(0, 0, 0, 0.783);
+color: rgb(255, 255, 255);
+text-shadow: 1px 1px black;
+height: 25.5vw;
+padding: 2vw;
+letter-spacing: .1vw;
+word-spacing: .5vw;
+font-family: "Josefin Slab", serif;
+line-height: 2vw;
+
+
+}
+.airplane {
+color: rgb(249, 131, 151);
+}
+.paw {
+  color: rgb(114, 78, 165);
 }
