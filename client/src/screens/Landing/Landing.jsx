@@ -16,7 +16,10 @@ export default function Landing(props) {
           <div className="shop"> Shop All</div>
         </Link>
         <Link className="landing-link" to={`/listing-page/Expedition`}>
-          <div className="shop">Shop Long Haul</div>
+          <div className="expedition-container">
+          <img />
+          <div className="shop">Shop Expedition</div>
+          </div>
         </Link>
       </div>
     </Layout>
