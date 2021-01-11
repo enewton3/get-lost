@@ -8,6 +8,7 @@ import {
   faPaw,
   faSubway,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link, animateScroll as scroll } from "react-scroll";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import Liz from "../../components/DevImages/Liz";
 import Evyn from "../../components/DevImages/Evyn"
@@ -29,11 +30,18 @@ const About = (props) => {
             being a nomad in the mountains or urban exploring, get ready to Get
             Lost.{" "}
           </p>
-          <div className="check-dev">Check Out the Creators of Get Lost</div>
+            <div className="check-dev">Check Out the Creators of Get Lost</div>
+            <Link
+              to="link1"
+              smooth={true}
+              offset={-80}
+              duration={500}
+            >
           <FontAwesomeIcon className="hand-down" icon={faHandPointDown} />
+            </Link>
         </div>
         <div className="about-devs">
-          <h6 className="the-devs">
+          <h6 className="the-devs" id="link1">
             <div className="line-1"></div>
             As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked
             with a project to build a fully CRUD-capable, fullstack app for a
