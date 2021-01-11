@@ -14,7 +14,7 @@ export default function FilterDropdown(props) {
       <select id="dropdown" onChange={handleChange} value={props.initial}>
         <option value="all">All</option>
         <option value="Day-Trip">Day Trip</option>
-        <option value="Expedition">Long Haul</option>
+        <option value="Long-Haul">Long Haul</option>
       </select>
     </>
   );
