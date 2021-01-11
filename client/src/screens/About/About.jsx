@@ -2,7 +2,12 @@ import React from "react";
 import "./About.css";
 import Layout from "../../components/shared/Layout/Layout";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHandPointDown, faMusic, faPaw } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHandPointDown,
+  faMusic,
+  faPaw,
+  faSubway,
+} from "@fortawesome/free-solid-svg-icons";
 
 const About = (props) => {
   return (
@@ -23,11 +28,12 @@ const About = (props) => {
           <FontAwesomeIcon className="hand-down" icon={faHandPointDown} />
         </div>
         <div className="about-devs">
-          <h6 className="the-devs"><div className="line-1"></div>
+          <h6 className="the-devs">
+            <div className="line-1"></div>
             As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked
             with a project to build a fully CRUD-capable, fullstack app for a
             retailer with stellar user-experince in mind. We hope you enjoy our
-            project!{" "}<div className= "line-2"></div>
+            project! <div className="line-2"></div>
           </h6>
           <div className="dev-div">
             <h1 className="dev-title">SHELBY</h1>
@@ -37,10 +43,14 @@ const About = (props) => {
             </h5>
           </div>
           <div className="dev-div">
-            <h1 className="dev-title">EVYN</h1>
+            <h1 className="dev-title">
+              EVYN <FontAwesomeIcon icon={faSubway} />
+            </h1>
+
             <h5 className="about-dev">
-              ldhflvhdelhfldehsflsdflsdlkdslkhlsdhvgflsdhlvgfihdslfihsdihfvgiadhwfvgliohdfvlogidihfgvldiohvlsdhvgjlsbfdvkjbsfjvbloaidhfadlkbvkjdabv
-              jsdbfvshdvfjsnjksdkjbfsjldfbhsljbfkjsdbfjbvadlJbflaFkjbskdjfb
+              Hey there! I'm a train-loving, theater making, code monkey that
+              loves to travel and see new cities and places. Originally from
+              Massachusetts, I am excited to be able to travel again soon.
             </h5>
           </div>
           <div className="dev-div">
@@ -59,9 +69,14 @@ const About = (props) => {
           <div className="dev-div">
             <h1 className="dev-title">
               MITCH <FontAwesomeIcon className="notes" icon={faMusic} />
-              </h1>
+            </h1>
             <h5 className="about-dev">
-            Hey there, thank you for taking the time to read about us! I go by Mitch. I am a bit of a nomad having lived on almost every coast of the US. Currently, I reside in Los Angeles where hikes and views are plentiful. The site was a joy to make, as we all have a combined interest in travel and exploration. Again, thanks for reading up on us, and don't forget to check the sale section!
+              Hey there, thank you for taking the time to read about us! I go by
+              Mitch. I am a bit of a nomad having lived on almost every coast of
+              the US. Currently, I reside in Los Angeles where hikes and views
+              are plentiful. The site was a joy to make, as we all have a
+              combined interest in travel and exploration. Again, thanks for
+              reading up on us, and don't forget to check the sale section!
             </h5>
           </div>
         </div>
