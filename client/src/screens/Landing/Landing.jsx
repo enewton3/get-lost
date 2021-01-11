@@ -15,7 +15,7 @@ export default function Landing(props) {
         <Link className="landing-link" to={`/listing-page/all`}>
           <div className="shop"> Shop All</div>
         </Link>
-        <Link className="landing-link" to={`/listing-page/Expedition`}>
+        <Link className="landing-link" to={`/listing-page/Long-Haul`}>
           <div className="shop">Shop Long Haul</div>
         </Link>
       </div>

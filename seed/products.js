@@ -87,7 +87,7 @@ const main = async () => {
       description:
         "Light on the scale but not on comfort, the ultralight Osprey Exos 58 pack offers a ventilated suspension system that evenly distributes weight and offers a supportive fit for logging big miles.",
       price: "$220.00",
-      type: "Expedition",
+      type: "Long-Haul",
     },
     {
       name: "Gregory Paragon 58 Pack - Men's",
@@ -108,7 +108,7 @@ const main = async () => {
       description:
         "Stay light on your feet with the men's Gregory Paragon 58 pack. An adjustable FreeFloat dynamic suspension moves with your body so you stay balanced across steep traverses and through slot canyons.",
       price: "$229.95",
-      type: "Expedition",
+      type: "Long-Haul",
     },
     {
       name: "MYSTERY RANCH Glacier Pack - Men's",
@@ -129,7 +129,7 @@ const main = async () => {
       description:
         "Hauling your essentials plus some creature comforts on weekend treks or week-long missions, the men's MYSTERY RANCH Glacier pack has a detachable lid that becomes a hip pack for day trips.",
       price: "$350.00",
-      type: "Expedition",
+      type: "Long-Haul",
     },
     {
       name: "Mountain Hardwear AMG 105 Pack",
@@ -150,7 +150,7 @@ const main = async () => {
       description:
         "Designed for mountaineering, the heavy-duty yet lightweight Mountain Hardwear AMG 105 pack can hold huge amounts of gear. It stands up to the toughest terrain while keeping your load maneuverable.",
       price: "$420.00",
-      type: "Expedition",
+      type: "Long-Haul",
     },
     {
       name: "Timbuk2 Launch Pack",
