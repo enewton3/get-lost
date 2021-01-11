@@ -1,11 +1,11 @@
 .product {
   border: 2px solid rgb(72, 72, 72, 0.2);
+  box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(165, 165, 165, 0.584);
+  text-align: center;
+  margin: 1vw 1vh 1vw 1vh;
 }
 
 .product-image {
-  border: 2px solid rgb(72, 72, 72, 0.2);
-  padding: 2vw;
-  box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(165, 165, 165, 0.584);
   width: 20vw;
   height: 30vw;
   object-fit: contain;
@@ -17,6 +17,7 @@
   text-decoration: none;
   color: #2b2b2b;
   border: none;
+  padding: 0 1vh 0 1vh;
 }
 
 .product-price {
@@ -30,6 +31,9 @@
   background-color: white;
 }
 
-@media (max-width: 1200) {
-  /* .product; */
+@media only screen and (max-width: 600) {
+  /* .product-image {
+    width: 30vw;
+    height: 40vw;
+  } */
 }
