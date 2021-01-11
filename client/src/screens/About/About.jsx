@@ -16,6 +16,7 @@ import Mitch from "../../components/DevImages/Mitch"
 const About = (props) => {
   return (
     <Layout user={props.user}>
+      <div className= "about-background">
       <div className="total-about">
         <div className="about-title"> About Us {">>"} </div>
         <div className="all-about">
@@ -91,7 +92,8 @@ const About = (props) => {
             </h5>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
     </Layout>
   );
 };
