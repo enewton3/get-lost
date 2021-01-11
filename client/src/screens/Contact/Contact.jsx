@@ -15,9 +15,9 @@ const Contact = (props) => {
 
         <div className="total-contact">
           <form>
-            <label className="label">Name</label>
+            <label className="contact-label">Name</label>
             <input
-              className="input"
+              className="contact-input"
               required
               type="text"
               name="name"
@@ -25,9 +25,9 @@ const Contact = (props) => {
               placeholder="Name"
               // onChange={handleChange}
             />
-            <label className="label">Email</label>
+            <label className="contact-label">Email</label>
             <input
-              className="input"
+              className="contact-input"
               required
               name="email"
               // value={password}
@@ -35,7 +35,7 @@ const Contact = (props) => {
               placeholder="Email"
               // onChange={handleChange}
             />
-            <label className="label">Message</label>
+            <label className="contact-label">Message</label>
             <input
               className="mess-input"
               required
