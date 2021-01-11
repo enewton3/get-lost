@@ -1,3 +1,11 @@
+.about-background {
+background: url("https://images.unsplash.com/photo-1452621946466-c0f2ff2ff100?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
+height: 500vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .all-about {
   background-color: #85a257;
   width: 70vw;
@@ -36,30 +44,34 @@
 }
 .line-1 {
   width: 50vw;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   height: 0.1vw;
   margin: 0 auto;
   margin-bottom: 2vw;
-  box-shadow: 1px 1px 1px 1px black;
+  box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
 }
 .line-2 {
   width: 50vw;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   height: 0.15vw;
   margin: 0 auto;
   margin-top: 2vw;
-  box-shadow: 1px 1px 1px 1px black;
+  box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
 }
 .the-devs {
-  margin-top: 30vw;
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-top: 50vw;
+
   font-size: 2vw;
   font-family: "Staatliches", cursive;
   margin-bottom: 18vw;
   text-align: center;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding: 2vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  color: rgb(255, 255, 255);
+  text-shadow: 1.1px 1.1px black;
+  background-color: rgba(21, 21, 21, 0.379);
+  width: 92%;
 }
 .hand-down:hover {
   font-size: 6vw;

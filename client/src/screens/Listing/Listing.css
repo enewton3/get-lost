@@ -1,3 +1,14 @@
+.list-back{
+  background: url("https://images.unsplash.com/photo-1452621946466-c0f2ff2ff100?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
+height: 170vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
 .page-title {
   text-align: center;
   margin-top: 7vh;
@@ -17,7 +28,9 @@
   column-gap: 50px;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.728);
+  padding-bottom: 7vw;
+  
 }
 
 .products {
@@ -26,6 +39,8 @@
   row-gap: 2vw;
   max-width: 100%;
   justify-content: start;
+ 
+  
 }
 
 .filter {
@@ -35,6 +50,7 @@
   justify-content: flex-end;
   margin: 2vw 2vw 2vw 2vw;
   text-decoration: gray;
+  
 }
 
 @media only screen and (max-width: 1200px) {
