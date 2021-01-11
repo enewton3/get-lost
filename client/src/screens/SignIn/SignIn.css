@@ -1,28 +1,32 @@
 .form-container {
   background-color: #e9e4bd;
   padding-bottom: 2vw;
-  padding-top: 1vw;
-  font-size: 1.5vw;
+  padding-top: 1vh;
+  font-size: 1rem;
   color: rgb(58, 58, 58);
   width: 50vw;
   margin-left: 19%;
   height: 30vw;
   margin-top: 8vw;
+  display: flex;
+  flex-flow: row wrap;
 }
-.hey {
+.hey-there {
   width: 20vw;
 }
 .total-sign {
+  /* border: 2px solid hotpink; */
   font-family: "Josefin Slab", serif;
   display: flex;
-  flex-direction: column;
-  width: 1vw;
-  height: 12vw;
+  flex-flow: column wrap;
+  width: 20vw;
   text-align: center;
-  justify-content: center;
-  margin-left: 25vw;
-  margin-top: -20vw;
   justify-content: space-between;
+  padding: 5vh 5vw 5vh 5vw;
+}
+
+.signin-form {
+  width: 100%;
 }
 .label {
   padding-bottom: 3vw;
@@ -38,8 +42,8 @@
   height: 1.5vw;
 }
 .sign-button {
-  margin-left: 5vw;
-  margin-top: 1vw;
+  /* margin-left: 5vw;
+  margin-top: 1vw; */
   width: 5vw;
   height: 2vw;
   border-radius: 25px;
@@ -59,4 +63,10 @@
 }
 .sign-up {
   font-size: 0.8vw;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 550px) {
 }
