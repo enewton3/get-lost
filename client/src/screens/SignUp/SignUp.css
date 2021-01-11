@@ -1,35 +1,49 @@
+.up-form-container {
+  background-color: #e9e4bd;
+  padding-bottom: 2vw;
+  padding-top: 1vh;
+  font-size: 1rem;
+  color: rgb(58, 58, 58);
+  margin: 0 20vw 0 20vw;
+  height: 50vh;
+  margin-top: 14vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .title {
   font-family: "Vast Shadow", cursive;
   color: #e88b44;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-left: 3vw;
-  margin-top: 2vw;
-  font-size: 3vw;
+  margin-top: 2vh;
+  width: 30%;
+  font-size: 3rem;
 }
 .hike-dude {
-  font-size: 7vw;
-  margin-left: 3vw;
+  font-size: 6rem;
   color: #0e9ca4;
 }
 
 .all-sign {
   font-family: "Josefin Slab", serif;
   display: flex;
-  flex-direction: column;
-  width: 1vw;
-  height: 5vw;
+  flex-direction: column wrap;
+  width: 50%;
   text-align: center;
   justify-content: center;
-  margin-left: 25vw;
-  margin-top: -15vw;
-  justify-content: space-between;
-  font-size: 1vw;
+}
+
+.signup-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 .label-up {
-  padding-bottom: 3vw;
-  margin-top: 2vw;
-  margin-bottom: 2vw;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
 }
 .input-up {
   border: none;
@@ -39,10 +53,6 @@
   height: 1.5vw;
 }
 .up-button {
-  margin-left: 5vw;
-  margin-top: 1vw;
-  width: 5vw;
-  height: 2vw;
   border-radius: 25px;
   border: none;
   background-color: #e88b44;
@@ -54,10 +64,55 @@
   background-color: rgb(242, 242, 242);
 }
 .do-have {
-  font-size: 0.8vw;
-  margin-top: 25vw;
-  margin-left: 2vw;
+  font-size: 0.8rem;
+  margin: 0;
+  align-self: flex-end;
 }
 .sign-in {
-  font-size: 0.8vw;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .up-form-container {
+    width: 80%;
+    margin: 14vh auto;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .up-form-container {
+    width: 100vw;
+    height: 80vh;
+    flex-flow: row wrap;
+    margin: 10vh 0 0 0;
+    text-align: center;
+  }
+  .title {
+    width: 60%;
+    margin-bottom: 0;
+    align-self: center;
+  }
+  .hike-dude {
+    align-self: center;
+  }
+  .all-sign {
+    width: 100%;
+    padding: 0;
+    z-index: 50;
+  }
+  .input-up {
+    width: 70%;
+    height: 2vh;
+    font-size: 1rem;
+  }
+  .label-up {
+    font-size: 2rem;
+  }
+  .up-button {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
 }

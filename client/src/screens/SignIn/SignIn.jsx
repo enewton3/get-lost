@@ -47,12 +47,16 @@ const SignIn = (props) => {
     const toggleForm = form.isError ? "danger" : "";
     if (form.isError) {
       return (
-        <button type="submit"  className ={toggleForm}>
+        <button type="submit" className={toggleForm}>
           {form.errorMsg}
         </button>
       );
     } else {
-      return <button className = "sign-button" type="submit">Sign In</button>;
+      return (
+        <button className="sign-button" type="submit">
+          Sign In
+        </button>
+      );
     }
   };
 
@@ -60,36 +64,41 @@ const SignIn = (props) => {
 
   return (
     <Layout>
-      
-      <div className="form-container">
-      <HeyThere />
-      <div className= "total-sign">
-       
-        <form onSubmit={onSignIn}>
-          <label className= "label">Username</label>
-          <input className= "input"
-            required
-            type="text"
-            name="username"
-            value={username}
-            placeholder="Enter Username"
-            onChange={handleChange}
-          />
-          <label className= "label">Password</label>
-          <input className= "input"
-            required
-            name="password"
-            value={password}
-            type="password"
-            placeholder="Enter Password"
-            onChange={handleChange}
-          />
-          {renderError()}
+      <div className="in-form-container">
+        <HeyThere />
+        <div className="total-sign">
+          <form className="signin-form" onSubmit={onSignIn}>
+            <label className="signin-label">Username</label>
+            <input
+              className="input"
+              required
+              type="text"
+              name="username"
+              value={username}
+              placeholder="Enter Username"
+              onChange={handleChange}
+            />
+            <label className="signin-label">Password</label>
+            <input
+              className="input"
+              required
+              name="password"
+              value={password}
+              type="password"
+              placeholder="Enter Password"
+              onChange={handleChange}
+            />
+            {renderError()}
           </form>
         </div>
-        
-          <h3 className= "dont-have">Don't have an account? Sign up <Link className="sign-up" to="/sign-up">here!</Link></h3>
-          </div>
+
+        <h3 className="dont-have">
+          Don't have an account? Sign up{" "}
+          <Link className="sign-up" to="/sign-up">
+            here!
+          </Link>
+        </h3>
+      </div>
     </Layout>
   );
 };

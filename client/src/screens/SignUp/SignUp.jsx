@@ -65,11 +65,11 @@ const SignUp = (props) => {
 
   return (
     <Layout>
-      <div className="form-container">
-        <h3 className="title">Sign Up </h3>
+      <div className="up-form-container">
+        <h3 className="title">Sign Up</h3>
         <FontAwesomeIcon className="hike-dude" icon={faHiking} />
         <div className="all-sign">
-          <form onSubmit={onSignUp}>
+          <form className="signup-form" onSubmit={onSignUp}>
             <label className="label-up">Username</label>
             <input
               className="input-up"
