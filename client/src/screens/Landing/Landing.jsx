@@ -3,6 +3,7 @@ import Carousel from "../../components/Carousel/Carousel";
 import "./Landing.css";
 import { Link } from "react-router-dom";
 import { images } from "../../images/HomepageCarousel";
+import Expedition from 
 
 export default function Landing(props) {
   return (
@@ -16,7 +17,10 @@ export default function Landing(props) {
           <div className="shop"> Shop All</div>
         </Link>
         <Link className="landing-link" to={`/listing-page/Long-Haul`}>
+          <div className="long-haul-container">
+          <img />
           <div className="shop">Shop Long Haul</div>
+          </div>
         </Link>
       </div>
     </Layout>
