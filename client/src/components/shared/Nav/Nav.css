@@ -15,7 +15,7 @@ A:link {
 
 .option-icons {
   text-align: right;
-  font-size: 2vw;
+  font-size: 2rem;
   display: flex;
   justify-content: space-between;
   width: 15%;
@@ -96,9 +96,6 @@ A:link {
   text-align: center;
   padding: 0;
   margin: -5px 0 0 -10px;
-  /* position: absolute;
-  top: 0;
-  right: 0; */
   width: 15px;
   height: 15px;
 }
@@ -116,4 +113,22 @@ A:link {
 .user-menu-exit-active {
   transform: translateX(100%);
   transition: transform 0.3s linear;
+}
+
+@media only screen and (max-width: 1024px) {
+  .all-nav {
+    height: 5vh;
+  }
+  .all-icons,
+  .burger-boi {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .welcome-msg {
+    display: none;
+  }
+  .option-icons {
+    justify-content: space-evenly;
+  }
 }

@@ -10,8 +10,6 @@ import CartCounter from "../../CartCounter/CartCounter";
 //logos
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  // faBars,
-  // faSearch,
   faUser,
   faShoppingCart,
   faMapSigns,
@@ -64,7 +62,6 @@ export default function Nav(props) {
       <CSSTransition
         timeout={300}
         in={menuToggle}
-        // mountOnEnter={true}
         unmountOnExit
         classNames="menu"
       >
@@ -86,7 +83,6 @@ export default function Nav(props) {
             icon={faBinoculars}
             name="searchToggle"
             onClick={() => {
-              // handleClickOutside();
               setSearchToggle((prev) => !prev);
             }}
           />{" "}
