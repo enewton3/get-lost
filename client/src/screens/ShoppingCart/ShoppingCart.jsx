@@ -29,7 +29,7 @@ function ShoppingCart(props) {
   return (
     <Layout user={user}>
       <div className="shopping-cart-all">
-        <div className="cart-title">Cart {">>"}</div>
+        <div className="cart-title">Checkout {">>"}</div>
         <div className="shopping-cart">
           <div className="shopping-cart-items">
             {cart ? (
@@ -58,7 +58,7 @@ function ShoppingCart(props) {
             <div>Taxes: $XXXX</div>
             <div>Shipping: $XXXX</div>
             <div>Grand Total: $XXXX</div>
-            <button onClick={handleCheckout}>Checkout</button>
+            <button  className= "cart-butt" onClick={handleCheckout}>Checkout</button>
           </div>
         </div>
       </div>
