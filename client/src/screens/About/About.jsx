@@ -49,14 +49,11 @@ const About = (props) => {
             </h1>
             <h5 className="about-dev">
               Hello fellow adventurers! I’m so glad to be a part of your
-              journey! I'm a Colorado native and have grown up playing in and
-              caring for the Rocky Mountains. The Rockies aren't just for
-              skiing. They offer a summertime playground too where we camp,
-              hike, mountain bike and rock climb, just to name a few incredible
-              activities that I enjoy. Whether we’re out for a day-long hike or
-              trekking for days, every new experience is an opportunity to learn
-              more about ourselves and our world. So throw on your pack and
-              embark on your own incredible excursion!
+              journey! I'm a Colorado native and grew up playing in the Rocky Mountains. The Rockies offer a summertime playground where we camp,
+              hike, mountain bike and rock climb, just to name a few cool
+              ways to spend a day. Every new experience is an opportunity to learn
+              more about ourselves and our world. 
+              I hope you enjoy traversing our site.  I led the creation of the component hierarchy and planning the technical layout of the site.  I headed up the back-end development, setting the foundation for the site.  The Digital Nomads team has been one of the highlights of my early development career.  Working with a team of talented professionals is a huge part of software engineering.  I've learned and grown a lot through the process of creating this web site.  I'm looking forward to future challenges!
             </h5>
           </div>
           <div className="dev-div">
