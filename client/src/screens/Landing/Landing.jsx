@@ -26,7 +26,7 @@ export default function Landing(props) {
         <Link className="landing-link" to={`/listing-page/Long-Haul`}>
 
           <div className="long-haul-container">
-             <img  we need this idk why but we do/>  
+             <div className= "empty"></div>
             <div className="shop-long">Shop Long Haul</div>
           </div>
 

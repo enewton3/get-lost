@@ -51,7 +51,7 @@ const About = (props) => {
           <div className="dev-div">
             <h1 className="dev-title">SHELBY <FontAwesomeIcon className="airplane" icon={faPaperPlane} /></h1>
             <h5 className="about-dev">
-              Salutations! Born and raised in Ohio, curently a North Carolina resident, I've tried to see as much of our planet as possible. When I'm not
+              Salutations! Born and raised in Ohio, currently a North Carolina resident, I've tried to see as much of our planet as possible. When I'm not
               plotting my next great escape, I relax with my house plants and quietly enjoy the local trails and parks. I'm so exicted to have worked on Get Lost with my team.
               I'm especially thankful for the technincal accumen Evyn, Liz, and Mitchell bring--I've learned so much! On this project,
               I led the design, project managemnt, and UX/UI elements while also taking a leadership role in most of the styling. Even though my passion and strength is in styling, UX/UI, and project planning, I'm blessed to have such

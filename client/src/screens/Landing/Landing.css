@@ -61,7 +61,7 @@
 }
 .shop-long {
   background-color: #eed06c;
-  margin-top: -18vw;
+  margin-top: -15vw;
   margin-left: 20vw;
   width: 30vw;
   padding: 1.5vw;
@@ -106,10 +106,11 @@ background-color: rgb(70, 70, 70);
   cursor: pointer;
   
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000) {
   .landing-link{
     font-size: 5vw;
     text-shadow: .5px .5px black;
+  
   }
 
 }
@@ -120,3 +121,5 @@ background-color: rgb(70, 70, 70);
     text-shadow: .5px .5px black;
   }
 }
+
+
