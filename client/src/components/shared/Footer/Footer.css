@@ -93,3 +93,36 @@
 .emply:hover {
   transform: scale(1.1);
 }
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    width: 100%;
+    padding: 1vw;
+    font-size: 3vw;
+    height: 60vw;
+  }
+  .our-name {
+   font-size: 3vw;
+  }
+  .social-icons { 
+    font-size: 6vw;
+  }
+  .help-icon {
+    font-size: 3.0vw;
+  }
+  .footer-help {
+    font-size: 2.0vw;
+  }
+  .emply {
+    width: 20%;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+
+    
+  }
+    
+  
+}

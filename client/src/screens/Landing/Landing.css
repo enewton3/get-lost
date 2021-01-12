@@ -52,7 +52,7 @@
 }
 .shop-long {
   background-color: #eed06c;
-  margin-top: -18vw;
+  margin-top: -15vw;
   margin-left: 20vw;
   width: 30vw;
   padding: 1.5vw;
@@ -91,7 +91,7 @@
 .long:hover {
   cursor: pointer;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1000) {
   .landing-link {
     font-size: 5vw;
     text-shadow: 0.5px 0.5px black;
