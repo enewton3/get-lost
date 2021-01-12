@@ -10,6 +10,7 @@ function ShoppingCart(props) {
   const [cart, setCart] = useState([]);
   const history = useHistory();
   const [subTotal, setSubtotal] = useState(0);
+  const shipping = 12.99;
 
   useEffect(() => {
     const fetchCart = getCart();
@@ -54,11 +55,12 @@ function ShoppingCart(props) {
             )}
           </div>
           <div className="totals">
-            <div>Subtotal: ${subTotal} </div>
-            <div>Taxes: $XXXX</div>
-            <div>Shipping: $XXXX</div>
-            <div>Grand Total: $XXXX</div>
-            <button  className= "cart-butt" onClick={handleCheckout}>Checkout</button>
+            <div>Subtotal: ${subTotal ? subTotal.toFixed(2) : "loading"} </div>
+            <div>Shipping: ${shipping}</div>
+            <div>Grand Total: ${subTotal + shipping}</div>
+            <button className="cart-butt" onClick={handleCheckout}>
+              Checkout
+            </button>
           </div>
         </div>
       </div>
