@@ -118,6 +118,12 @@ color: rgb(65, 217, 244)
 .notes {
 color: rgb(75, 196, 14);
 }
+.shelby-pic {
+  position: absolute;
+  left: 15vw;
+  width: 21vw;
+  top: 101vw;
+}
 .liz-pic {
 position: absolute;
 left: 15vw;
@@ -136,37 +142,75 @@ top: 199vw;
     width: 21vw;
     top: 248vw;
     }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 770px) {
       .total-about {
         margin-top: 80px;
       }
-
-    }
-    
-    @media only screen and (max-width: 650px) {
-      .total-about {
-        margin-top: 80px;
+      .shelby-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 5vw;
       }
       .evyn-pic {
         position: absolute;
         left: 16vw;
-        width: 14vw;
+        margin-top: 5vw;
+        
       }
       .liz-pic {
         position: absolute;
         left: 16vw;
-        width: 14vw;
+        margin-top: 5vw;
+        
       }
       .mitch-pic {
         position: absolute;
         left: 16vw;
-        width: 14vw;
+        margin-top: 5vw;
+        
+      }
+
+    }
+    
+    @media only screen and (max-width: 550px) {
+      .total-about {
+        margin-top: 80px;
+      }
+      .shelby-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 9vw;
+        
+      }
+      .evyn-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 9vw;
+       
+      }
+      .liz-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 9vw;
+       
+      }
+      .mitch-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 9vw;
+        
       }
     }
     
     @media only screen and (max-width: 400px) {
       .total-about {
         margin-top: 80px;
+      }
+      .shelby-pic {
+        position: absolute;
+        margin-top: 70px;
+        left: 16vw;
+        width: 14vw;
       }
        .evyn-pic {
         position: absolute;

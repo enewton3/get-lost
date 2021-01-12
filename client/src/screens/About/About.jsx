@@ -12,6 +12,7 @@ import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import Liz from "../../components/DevImages/Liz";
 import Evyn from "../../components/DevImages/Evyn"
 import Mitch from "../../components/DevImages/Mitch"
+import Shelby from "../../components/DevImages/Shelby"
 
 const About = (props) => {
   return (
@@ -41,7 +42,7 @@ const About = (props) => {
             project! <div className="line-2"></div>
           </h6>
           <div className="dev-div">
-            <h1 className="dev-title">SHELBY <FontAwesomeIcon className="airplane" icon={faPaperPlane} /></h1>
+            <h1 className="dev-title"><Shelby className="shelby-pic" />SHELBY <FontAwesomeIcon className="airplane" icon={faPaperPlane} /></h1>
             <h5 className="about-dev">
               Salutations! Born and raised in Ohio, currently a North Carolina resident, I've tried to see as much of our planet as possible. When I'm not
               plotting my next great escape, I relax with my house plants and quietly enjoy the local trails and parks. I'm so exicted to have worked on Get Lost with my team.
