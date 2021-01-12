@@ -1,4 +1,4 @@
-import Carousel from "../../components/Carousel/Carousel";
+import Carousel from "../Carousel/Carousel";
 
 export default EvynTesting = () => {
   const testArray = [
