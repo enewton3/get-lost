@@ -2,9 +2,8 @@
   background-color: rgb(70, 70, 70);
   height: 45vw;
   margin-top: 14vw;
- padding-bottom: 5vw;
+  padding-bottom: 5vw;
 }
-
 
 .total-land {
   width: 50vw;
@@ -16,8 +15,6 @@
   margin-top: -35.2vw;
   display: flex;
   opacity: 90%;
-  
-  
 }
 
 .landing-link {
@@ -27,7 +24,6 @@
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-top: 13vw;
   text-align: center;
- 
 }
 .all-landing {
   display: flex;
@@ -36,8 +32,7 @@
   margin-left: -10vw;
   margin-top: -13vw;
   text-align: center;
-   height: 35vw;
-  
+  height: 35vw;
 }
 .shop-all {
   background-color: #eed06c;
@@ -46,10 +41,6 @@
   width: 30vw;
   padding: 1.5vw;
   text-align: center;
-
-   
-
-  
 }
 .shop-day {
   background-color: #eed06c;
@@ -80,43 +71,36 @@
   transform: scale(1.2);
 }
 
-
 .short {
-
   margin-top: 8vw;
   margin-left: 2vw;
   width: 35.1vw;
- 
 }
 .l-back {
-width: 100%;
-height: 36vw;
-background-color: rgb(70, 70, 70);
+  width: 100%;
+  height: 36vw;
+  background-color: rgb(70, 70, 70);
 }
 .long {
   width: 100%;
   margin-top: -1vw;
-  
 }
-.l-back:hover{
+.l-back:hover {
   cursor: pointer;
-  
 }
-.long:hover{
+.long:hover {
   cursor: pointer;
-  
 }
 @media only screen and (max-width: 1200px) {
-  .landing-link{
+  .landing-link {
     font-size: 5vw;
-    text-shadow: .5px .5px black;
+    text-shadow: 0.5px 0.5px black;
   }
-
 }
 
 @media only screen and (max-width: 650px) {
-  .landing-link{
+  .landing-link {
     font-size: 2.5vw;
-    text-shadow: .5px .5px black;
+    text-shadow: 0.5px 0.5px black;
   }
 }

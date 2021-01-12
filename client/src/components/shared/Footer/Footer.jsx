@@ -5,7 +5,7 @@ import {
   faComment,
   faCopyright,
   faEnvelope,
-  faHandPointUp,
+  // faHandPointUp,
   faHiking,
   faPhone,
   faQuestionCircle,
@@ -16,7 +16,7 @@ import {
   faInstagramSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
+// import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
 
 export default function Footer() {
   return (
