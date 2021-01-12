@@ -8,7 +8,7 @@ import {
   faPaw,
   faSubway,
 } from "@fortawesome/free-solid-svg-icons";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import Liz from "../../components/DevImages/Liz";
 import Evyn from "../../components/DevImages/Evyn";
