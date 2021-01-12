@@ -1,4 +1,7 @@
-const testArray = [
+import Carousel from "../../components/Carousel/Carousel";
+
+export default EvynTesting = () => {
+  const testArray = [
     { text: "test 1" },
     {
       image:
@@ -8,4 +11,5 @@ const testArray = [
     { text: "test 4" },
   ];
 
- <Carousel source={testArray} />
+  return <Carousel source={testArray} />;
+};

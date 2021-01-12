@@ -25,44 +25,41 @@
 .item-link {
   width: 100%;
   display: flex;
-  color:  black;
+  color: black;
   text-align: center;
   font-size: 1.5vw;
   background-color: white;
-  
 }
 .totals {
-background-color: whitesmoke;
-width: 52vw;
-margin: 0 auto;
-padding-top: 2vw;
-padding-left: 2vw;
-padding-bottom: 2vw;
-line-height: 1.5vw;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 1vw;
+  background-color: whitesmoke;
+  width: 52vw;
+  margin: 0 auto;
+  padding-top: 2vw;
+  padding-left: 2vw;
+  padding-bottom: 2vw;
+  line-height: 1.5vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1vw;
 }
 
 .cart-butt {
-border: none;
-background-color: tomato;
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-width: 5vw;
-height: 2vw;
-margin-top: 1vw;
-border-radius: 10px;
-font-size: 1vw;
+  border: none;
+  background-color: tomato;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  width: 5vw;
+  height: 2vw;
+  margin-top: 1vw;
+  border-radius: 10px;
+  font-size: 1vw;
 }
 .cart-butt:hover {
-background-color: rgb(247, 154, 138);
-transform: scale(1.1);
-
+  background-color: rgb(247, 154, 138);
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 650px) {
   .shopping-cart {
     font-size: 5vw;
-    
   }
   .shopping-cart-items {
     width: 90%;
@@ -78,16 +75,13 @@ transform: scale(1.1);
     line-height: 2.5vw;
   }
   .item-link {
-  font-size: 2.5vw;
-  height: 30vw;
-  background-color: white;
+    font-size: 2.5vw;
+    height: 30vw;
+    background-color: white;
   }
   .cart-butt {
     width: 20%;
     height: 25%;
     font-size: 2.5vw;
   }
-
 }
-
-

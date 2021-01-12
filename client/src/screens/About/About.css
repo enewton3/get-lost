@@ -1,6 +1,6 @@
 .about-background {
-background: url("https://images.unsplash.com/photo-1452621946466-c0f2ff2ff100?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
-height: 320vw;
+  background: url("https://images.unsplash.com/photo-1452621946466-c0f2ff2ff100?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
+  height: 320vw;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,36 +86,34 @@ height: 320vw;
   font-family: "Staatliches", cursive;
 }
 .dev-title {
-font-size: 5.5vw;
-padding-top: .5vw;
-height: 5vw;
+  font-size: 5.5vw;
+  padding-top: 0.5vw;
+  height: 5vw;
 }
 .about-dev {
-font-size: 1.5vw;
-background-color: rgba(0, 0, 0, 0.783);
-color: rgb(255, 255, 255);
-text-shadow: 1px 1px black;
-height: 25.6vw;
-padding: 2vw;
-padding-top: 3.25vw;
-letter-spacing: .1vw;
-word-spacing: .5vw;
-font-family: "Josefin Slab", serif;
-line-height: 2vw;
-
-
+  font-size: 1.5vw;
+  background-color: rgba(0, 0, 0, 0.783);
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px black;
+  height: 25.6vw;
+  padding: 2vw;
+  padding-top: 3.25vw;
+  letter-spacing: 0.1vw;
+  word-spacing: 0.5vw;
+  font-family: "Josefin Slab", serif;
+  line-height: 2vw;
 }
 .airplane {
-color: rgb(249, 131, 151);
+  color: rgb(249, 131, 151);
 }
 .paw {
   color: rgb(114, 78, 165);
 }
 .train {
-color: rgb(65, 217, 244)
+  color: rgb(65, 217, 244);
 }
 .notes {
-color: rgb(75, 196, 14);
+  color: rgb(75, 196, 14);
 }
 .shelby-pic {
   position: absolute;
@@ -124,109 +122,101 @@ color: rgb(75, 196, 14);
   top: 101vw;
 }
 .liz-pic {
-position: absolute;
-left: 15vw;
-width: 21vw;
-top: 199vw;
+  position: absolute;
+  left: 15vw;
+  width: 21vw;
+  top: 199vw;
 }
 .evyn-pic {
   position: absolute;
   left: 15vw;
   width: 21vw;
   top: 150vw;
+}
+.mitch-pic {
+  position: absolute;
+  left: 15vw;
+  width: 21vw;
+  top: 248vw;
+}
+@media only screen and (max-width: 770px) {
+  .total-about {
+    margin-top: 80px;
+  }
+  .shelby-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 5vw;
+  }
+  .evyn-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 5vw;
+  }
+  .liz-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 5vw;
   }
   .mitch-pic {
     position: absolute;
-    left: 15vw;
-    width: 21vw;
-    top: 248vw;
-    }
-    @media only screen and (max-width: 770px) {
-      .total-about {
-        margin-top: 80px;
-      }
-      .shelby-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 5vw;
-      }
-      .evyn-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 5vw;
-        
-      }
-      .liz-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 5vw;
-        
-      }
-      .mitch-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 5vw;
-        
-      }
+    left: 16vw;
+    margin-top: 5vw;
+  }
+}
 
-    }
-    
-    @media only screen and (max-width: 550px) {
-      .total-about {
-        margin-top: 80px;
-      }
-      .shelby-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 9vw;
-        
-      }
-      .evyn-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 9vw;
-       
-      }
-      .liz-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 9vw;
-       
-      }
-      .mitch-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 9vw;
-        
-      }
-    }
-    
-    @media only screen and (max-width: 400px) {
-      .total-about {
-        margin-top: 80px;
-      }
-      .shelby-pic {
-        position: absolute;
-        margin-top: 70px;
-        left: 16vw;
-        width: 14vw;
-      }
-       .evyn-pic {
-        position: absolute;
-        margin-top: 70px;
-        left: 16vw;
-        width: 14vw;
-      }
-      .liz-pic {
-        position: absolute;
-        margin-top: 70px;
-        left: 16vw;
-        width: 14vw;
-      }
-      .mitch-pic {
-        position: absolute;
-        margin-top: 70px;
-        left: 16vw;
-        width: 14vw;
-      }
-    }
+@media only screen and (max-width: 550px) {
+  .total-about {
+    margin-top: 80px;
+  }
+  .shelby-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 9vw;
+  }
+  .evyn-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 9vw;
+  }
+  .liz-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 9vw;
+  }
+  .mitch-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 9vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .total-about {
+    margin-top: 80px;
+  }
+  .shelby-pic {
+    position: absolute;
+    margin-top: 70px;
+    left: 16vw;
+    width: 14vw;
+  }
+  .evyn-pic {
+    position: absolute;
+    margin-top: 70px;
+    left: 16vw;
+    width: 14vw;
+  }
+  .liz-pic {
+    position: absolute;
+    margin-top: 70px;
+    left: 16vw;
+    width: 14vw;
+  }
+  .mitch-pic {
+    position: absolute;
+    margin-top: 70px;
+    left: 16vw;
+    width: 14vw;
+  }
+}

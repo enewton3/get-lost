@@ -34,11 +34,6 @@ const ProductCreate = (props) => {
     }
   };
 
-  // const fixIMGlink = () => {
-  //   const imgLink = product.imgURL;
-  //   setProduct({ ...product, imgURL: [{ image: imgLink }] });
-  // };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (!product.type) {

@@ -13,7 +13,6 @@ const ProductEdit = (props) => {
     type: "",
   });
   const [isUpdated, setUpdated] = useState(false);
-  // const [add, setAdd] = useState(false);
   const params = useParams();
   let { id } = params;
 
@@ -24,8 +23,6 @@ const ProductEdit = (props) => {
     };
     fetchProduct();
   }, [id]);
-
-  // useEffect(() => {}, [add]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -40,12 +37,6 @@ const ProductEdit = (props) => {
     const updated = await editProduct(id, product);
     setUpdated(updated);
   };
-
-  // const handleAddInput = (e) => {
-  //   e.preventDefault();
-  //   product.imgURL[product.imgURL.length] = { image: "" };
-  //   setAdd((prev) => !prev);
-  // };
 
   if (isUpdated) {
     return <Redirect to={`/detail/${id}`} />;
@@ -102,8 +93,6 @@ const ProductEdit = (props) => {
             required
             onChange={handleChange}
           />
-          {/* <label htmlFor="type">Type: </label>
-          <div id="type">{product.type}</div> */}
           <button type="submit" className="save-button">
             Save
           </button>
