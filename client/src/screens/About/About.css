@@ -25,7 +25,7 @@
   font-size: 6.2vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   width: 55vw;
-  margin-top: 6vw;
+  margin-top: 4.5vw;
   height: 5vw;
   margin-left: 23vw;
   text-align: center;
@@ -119,51 +119,54 @@
   position: absolute;
   left: 15vw;
   width: 21vw;
-  top: 101vw;
+  top: 100vw;
 }
 .liz-pic {
-  position: absolute;
-  left: 15vw;
-  width: 21vw;
-  top: 199vw;
+position: absolute;
+left: 15vw;
+width: 21vw;
+top: 198vw;
 }
 .evyn-pic {
   position: absolute;
   left: 15vw;
   width: 21vw;
-  top: 150vw;
-}
-.mitch-pic {
-  position: absolute;
-  left: 15vw;
-  width: 21vw;
-  top: 248vw;
-}
-@media only screen and (max-width: 770px) {
-  .total-about {
-    margin-top: 80px;
-  }
-  .shelby-pic {
-    position: absolute;
-    left: 16vw;
-    margin-top: 5vw;
-  }
-  .evyn-pic {
-    position: absolute;
-    left: 16vw;
-    margin-top: 5vw;
-  }
-  .liz-pic {
-    position: absolute;
-    left: 16vw;
-    margin-top: 5vw;
+  top: 149vw;
   }
   .mitch-pic {
     position: absolute;
-    left: 16vw;
-    margin-top: 5vw;
-  }
-}
+    left: 15vw;
+    width: 21vw;
+    top: 247vw;
+    }
+    @media only screen and (max-width: 770px) {
+      .total-about {
+        margin-top: 80px;
+      }
+      .shelby-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 5vw;
+      }
+      .evyn-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 5vw;
+        
+      }
+      .liz-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 5vw;
+        
+      }
+      .mitch-pic {
+        position: absolute;
+        left: 16vw;
+        margin-top: 5vw;
+        
+      }
+    }
 
 @media only screen and (max-width: 550px) {
   .total-about {
