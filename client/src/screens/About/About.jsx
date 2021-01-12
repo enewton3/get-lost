@@ -11,29 +11,48 @@ import {
 import { Link } from "react-scroll";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import Liz from "../../components/DevImages/Liz";
-import Evyn from "../../components/DevImages/Evyn";
-import Mitch from "../../components/DevImages/Mitch";
+import Evyn from "../../components/DevImages/Evyn"
+import Mitch from "../../components/DevImages/Mitch"
+import Shelby from "../../components/DevImages/Shelby"
 
 const About = (props) => {
   return (
     <Layout user={props.user}>
-      <div className="about-background">
-        <div className="total-about">
-          <div className="about-title"> About Us {">>"} </div>
-          <div className="all-about">
-            <p className="about-lost">
-              {" "}
-              Get Lost is a travel brand and gear store specializing in packs of
-              all sizes for whatever your next adventure may be. All items are
-              tested by staff so you can trust they are just as rugged and ready
-              for an expedition as you are. Whether your next big adventure is
-              being a nomad in the mountains or urban exploring, get ready to
-              Get Lost.{" "}
-            </p>
-            <div className="check-dev">Check Out the Creators of Get Lost</div>
-            <Link to="link1" smooth={true} offset={-80} duration={500}>
-              <FontAwesomeIcon className="hand-down" icon={faHandPointDown} />
-            </Link>
+      <div className= "about-background">
+      <div className="total-about">
+        <div className="about-title"> About Us {">>"} </div>
+        <div className="all-about">
+          <p className="about-lost">
+            {" "}
+            Get Lost is a travel brand and gear store specializing in packs of
+            all sizes for whatever your next adventure may be. All items are
+            tested by staff so you can trust they are just as rugged and ready
+            for an expedition as you are. Whether your next big adventure is
+            being a nomad in the mountains or urban exploring, get ready to Get
+            Lost.{" "}
+          </p>
+          <div className="check-dev">Check Out the Creators of Get Lost</div>
+          <FontAwesomeIcon className="hand-down" icon={faHandPointDown} />
+        </div>
+        <div className="about-devs">
+          <h6 className="the-devs">
+            <div className="line-1"></div>
+            As engineering fellows, Liz, Mitchell, Evyn, and Shelby were tasked
+            with a project to build a fully CRUD-capable, fullstack app for a
+            retailer with stellar user-experince in mind. We hope you enjoy our
+            project! <div className="line-2"></div>
+          </h6>
+          <div className="dev-div">
+            <h1 className="dev-title"><Shelby className="shelby-pic" />SHELBY <FontAwesomeIcon className="airplane" icon={faPaperPlane} /></h1>
+            <h5 className="about-dev">
+              Salutations! Born and raised in Ohio, currently a North Carolina resident, I've tried to see as much of our planet as possible. When I'm not
+              plotting my next great escape, I relax with my house plants and quietly enjoy the local trails and parks. I'm so exicted to have worked on Get Lost with my team.
+              I'm especially thankful for the technincal accumen Evyn, Liz, and Mitchell bring--I've learned so much! On this project,
+              I led the design, project managemnt, and UX/UI elements while also taking a leadership role in most of the styling. Even though my passion and strength is in styling, UX/UI, and project planning, I'm blessed to have such
+              strong team memebers who are so talented in JS and React who took the time to teach me more about backend and component creation. I hope you enjoy your adventure through our site!
+            </h5>
+
+
           </div>
           <div className="about-devs">
             <h6 className="the-devs" id="link1">
