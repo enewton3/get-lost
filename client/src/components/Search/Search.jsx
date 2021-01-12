@@ -36,7 +36,11 @@ export default function Search() {
       <div className="search-results">
         {search &&
           results.map((result) => (
-            <Link key={result.name} to={`/detail/${result._id}`}>
+            
+          
+            <Link key={result.name} to={`/detail/${result._id}`} onClick={() => {
+              setSearch('')
+            }}>
               <div className="search-result">{result.name}</div>
             </Link>
           ))}
