@@ -47,7 +47,7 @@
 .carousel-indicator {
   background-color: rgba(128, 128, 128, 0.831);
   border: 0.1vw solid rgba(41, 41, 41, 0.68);
-  margin: 0.1vw;
+  margin-top: -2.5vw;
   width: 2.5vw;
   height: 0.3vw;
   justify-self: baseline;
@@ -58,17 +58,19 @@
 }
 .lefty {
   color: rgb(133, 133, 133);
-  padding: 0vw 0.1vw 0 0.1vw;
+  padding: 0vw 1vw 2vw 1vw;
   font-size: 1.2vw;
-  margin-top: -0.5vw;
+  
 }
 .lefty:hover {
-  color: chocolate;
+  color: chocolate !important;
+
 }
 @media only screen and (max-width: 1200px) {
   .lefty {
     font-size: 10px;
   }
+ 
 }
 
 @media only screen and (max-width: 650px) {
