@@ -1,9 +1,9 @@
-import logo from "../../images/longad.png";
+import logo from "../../images/long.png";
 
 export default function Long() {
   return (
     <div className="long">
-      <img className = "long" src={logo}  alt="long logo" />
+      <img className="long" src={logo} alt="long logo" />
     </div>
   );
 }

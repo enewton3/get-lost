@@ -8,27 +8,45 @@ const ProductCreate = (props) => {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    imgURL: [{ image: "" }],
+    imgURL: "",
     price: "",
-    type: "",
+    type: null,
   });
 
-  const types = ["Day-Trip", "Expedition"];
+  const types = ["Day-Trip", "Long-Haul"];
 
   const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setProduct({
-      ...product,
-      [name]: value,
-    });
+
+    if (name === "imgURL") {
+      const imgObject = [{ image: value }];
+      setProduct({
+        ...product,
+        imgURL: imgObject,
+      });
+    } else {
+      setProduct({
+        ...product,
+        [name]: value,
+      });
+    }
   };
+
+  // const fixIMGlink = () => {
+  //   const imgLink = product.imgURL;
+  //   setProduct({ ...product, imgURL: [{ image: imgLink }] });
+  // };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const created = await createProduct(product);
-    setCreated({ created });
+    if (!product.type) {
+      alert("Please select a type!");
+    } else {
+      const created = await createProduct(product);
+      setCreated({ created });
+    }
   };
 
   if (isCreated) {
@@ -67,7 +85,7 @@ const ProductCreate = (props) => {
         <input
           className="input-add"
           placeholder="Image Link"
-          value={product.imgURL[0].image}
+          value={product.imgURL}
           name="imgURL"
           required
           onChange={handleChange}

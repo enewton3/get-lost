@@ -11,7 +11,7 @@ function ShoppingCartCard(props) {
       const product = await getProduct(productID);
       setProduct(product);
       const priceString = product.price.slice(1);
-      const price = parseInt(priceString);
+      const price = parseFloat(priceString);
       setSubtotal((prev) => prev + price);
     };
     fetchProduct();

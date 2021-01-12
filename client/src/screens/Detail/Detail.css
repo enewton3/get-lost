@@ -120,3 +120,9 @@
 .cart-button:hover {
   transform: scale(2.2);
 }
+
+@media only screen and (max-width: 1024px) {
+  .all-detail {
+    width: 80%;
+  }
+}
