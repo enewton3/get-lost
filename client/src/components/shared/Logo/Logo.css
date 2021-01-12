@@ -1,7 +1,23 @@
-.main-logo {
+.logo {
   width: 7vw;
-  
 }
-.main-logo:hover  {
+
+.main-logo {
+  width: 100%;
+}
+.main-logo:hover {
   transform: scale(1.06);
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    width: 10vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    width: 17vw;
+    margin-top: -3vw;
+  }
 }

@@ -1,47 +1,41 @@
+.list-back {
+  background: url("https://images.unsplash.com/photo-1452621946466-c0f2ff2ff100?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80");
+  height: 170vw;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .page-title {
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 7vh;
   padding-top: 16px;
   padding-bottom: 20px;
   font-family: "Vast Shadow", cursive;
   color: #e88b44;
-  font-size: 5vw;
+  font-size: 5rem;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
 }
 
 .products-container {
-  margin: 20px;
+  margin: 0 auto;
+  width: 90vw;
   max-width: 100%;
   display: grid;
   column-gap: 50px;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.728);
+  padding-bottom: 7vw;
 }
 
 .products {
   display: grid;
-  grid-template-columns: 30vw 30vw 30vw;
+  grid-template-columns: 33% 33% 33%;
   row-gap: 2vw;
   max-width: 100%;
   justify-content: start;
-}
-
-.product-image {
-  border: 2px solid rgb(72, 72, 72, 0.2);
-  padding: 2vw;
-  box-shadow: 0.1vw 0.1vw 0.1vw 0.1vw rgba(165, 165, 165, 0.584);
-  width: 20vw;
-  height: 30vw;
-  object-fit: contain;
-}
-
-.product-name {
-  font-family: "Staatliches", cursive, serif;
-  font-size: 2vw;
-  text-decoration: none;
-  color: #2b2b2b;
-  border: none;
 }
 
 .filter {
@@ -53,26 +47,43 @@
   text-decoration: gray;
 }
 
-.product-image:hover {
-  transform: scale(1.1);
-  background-color: white;
-}
-
 @media only screen and (max-width: 1200px) {
-  .products {
-    display: block;
-    align-content: center;
-    justify-content: center;
-    margin-top: 25px;
-    padding: 10px;
+  .list-back {
+    height: 100%;
   }
-  .price {
-    margin-bottom: 25px;
-    color: #060606;
+  .products-container {
+    width: 100vw;
+  }
+  .products {
+    width: 100%;
+    grid-template-columns: 50vw 50vw;
+    justify-content: space-around;
   }
   .filter {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .page-title {
+    font-size: 3rem;
+  }
+  .products {
+    grid-template-columns: 90vw;
+  }
+  .list-back {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page-title {
+    font-size: 2rem;
+    margin-top: 8vh;
+  }
+  .list-back {
+    height: 100%;
   }
 }

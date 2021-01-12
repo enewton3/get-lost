@@ -10,6 +10,7 @@ function ShoppingCart(props) {
   const [cart, setCart] = useState([]);
   const history = useHistory();
   const [subTotal, setSubtotal] = useState(0);
+  const shipping = 12.99;
 
   useEffect(() => {
     const fetchCart = getCart();
@@ -22,14 +23,10 @@ function ShoppingCart(props) {
     history.push("/");
   };
 
-  //Call getCart() to get cart from local storage or context
-  //map through returned cart to display cart products images and prices
-  //Link to specific product detail page
-
   return (
     <Layout user={user}>
       <div className="shopping-cart-all">
-        <div className="cart-title">Cart {">>"}</div>
+        <div className="cart-title">Checkout {">>"}</div>
         <div className="shopping-cart">
           <div className="shopping-cart-items">
             {cart ? (
@@ -54,11 +51,12 @@ function ShoppingCart(props) {
             )}
           </div>
           <div className="totals">
-            <div>Subtotal: ${subTotal} </div>
-            <div>Taxes: $XXXX</div>
-            <div>Shipping: $XXXX</div>
-            <div>Grand Total: $XXXX</div>
-            <button onClick={handleCheckout}>Checkout</button>
+            <div>Subtotal: ${subTotal ? subTotal.toFixed(2) : "loading"} </div>
+            <div>Shipping: ${shipping}</div>
+            <div>Grand Total: ${subTotal + shipping}</div>
+            <button className="cart-butt" onClick={handleCheckout}>
+              Checkout
+            </button>
           </div>
         </div>
       </div>

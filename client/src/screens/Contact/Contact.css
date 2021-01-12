@@ -1,58 +1,116 @@
-.label {
+.contact-form-container {
+  background-color: #e9e4bd;
+  padding-bottom: 2vw;
+  padding-top: 1vh;
+  font-size: 1rem;
+  color: rgb(58, 58, 58);
+  margin: 0 20vw 0 20vw;
+  height: 75vh;
+  margin-top: 14vh;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact-label {
   padding-bottom: 3vw;
   margin-top: 5vw;
   margin-bottom: 3vw;
   font-size: 2vw;
-  }
-  .total-contact {
-    font-family: 'Josefin Slab', serif;
-    display: flex;
-    flex-direction: column;
-    width: 20vw;
-    height: 12vw;
-    text-align: center;
-    justify-content: center;
-    margin-left: 25vw;
-    margin-top: -23vw;
-     justify-content: space-between;
-    
-   
-  }
-  .contact-us {
-    width: 22vw;
-    margin-top: 5vw;
-    margin-left: 1vw;
-    font-family: 'Vast Shadow', cursive;
-    font-size: 2.2vw;
-    
-  }
-.hand-right {
-  color: #E88B44;
-  font-size: 5vw;
-  margin-left: 10vw;
 }
-.mess-input{
+.contact-input {
+  border: none;
+  margin-top: 1vw;
+  margin-bottom: 3vw;
+  width: 15vw;
+}
+.total-contact {
+  font-family: "Josefin Slab", serif;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  height: 12vw;
+  text-align: center;
+  justify-content: center;
+  margin-left: 25vw;
+  margin-top: -27vw;
+  justify-content: space-between;
+}
+.contact-us {
+  width: 22vw;
+  margin-top: 5vw;
+  margin-left: 1vw;
+  font-family: "Vast Shadow", cursive;
+  font-size: 2.2vw;
+}
+.hand-right {
+  color: #e88b44;
+  font-size: 5vw;
+  margin-left: -10vw;
+  margin-top: 20vw;
+}
+.mess-input {
   border: none;
   margin-top: 1vw;
   margin-bottom: 3vw;
   width: 15vw;
   height: 5.5vw;
   text-align: center;
-
 }
 .mess-input:hover {
   background-color: rgb(242, 242, 242);
+}
+.mess-button {
+  margin-top: -1.5vw;
+  width: 5vw;
+  height: 2vw;
+  border-radius: 25px;
+  border: none;
+  background-color: #e88b44;
+  font-family: "Josefin Slab", serif;
+  font-size: 1vw;
+}
+.mess-button:hover {
+  background-color: #f2b17f;
+}
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 700px) {
+  .contact-form-container {
+    width: 75%;
+    padding: 0;
+    z-index: 50;
+  }
+  .total-contact {
+    width: 40%;
+    padding: 0;
+    z-index: 50;
+    margin-top: -30vw;
+  }
+  .contact-input {
+    width: 110%;
+    font-size: 1rem;
+  }
+  .mess-input {
+    width: 110%;
+    height: 40%;
+    font-size: 1rem;
+  }
+  .contact-label {
+    font-size: 2rem;
   }
   .mess-button {
-    margin-top: -1.5vw;
-    width: 5vw;
-    height: 2vw;
-    border-radius: 25px;
-    border: none;
-    background-color: #E88B44;
-    font-family: 'Josefin Slab', serif;
-
+    width: 70%;
+    height: 10%;
+    font-size: 2.5vw;
   }
-  .mess-button:hover {
-    background-color: #f2b17f;
+  .hand-right {
+    margin-top: 8vw;
+    font-size: 8.5vw;
+    margin-left: 25vw;
   }
+  .contact-us {
+    width: 50%;
+    font-size: 1rem;
+  }
+}

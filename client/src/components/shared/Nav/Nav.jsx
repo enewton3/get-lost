@@ -10,8 +10,6 @@ import CartCounter from "../../CartCounter/CartCounter";
 //logos
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  // faBars,
-  // faSearch,
   faUser,
   faShoppingCart,
   faMapSigns,
@@ -49,11 +47,6 @@ export default function Nav(props) {
   );
   return (
     <div className="all-nav">
-      <div className="all-icons">
-        <Link className="home-link" to="/">
-          <Logo />
-        </Link>
-      </div>
       <div className="burger-boi">
         <FontAwesomeIcon
           icon={faMapSigns}
@@ -61,10 +54,15 @@ export default function Nav(props) {
           onClick={() => setMenuToggle((prev) => !prev)}
         />
       </div>
+      <div className="all-icons">
+        <Link className="home-link" to="/">
+          <Logo />
+        </Link>
+      </div>
+
       <CSSTransition
         timeout={300}
         in={menuToggle}
-        // mountOnEnter={true}
         unmountOnExit
         classNames="menu"
       >
@@ -86,7 +84,6 @@ export default function Nav(props) {
             icon={faBinoculars}
             name="searchToggle"
             onClick={() => {
-              // handleClickOutside();
               setSearchToggle((prev) => !prev);
             }}
           />{" "}
@@ -101,7 +98,6 @@ export default function Nav(props) {
         <CSSTransition
           timeout={300}
           in={userMenuToggle}
-          // mountOnEnter={true}
           unmountOnExit
           classNames="user-menu"
         >

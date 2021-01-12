@@ -51,7 +51,6 @@ const signIn = async (req, res) => {
 
 const verify = async (req, res) => {
   try {
-    console.log(req);
     const token = req.headers.authorization.split(" ")[1];
     const payload = jwt.verify(token, TOKEN_KEY);
     if (payload) {
@@ -68,7 +67,6 @@ const changePassword = async (req, res) => {
     //req = username, oldpassword, newpassword
     const { username, password, newPassword } = req.body;
     const user = await User.findOne({ username: username });
-
     //verify the old password against the password stored in the database
     if (await bcrypt.compare(password, user.password_digest)) {
       //hash the new password

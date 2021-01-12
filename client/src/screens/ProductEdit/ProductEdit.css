@@ -1,7 +1,7 @@
 .product-edit {
   width: 55vw;
   margin: 0 auto;
-  margin-top: 5vw;
+  margin-top: 10vh;
   background-color: rgb(230, 230, 230);
   padding: 2vw;
   font-family: "Staatliches", cursive;
@@ -9,7 +9,6 @@
 }
 .edit-link {
   font-family: "Staatliches", cursive;
-  font-size: 1vw;
   margin-bottom: 0.5vw;
   border: none;
   width: 35vw;
@@ -22,14 +21,29 @@
   width: 40vw;
 }
 .edit-image {
-  font-size: 1vw;
+  height: 40vh;
+  width: auto;
   margin-bottom: 0.5vw;
   border: none;
 }
 .input-edit {
-  font-size: 1vw;
   margin-bottom: 0.5vw;
   margin-left: 1vw;
   border: none;
   width: 40vw;
+}
+
+@media only screen and (max-width: 1024px) {
+  .edit-link,
+  .input-edit,
+  .edit-form {
+    width: 95%;
+    margin: 0.5vh 1vw 0.5vh 1vw;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .product-edit {
+    width: 100vw;
+  }
 }

@@ -7,7 +7,7 @@ export default function Sale() {
       <div className="sale">
         <h1 className="sale-title">SALESALESALESALESALESALE</h1>
         <a
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
           target="_blank"
           rel="noreferrer"
         >

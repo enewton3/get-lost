@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComment,
@@ -8,13 +8,13 @@ import {
   faHiking,
   faPhone,
   faQuestionCircle,
-  // faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookSquare,
   faInstagramSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
+
 
 export default function Footer() {
   return (
@@ -43,12 +43,12 @@ export default function Footer() {
         </p>
       </div>
       <button className="emply">
-      <Link className="sign-in" to="/sign-in">
-        <p className="employee-word">
-          Employee Sign In {"-->"}{" "}
-          <FontAwesomeIcon className="employee-icon" icon={faHiking} />
+        <Link className="sign-in" to="/sign-in">
+          <p className="employee-word">
+            Employee Sign In {"-->"}{" "}
+            <FontAwesomeIcon className="employee-icon" icon={faHiking} />
           </p>
-          </Link>
+        </Link>
       </button>
     </div>
   );

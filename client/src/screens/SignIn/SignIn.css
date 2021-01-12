@@ -1,48 +1,45 @@
-.form-container {
+.in-form-container {
   background-color: #e9e4bd;
   padding-bottom: 2vw;
-  padding-top: 1vw;
-  font-size: 1.5vw;
+  padding-top: 1vh;
+  font-size: 1rem;
   color: rgb(58, 58, 58);
-  width: 50vw;
-  margin-left: 19%;
-  height: 30vw;
-  margin-top: 8vw;
+  margin: 0 20vw 0 20vw;
+  height: 50vh;
+  margin-top: 14vh;
+  display: flex;
+  flex-flow: row wrap;
 }
-.hey {
-  width: 20vw;
+.hey-there {
+  width: 25vw;
 }
 .total-sign {
   font-family: "Josefin Slab", serif;
   display: flex;
-  flex-direction: column;
-  width: 1vw;
-  height: 12vw;
+  flex-flow: column wrap;
+  width: 50%;
   text-align: center;
   justify-content: center;
-  margin-left: 25vw;
-  margin-top: -20vw;
-  justify-content: space-between;
 }
-.label {
-  padding-bottom: 3vw;
-  margin-top: 5vw;
-  margin-bottom: 3vw;
-  font-size: 2vw;
+
+.signin-form {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.signin-label {
+  font-size: 3rem;
 }
 .input {
   border: none;
   margin-top: 1vw;
   margin-bottom: 3vw;
   width: 15vw;
-  height: 1.5vw;
 }
 .sign-button {
-  margin-left: 5vw;
-  margin-top: 1vw;
-  width: 5vw;
-  height: 2vw;
   border-radius: 25px;
+  width: 20%;
   border: none;
   background-color: #e88b44;
 }
@@ -53,10 +50,42 @@
   background-color: rgb(242, 242, 242);
 }
 .dont-have {
-  font-size: 0.8vw;
-  margin-top: 15vw;
+  font-size: 0.8rem;
   margin-left: 2vw;
 }
 .sign-up {
-  font-size: 0.8vw;
+  font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 700px) {
+  .in-form-container {
+    width: 100vw;
+    flex-flow: row wrap;
+    margin: 10vh 0 0 0;
+  }
+  .hey-there {
+    width: 50%;
+  }
+  .total-sign {
+    width: 40%;
+    padding: 0;
+    z-index: 50;
+  }
+  .input {
+    width: 70%;
+    font-size: 1rem;
+  }
+  .signin-label {
+    font-size: 2rem;
+  }
+  .sign-button {
+    width: 40%;
+  }
+  .dont-have {
+    margin-top: vw;
+    margin-left: 7vw;
+  }
 }

@@ -8,27 +8,40 @@ const ProductCreate = (props) => {
   const [product, setProduct] = useState({
     name: "",
     description: "",
-    imgURL: [{ image: "" }],
+    imgURL: "",
     price: "",
-    type: "",
+    type: null,
   });
 
-  const types = ["Day-Trip", "Expedition"];
+  const types = ["Day-Trip", "Long-Haul"];
 
   const [isCreated, setCreated] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setProduct({
-      ...product,
-      [name]: value,
-    });
+
+    if (name === "imgURL") {
+      const imgObject = [{ image: value }];
+      setProduct({
+        ...product,
+        imgURL: imgObject,
+      });
+    } else {
+      setProduct({
+        ...product,
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const created = await createProduct(product);
-    setCreated({ created });
+    if (!product.type) {
+      alert("Please select a type!");
+    } else {
+      const created = await createProduct(product);
+      setCreated({ created });
+    }
   };
 
   if (isCreated) {
@@ -37,8 +50,9 @@ const ProductCreate = (props) => {
   return (
     <Layout user={props.user}>
       <form className="create-form" onSubmit={handleSubmit}>
+        <h1 className="add-title">Add A New Product</h1>
         <input
-          className="input-name"
+          className="input-add"
           placeholder="Name"
           value={product.name}
           name="name"
@@ -47,7 +61,7 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="input-price"
+          className="input-add"
           placeholder="Price"
           value={product.price}
           name="price"
@@ -55,7 +69,7 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <textarea
-          className="textarea-description"
+          className="input-add"
           rows={10}
           placeholder="Description"
           value={product.description}
@@ -64,9 +78,9 @@ const ProductCreate = (props) => {
           onChange={handleChange}
         />
         <input
-          className="input-image-link"
+          className="input-add"
           placeholder="Image Link"
-          value={product.imgURL[0].image}
+          value={product.imgURL}
           name="imgURL"
           required
           onChange={handleChange}

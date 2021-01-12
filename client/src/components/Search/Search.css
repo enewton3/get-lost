@@ -4,7 +4,7 @@
   background-color: rgb(228, 228, 228);
   position: absolute;
   right: 21vw;
-  width: 15vw;
+  width: 20vw;
   top: 2.1vw;
   height: 2.5vh;
   z-index: 100;
@@ -34,11 +34,11 @@
   width: 0;
 }
 .search-bar-enter-active {
-  width: 15vw;
+  width: 20vw;
   transition: width 0.3s ease-in-out;
 }
 .search-bar-exit {
-  width: 15vw;
+  width: 20vw;
 }
 .search-bar-exit-active {
   width: 0;
@@ -49,11 +49,25 @@
   border: none;
   border-radius: 20px;
   background-color: rgb(228, 228, 228, 0);
-  width: 15vw;
-  height: 2.2vh;
+  width: 100%;
+  height: 100%;
   z-index: 100;
-  margin-top: -2vh;
   padding: 0;
   justify-self: flex-end;
   align-self: flex-end;
+}
+
+@media screen and (max-width: 1024px) {
+  .search-bar {
+    top: 1.5vw;
+    right: 35vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-bar {
+    right: 40vw;
+    top: 3vw;
+    height: 3vh;
+  }
 }

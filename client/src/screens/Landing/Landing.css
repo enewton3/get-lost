@@ -1,7 +1,27 @@
+.all {
+  background-color: rgb(70, 70, 70);
+  height: 44vw;
+  padding-bottom: 5vw;
+  
+}
+
+.total-land {
+  width: 50vw;
+  height: 40vw;
+  max-height: 35vw;
+  background: url("../../images/expedition-background.jpg");
+  background-repeat: no-repeat;
+  margin-left: 45vw;
+  margin-top: -35.3vw;
+  display: flex;
+  opacity: 90%;
+  
+}
+
 .landing-link {
   font-family: "Vast Shadow", cursive;
   color: #e88b44;
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   margin-top: 13vw;
   text-align: center;
@@ -10,20 +30,79 @@
   display: flex;
   flex-direction: column;
   justify-items: center;
-  margin-left: 31.5vw;
+  margin-left: -10vw;
+  margin-top: -13vw;
   text-align: center;
-  width: 40vw;
+  height: 35vw;
 }
-.shop {
+.shop-all {
   background-color: #eed06c;
+  margin-top: -10.5vw;
+  margin-left: 20vw;
+  width: 30vw;
+  padding: 1.5vw;
+  text-align: center;
+}
+.shop-day {
+  background-color: #eed06c;
+  margin-top: 5vw;
+  margin-left: 20vw;
+  width: 30vw;
+  padding: 1.5vw;
+  text-align: center;
+}
+.shop-long {
+  background-color: #eed06c;
+  margin-top: -15vw;
+  margin-left: 20vw;
+  width: 30vw;
+  padding: 1.5vw;
+  text-align: center;
+}
+.shop-day:hover {
+  background-color: #fcca24f3;
+  transform: scale(1.2);
+}
+.shop-all:hover {
+  background-color: #fcca24f3;
+  transform: scale(1.2);
+}
+.shop-long:hover {
+  background-color: #fcca24f3;
+  transform: scale(1.2);
+}
+
+.short {
   margin-top: 2vw;
   margin-left: 2vw;
-  width: 30vw;
-
-  padding: 2vw;
-  text-align: center;
+  width: 35.1vw;
+  
 }
-.shop:hover {
-  background-color: #f5e3a8d2;
-  transform: scale(1.2);
+.l-back {
+  width: 100%;
+  height: 36vw;
+  background-color: rgb(70, 70, 70);
+}
+.long {
+  width: 100%;
+  margin-top: -3vw;
+}
+.l-back:hover {
+  cursor: pointer;
+}
+.long:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 1000) {
+  .landing-link {
+    font-size: 5vw;
+    text-shadow: 0.5px 0.5px black;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .landing-link {
+    font-size: 2.5vw;
+    text-shadow: 0.5px 0.5px black;
+  }
 }

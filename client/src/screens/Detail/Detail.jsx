@@ -11,7 +11,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { shopProduct } from "../../services/shopping";
 import Carousel from "../../components/Carousel/Carousel";
-// import './DetailCarousel.css';
 import "./Detail.css";
 
 const Detail = (props) => {
@@ -31,6 +30,7 @@ const Detail = (props) => {
 
   const handleDelete = () => {
     deleteProduct(id);
+    alert("item deleted");
     history.push("/");
   };
 
@@ -62,7 +62,9 @@ const Detail = (props) => {
               <button
                 className="trash-button"
                 onClick={() => {
-                  handleDelete();
+                  window.confirm("Are you sure you want to delete this item?")
+                    ? handleDelete()
+                    : alert("cancelled");
                 }}
               >
                 <FontAwesomeIcon icon={faTrashAlt} />

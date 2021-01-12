@@ -32,10 +32,14 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/">
+          <ScrollToTop>
           <Landing user={user} />
+          </ScrollToTop>
         </Route>
         <Route path="/sign-up">
+          <ScrollToTop>
           <SignUp user={user} setUser={setUser} />
+          </ScrollToTop>
         </Route>
         <Route path="/sign-in">
           <ScrollToTop>
@@ -43,21 +47,29 @@ function App() {
           </ScrollToTop>
         </Route>
         <Route path="/sign-out">
+          <ScrollToTop>
           <SignOut user={user} setUser={setUser} clearUser={clearUser} />
+          </ScrollToTop>
         </Route>
         <Route path="/listing-page/:filter">
+          <ScrollToTop>
           <Listing user={user} />
+          </ScrollToTop>
         </Route>
         <Route path="/detail/:id">
           <ScrollToTop>
-          <Detail user={user} />
+            <Detail user={user} />
           </ScrollToTop>
         </Route>
         <Route path="/about">
+          <ScrollToTop>
           <About user={user} />
+          </ScrollToTop>
         </Route>
         <Route path="/contact">
+        <ScrollToTop>
           <Contact user={user} />
+        </ScrollToTop>
         </Route>
         <Route path="/add-product">
           {user ? <ProductCreate user={user} /> : <Redirect to="/sign-up" />}
@@ -67,11 +79,13 @@ function App() {
         </Route>
         <Route path="/shopping-cart">
           <ScrollToTop>
-          <ShoppingCart user={user} />
+            <ShoppingCart user={user} />
           </ScrollToTop>
         </Route>
         <Route path="/sale">
+          <ScrollToTop>
           <Sale user={user} />
+          </ScrollToTop>
         </Route>
       </Switch>
       <div className="filler"></div>

@@ -6,37 +6,37 @@ A:link {
   height: 4.5vw;
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   position: fixed;
   top: 0;
   width: 100vw;
   border-bottom: 2px solid rgba(87, 87, 87, 0.3);
-  padding-top: 0.7vw;
 }
 
 .option-icons {
   text-align: right;
-  font-size: 2vw;
+  font-size: 2.5rem;
   display: flex;
   justify-content: space-between;
   width: 15%;
-  justify-self: flex-end;
   text-decoration: none;
   color: white;
   margin-right: 5vw;
-  margin-top: 1.6vw;
+  margin-top: 1.6vh;
+  padding: 2px;
 }
 .burger-boi {
-  width: 3.5%;
   border-radius: 20px;
   justify-self: flex-start;
-  font-size: 3vw;
-  margin-top: 3px;
-  margin-left: -85vw;
+  font-size: 3rem;
+  margin-top: 1vh;
+  margin-left: 1vw;
   color: rgb(52, 52, 52);
   text-align: center;
 }
 .all-icons {
-  margin-left: 5vw;
+  margin-left: -65vw;
+  align-self: flex-start;
 }
 .shopping-cart-icon {
   text-decoration: none;
@@ -45,16 +45,16 @@ A:link {
   flex-flow: row nowrap;
 }
 .shopping-cart-icon:hover {
-  font-size: 110%;
+  transform: scale(1.1);
 }
 .user-icon:hover {
-  font-size: 110%;
+  transform: scale(1.1);
 }
 .cart-icon:hover {
-  font-size: 110%;
+  transform: scale(1.1);
 }
 .search-icon:hover {
-  font-size: 110%;
+  transform: scale(1.1);
 }
 .burger-boi:hover {
   background-color: #655d53;
@@ -63,20 +63,21 @@ A:link {
 .user-menu {
   display: flex;
   flex-direction: column;
-  width: 9vw;
+  width: auto;
   text-align: center;
   justify-self: flex-start;
   position: absolute;
   right: 0;
   top: 100%;
+  font-family: "Josefin Slab", serif;
+  z-index: 100;
+  background-color: rgba(232, 232, 232, 0.927);
 }
 .user-link {
   background-color: rgba(232, 232, 232, 0.927);
-  padding-bottom: 2vw;
-  padding-top: 1vw;
-  font-size: 1.5vw;
   color: rgb(58, 58, 58);
-  font-family: "Josefin Slab", serif;
+  padding: 2vw;
+  font-size: 1.5rem;
 }
 .user-link:hover {
   background-color: rgb(199, 199, 199);
@@ -96,9 +97,6 @@ A:link {
   text-align: center;
   padding: 0;
   margin: -5px 0 0 -10px;
-  /* position: absolute;
-  top: 0;
-  right: 0; */
   width: 15px;
   height: 15px;
 }
@@ -116,4 +114,40 @@ A:link {
 .user-menu-exit-active {
   transform: translateX(100%);
   transition: transform 0.3s linear;
+}
+
+@media only screen and (max-width: 1024px) {
+  .all-nav {
+    height: 5vh;
+  }
+  .user-menu {
+    top: 110%;
+  }
+  .option-icons {
+    width: 25%;
+    font-size: 2rem;
+  }
+  .all-icons {
+    margin-left: -55vw;
+  }
+  .burger-boi {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .all-nav {
+    padding-top: 10px;
+  }
+  .welcome-msg {
+    display: none;
+  }
+  .option-icons {
+    margin-top: 1vh;
+    margin-right: 0;
+    width: 40vw;
+    justify-content: space-around;
+  }
+  .all-icons {
+    margin-left: -20vw;
+  }
 }
