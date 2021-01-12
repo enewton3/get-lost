@@ -122,51 +122,48 @@
   top: 100vw;
 }
 .liz-pic {
-position: absolute;
-left: 15vw;
-width: 21vw;
-top: 198vw;
+  position: absolute;
+  left: 15vw;
+  width: 21vw;
+  top: 198vw;
 }
 .evyn-pic {
   position: absolute;
   left: 15vw;
   width: 21vw;
   top: 149vw;
+}
+.mitch-pic {
+  position: absolute;
+  left: 15vw;
+  width: 21vw;
+  top: 247vw;
+}
+@media only screen and (max-width: 770px) {
+  .total-about {
+    margin-top: 80px;
+  }
+  .shelby-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 5vw;
+  }
+  .evyn-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 5vw;
+  }
+  .liz-pic {
+    position: absolute;
+    left: 16vw;
+    margin-top: 5vw;
   }
   .mitch-pic {
     position: absolute;
-    left: 15vw;
-    width: 21vw;
-    top: 247vw;
-    }
-    @media only screen and (max-width: 770px) {
-      .total-about {
-        margin-top: 80px;
-      }
-      .shelby-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 5vw;
-      }
-      .evyn-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 5vw;
-        
-      }
-      .liz-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 5vw;
-        
-      }
-      .mitch-pic {
-        position: absolute;
-        left: 16vw;
-        margin-top: 5vw;
-        
-      }
-    }
+    left: 16vw;
+    margin-top: 5vw;
+  }
+}
 
 @media only screen and (max-width: 550px) {
   .total-about {
