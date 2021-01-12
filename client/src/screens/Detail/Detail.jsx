@@ -11,7 +11,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { shopProduct } from "../../services/shopping";
 import Carousel from "../../components/Carousel/Carousel";
-// import './DetailCarousel.css';
 import "./Detail.css";
 
 const Detail = (props) => {

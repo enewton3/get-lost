@@ -23,10 +23,6 @@ function ShoppingCart(props) {
     history.push("/");
   };
 
-  //Call getCart() to get cart from local storage or context
-  //map through returned cart to display cart products images and prices
-  //Link to specific product detail page
-
   return (
     <Layout user={user}>
       <div className="shopping-cart-all">
