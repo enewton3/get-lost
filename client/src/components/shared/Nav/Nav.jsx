@@ -98,7 +98,6 @@ export default function Nav(props) {
         <CSSTransition
           timeout={300}
           in={userMenuToggle}
-          // mountOnEnter={true}
           unmountOnExit
           classNames="user-menu"
         >

@@ -14,15 +14,12 @@ export const shopProduct = (id) => {
     localStorage.setItem("cart", stringedCart);
   }
   return "added to cart";
-  //ADD PRODUCT ID TO CART ARRAY, IF NO CART AVAILABLE > CREATE CART ARRAY AND ADD PRODUCT
-  //CART IS AN ARRAY STORED IN LOCAL STORAGE OR IN A CONTEXT STATE IN REACT
 };
 
 export const getCart = () => {
   const cart = localStorage.getItem("cart");
   const parsedCart = cart ? JSON.parse(cart) : null;
   return parsedCart;
-  //GET CART ARRAY FROM LOCAL STORAGE OR CONTEXT
 };
 
 export const clearCart = () => {

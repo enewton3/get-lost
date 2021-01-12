@@ -5,18 +5,16 @@ import {
   faComment,
   faCopyright,
   faEnvelope,
-  // faHandPointUp,
   faHiking,
   faPhone,
   faQuestionCircle,
-  // faUsers,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookSquare,
   faInstagramSquare,
   faTwitterSquare,
 } from "@fortawesome/free-brands-svg-icons";
-// import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll";
+
 
 export default function Footer() {
   return (
