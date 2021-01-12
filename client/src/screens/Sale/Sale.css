@@ -1,44 +1,40 @@
 .sale {
-width: 90vw;
-height: 45vw;
-background-color: rgb(235, 235, 235);
-margin-top: 8vw;
-margin-left: 5vw;
-margin-bottom: 30vw;
-
+  width: 90vw;
+  height: 45vw;
+  background-color: rgb(235, 235, 235);
+  margin-top: 8vw;
+  margin-left: 5vw;
+  margin-bottom: 30vw;
 }
 .sale-title {
   color: rgb(210, 12, 12);
   font-size: 5.1vw;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- 
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .sale-title2 {
   color: rgb(210, 12, 12);
   font-size: 5.1vw;
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .sale-butt {
-border: none;
-background-color: rgba(0, 0, 0, 0.81);
-font-family: 'Times New Roman', Times, serif;
-letter-spacing: 5px;
-word-spacing: 1.5vw;
-color: white;
-width: 45vw;
-height: 25vw;
-margin-left: 22vw;
-font-size: 4vw;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.81);
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 5px;
+  word-spacing: 1.5vw;
+  color: white;
+  width: 45vw;
+  height: 25vw;
+  margin-left: 22vw;
+  font-size: 4vw;
 }
 .sale-butt:hover {
   transform: scale(1.1);
   color: rgb(193, 38, 38);
 
   cursor: pointer;
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -51,5 +47,4 @@ font-size: 4vw;
   .sale {
     margin-top: 90px;
   }
-
 }

@@ -45,10 +45,10 @@ box-shadow: .5vw 1vw .5vw 1.4vw  #726459d7; */
 }
 .carousel-indicator {
   background-color: rgba(128, 128, 128, 0.831);
-  border: .1vw solid rgba(41, 41, 41, 0.68);
-  margin: .1vw;
+  border: 0.1vw solid rgba(41, 41, 41, 0.68);
+  margin: 0.1vw;
   width: 2.5vw;
-  height: .3vw;
+  height: 0.3vw;
   justify-self: baseline;
 }
 
@@ -59,20 +59,19 @@ box-shadow: .5vw 1vw .5vw 1.4vw  #726459d7; */
   color: rgb(133, 133, 133);
   padding: 0vw 0.1vw 0 0.1vw;
   font-size: 1.2vw;
-  margin-top: -.5vw;
+  margin-top: -0.5vw;
 }
 .lefty:hover {
   color: chocolate;
 }
 @media only screen and (max-width: 1200px) {
   .lefty {
-   font-size:  10px;
+    font-size: 10px;
   }
-
 }
 
 @media only screen and (max-width: 650px) {
   .lefty {
-    font-size:  8px;
-   }
+    font-size: 8px;
+  }
 }
