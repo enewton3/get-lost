@@ -25,7 +25,7 @@ height: 320vw;
   font-size: 6.2vw;
   text-shadow: 1.5px 1.5px rgb(72, 72, 72);
   width: 55vw;
-  margin-top: 6vw;
+  margin-top: 4.5vw;
   height: 5vw;
   margin-left: 23vw;
   text-align: center;
@@ -122,25 +122,25 @@ color: rgb(75, 196, 14);
   position: absolute;
   left: 15vw;
   width: 21vw;
-  top: 101vw;
+  top: 100vw;
 }
 .liz-pic {
 position: absolute;
 left: 15vw;
 width: 21vw;
-top: 199vw;
+top: 198vw;
 }
 .evyn-pic {
   position: absolute;
   left: 15vw;
   width: 21vw;
-  top: 150vw;
+  top: 149vw;
   }
   .mitch-pic {
     position: absolute;
     left: 15vw;
     width: 21vw;
-    top: 248vw;
+    top: 247vw;
     }
     @media only screen and (max-width: 770px) {
       .total-about {
