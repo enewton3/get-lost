@@ -1,8 +1,8 @@
 .all {
   background-color: rgb(70, 70, 70);
-  height: 45vw;
-  margin-top: 14vw;
+  height: 44vw;
   padding-bottom: 5vw;
+  
 }
 
 .total-land {
@@ -12,9 +12,10 @@
   background: url("../../images/expedition-background.jpg");
   background-repeat: no-repeat;
   margin-left: 45vw;
-  margin-top: -35.2vw;
+  margin-top: -35.3vw;
   display: flex;
   opacity: 90%;
+  
 }
 
 .landing-link {
@@ -72,9 +73,10 @@
 }
 
 .short {
-  margin-top: 8vw;
+  margin-top: 2vw;
   margin-left: 2vw;
   width: 35.1vw;
+  
 }
 .l-back {
   width: 100%;
@@ -83,7 +85,7 @@
 }
 .long {
   width: 100%;
-  margin-top: -1vw;
+  margin-top: -3vw;
 }
 .l-back:hover {
   cursor: pointer;
