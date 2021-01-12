@@ -31,6 +31,7 @@ const Detail = (props) => {
 
   const handleDelete = () => {
     deleteProduct(id);
+    alert("item deleted");
     history.push("/");
   };
 
@@ -61,8 +62,10 @@ const Detail = (props) => {
               </Link>
               <button
                 className="trash-button"
-                onClick={() => { window.confirm('Are you sure you want to delete this item?') ?
-                  handleDelete() : window.oncancel("cancel");
+                onClick={() => {
+                  window.confirm("Are you sure you want to delete this item?")
+                    ? handleDelete()
+                    : alert("cancelled");
                 }}
               >
                 <FontAwesomeIcon icon={faTrashAlt} />
