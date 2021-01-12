@@ -18,10 +18,10 @@
   font-family: "Staatliches", cursive;
   margin-left: -80vw;
   margin-top: -25vw;
-  padding-right: .5vw;
-  padding-left: .5vw;
-  padding-top: .01vw;
-  padding-bottom: .01vw;
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+  padding-top: 0.01vw;
+  padding-bottom: 0.01vw;
 }
 .employee-word {
   color: #cdcdcd;
@@ -99,30 +99,26 @@
 
 @media only screen and (max-width: 700px) {
   .footer {
-    width: 100%;
+    width: 100vw;
     padding: 1vw;
     font-size: 3vw;
     height: 60vw;
   }
   .our-name {
-   font-size: 3vw;
+    font-size: 3vw;
   }
-  .social-icons { 
+  .social-icons {
     font-size: 6vw;
   }
   .help-icon {
-    font-size: 3.0vw;
+    font-size: 3vw;
   }
   .footer-help {
-    font-size: 2.0vw;
+    font-size: 2vw;
   }
   .emply {
     width: 20%;
     margin-top: 2vw;
     margin-bottom: 2vw;
-
-    
   }
-    
-  
 }
