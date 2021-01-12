@@ -61,8 +61,8 @@ const Detail = (props) => {
               </Link>
               <button
                 className="trash-button"
-                onClick={() => {
-                  handleDelete();
+                onClick={() => { window.confirm('Are you sure you want to delete this item?') ?
+                  handleDelete() : window.oncancel("cancel");
                 }}
               >
                 <FontAwesomeIcon icon={faTrashAlt} />

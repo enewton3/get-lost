@@ -84,4 +84,9 @@
   .sign-button {
     width: 40%;
   }
+  .dont-have {
+    margin-top: vw;
+    margin-left: 7vw;
+  }
 }
+
